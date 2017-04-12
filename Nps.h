@@ -12,15 +12,15 @@
 #import "CardDetails.h"
 #import "Billing.h"
 #import "Soap/NpsSoapClient.h"
-//#import "NpsSoapClient.h"
 #import "MethodResponses/CreatePaymentMethodTokenResponse.h"
 #import "MethodResponses/RetrievePaymentMethodTokenResponse.h"
 #import "MethodResponses/RecachePaymentMethodTokenResponse.h"
 #import "MethodResponses/GetIINDetailsResponse.h"
+#import "Utils/Environments.h"
 
 @interface Nps : NSObject
 
--(instancetype) initWithEnvironment:(NSString*) environment;
+-(instancetype) initWithEnvironment:(int) environment;
 
 @property NpsSoapClient* client;
 @property NSString* environment;

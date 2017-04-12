@@ -10,4 +10,8 @@
 
 @implementation Environments
 
+int SANDBOX = 0;
+int STAGING = 1;
+int PRODUCTION = 2;
+
 @end

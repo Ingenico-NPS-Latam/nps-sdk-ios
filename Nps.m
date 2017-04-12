@@ -16,10 +16,10 @@
 
 @implementation Nps
 
--(instancetype)initWithEnvironment:(NSString *)environment{
+-(instancetype)initWithEnvironment:(int)environment{
     self = [super init];
     if (self) {
-        self.client = [[NpsSoapClient alloc]initWithConfiguration:[Utilities getEnvironmentConfiguration:@""]];
+        self.client = [[NpsSoapClient alloc]initWithConfiguration:[Utilities getEnvironmentConfiguration:environment]];
     }
     return self;
 }

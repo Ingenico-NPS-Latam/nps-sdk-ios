@@ -10,4 +10,9 @@
 
 @interface Environments : NSObject
 
+extern int SANDBOX;
+extern int STAGING;
+extern int PRODUCTION;
+
 @end
+

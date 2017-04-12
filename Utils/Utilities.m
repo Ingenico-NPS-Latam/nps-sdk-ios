@@ -7,7 +7,8 @@
 //
 
 #import "Utilities.h"
-#import "Configuration.h"
+#import "Environments.h"
+
 
 @implementation Utilities
 
@@ -62,11 +63,26 @@
     return response[@"SOAP-ENV:Envelope"][@"SOAP-ENV:Body"][responseKey][@"Respuesta"];
 }
 
-+(Configuration*) getEnvironmentConfiguration:(NSString*) environ{
++(Configuration*) getEnvironmentConfiguration:(int) environ{
     Configuration *conf = [[Configuration alloc]init];
-    conf.baseAction = @"http://sandbox.com.ar/ws.php/";
-    conf.host = @"www.sandbox.nps.com.ar";
-    conf.url = @"https://sandbox.nps.com.ar";
+    switch (environ) {
+        case 0:
+            conf.baseAction = @"http://sandbox.com.ar/ws.php/";
+            conf.host = @"www.sandbox.nps.com.ar";
+            conf.url = @"https://sandbox.nps.com.ar";
+            break;
+        case 1:
+            conf.baseAction = @"http://implementacion.com.ar/ws.php/";
+            conf.host = @"www.implementacion.nps.com.ar";
+            conf.url = @"https://implementacion.nps.com.ar";
+            break;
+        case 2:
+            conf.baseAction = @"http://service2.com.ar/ws.php/";
+            conf.host = @"www.service2.nps.com.ar";
+            conf.url = @"https://service2.nps.com.ar";
+            break;        
+    }
+    
     return conf;
 }
 

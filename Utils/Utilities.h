@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "XmlNode.h"
+#import "Environments.h"
 #import "Configuration.h"
 
 @interface Utilities : NSObject
@@ -31,7 +32,7 @@
                       max:(int) maxSize
                   minimum:(int)minSize;
 
-+(Configuration*) getEnvironmentConfiguration:(NSString*) environ;
++(Configuration*) getEnvironmentConfiguration:(int) environ;
 
 +(NSString*) getValueFromResponseDictionary:(NSDictionary*) dict
                                         key:(NSString*) key;
