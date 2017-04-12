@@ -17,9 +17,21 @@
     IBOutlet UITextField *installmentsField;
     IBOutlet UIButton *sendButton;
     IBOutlet UILabel *responseLabel;
+    
+    IBOutlet UIButton *retrieveButton;
+    IBOutlet UILabel *retrieveLabel;
+    
+    IBOutlet UIButton *recacheButton;
+    IBOutlet UILabel *recacheLabel;
+    
+    IBOutlet UIButton *getProductButton;
+    IBOutlet UILabel *getProductLabel;
 }
 
 -(IBAction)sendButton:(id)sender;
+-(IBAction)retrieveButton:(id)sender;
+-(IBAction)recacheButton:(id)sender;
+-(IBAction)getProductButton:(id)sender;
 
 @end
 
