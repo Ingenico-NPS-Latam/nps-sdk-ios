@@ -12,13 +12,13 @@ iOS Client-side SDK
     CardDetails *card = [[CardDetails alloc]init];
 
     [card setNumber:@"4507990000000010"];
-    [card setHolderName:@"Gustavo Diaz"];
+    [card setHolderName:@"JOHN DOE"];
     [card setSecurityCode:@"123"];
     [card setExpirationDate:@"1909"];
 
     Billing *billingDetails = [[Billing alloc]init];
 
-    billingDetails.pspPerson.firstName = @"Gustavo Doaz";
+    billingDetails.pspPerson.firstName = @"JOHN DOE";
 
     [nps createPaymentMethodToken:card
                    billingDetails:billingDetails
@@ -51,7 +51,7 @@ iOS Client-side SDK
 
     Billing *billingDetailss = [[Billing alloc]init];
 
-    billingDetailss.pspPerson.firstName = @"Gustavo Doaz";
+    billingDetailss.pspPerson.firstName = "JOHN DOE";
 
     [npsc recachePaymentMethodToken:@"kWRZGcAxy5D7MoB6BDACugHYrlFzP9Eg"
                    cardSecurityCode:@"123"
