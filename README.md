@@ -105,25 +105,6 @@ nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngR
 
 ## 5. Validate input data manually
 
--(Boolean)validateCardNumber:(NSString *)cardNumber{
-return [Utilities hazCorrectSize:cardNumber max:24 minimum:9];
-}
-
--(Boolean)validateCardHolderName:(NSString *)cardHolderName{
-return [Utilities hazCorrectSize:cardHolderName max:27 minimum:2];
-}
-
--(Boolean)validateCardSecurityCode:(int)cardSecurityCode{
-NSString *cvcAsString = [NSString stringWithFormat:@"%d", cardSecurityCode];
-return [Utilities hazCorrectSize:cvcAsString max:4 minimum:3];
-}
-
--(Boolean)validateCardExpDate:(NSString *)cardNumber{
-return true;
-}
-
-
-
 ### Card number
 
 ```obj-c
