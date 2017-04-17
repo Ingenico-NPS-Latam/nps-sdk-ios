@@ -98,7 +98,9 @@ nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngR
 [nps getProduct:@"424242"
    postDateTime:@"2016-12-01 12:00:00"
  methodResponse:^(GetIINDetailsResponse *methodResponse, NSError *error) {
-    NSLog(@"%@", [methodResponse responseCod]);
+    if(!error){
+        NSLog(@"%@", [methodResponse responseCod]);
+    }
 }];
 
 ```
