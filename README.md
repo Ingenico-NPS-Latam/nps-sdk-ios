@@ -128,7 +128,7 @@ if([nps validateCardSecurityCode:@"123"]) {
 ### Expiration date
 
 ```obj-c
-if([nps validateCardExpDate:@"1909"]) {
+if([nps validateCardExpDate:2017 month:12]) {
     NSLog(@"Expiration date is valid");
 }else{
     NSLog(@"Expiration date is invalid");
