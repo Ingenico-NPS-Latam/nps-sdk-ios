@@ -15,6 +15,7 @@
     IBOutlet UITextField *expDateField;
     IBOutlet UITextField *cvcField;
     IBOutlet UITextField *installmentsField;
+    
     IBOutlet UIButton *sendButton;
     IBOutlet UILabel *responseLabel;
     
@@ -29,9 +30,9 @@
 }
 
 -(IBAction)sendButton:(id)sender;
--(IBAction)retrieveButton:(id)sender;
--(IBAction)recacheButton:(id)sender;
--(IBAction)getProductButton:(id)sender;
+-(IBAction)retrievePMT:(id)sender;
+-(IBAction)recachePMT:(id)sender;
+-(IBAction)getProduct:(id)sender;
 
 @end
 
