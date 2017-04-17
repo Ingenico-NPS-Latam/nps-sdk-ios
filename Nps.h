@@ -46,11 +46,12 @@
 
 -(Boolean)validateCardNumber:(NSString*)cardNumber;
 
--(Boolean)validateCardHolderName:(NSString*)cardNumber;
+-(Boolean)validateCardHolderName:(NSString*)holderName;
 
--(Boolean)validateCardSecurityCode:(int)cardNumber;
+-(Boolean)validateCardSecurityCode:(int)cvv;
 
--(Boolean)validateCardExpDate:(NSString*)cardNumber;
+-(Boolean)validateCardExpDate:(int)year
+                         month:(int)month;
 
 @end
 

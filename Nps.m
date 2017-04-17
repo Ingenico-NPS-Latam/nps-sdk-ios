@@ -98,8 +98,23 @@
     return [Utilities hazCorrectSize:cvcAsString max:4 minimum:3];
 }
 
--(Boolean)validateCardExpDate:(NSString *)cardNumber{
-    return true;
+-(Boolean)validateCardExpDate:(int)year
+                        month:(int)month{
+    
+    if (month < 1 || month > 12 || year < 1){
+        return NO;
+    }
+    
+    year += year < 100 ? 2000 : 0;
+    
+    NSDateComponents *comp = [[NSDateComponents alloc]init];
+    [comp setYear:year];
+    [comp setMonth:month];
+    [comp setDay:1];
+    
+    NSDate *expirationDate = [[NSCalendar currentCalendar] dateFromComponents:comp];
+    
+    return [expirationDate timeIntervalSinceNow] > 0;
 }
 
 @end
