@@ -7,6 +7,7 @@
 //
 
 #import "Nps.h"
+
 #import "Methods/Method.h"
 #import "Methods/CreatePaymentMethodToken.h"
 #import "Methods/RetrievePaymentMethodToken.h"
@@ -26,7 +27,7 @@
 
 -(void)createPaymentMethodToken:(CardDetails *)card
                  billingDetails:(Billing *)billing
-                 methodResponse:(void (^)(MethodResponse *))response{
+                 methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
     
     CreatePaymentMethodToken *cppt = [[CreatePaymentMethodToken alloc]init];
     
@@ -40,7 +41,7 @@
 }
 
 -(void)retrievePaymentMethodToken:(NSString *)paymentMethodToken
-                   methodResponse:(void (^)(MethodResponse *))response{
+                   methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
     
     RetrievePaymentMethodToken *rppt = [[RetrievePaymentMethodToken alloc]init];
     
@@ -55,7 +56,7 @@
 -(void)recachePaymentMethodToken:(NSString *)paymentMethodId
                 cardSecurityCode:(NSString *)securityCode
                   billingDetails:(Billing *)billing
-                  methodResponse:(void (^)(MethodResponse *))response{
+                  methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
 
     RecachePaymentMethodToken *rppt = [[RecachePaymentMethodToken alloc]init];
     
@@ -71,7 +72,7 @@
 
 -(void)getProduct:(NSString *)iin
      postDateTime:(NSString *)pDateTime
-   methodResponse:(void (^)(MethodResponse *))response{
+   methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
     
     GetIINDetails *giid = [[GetIINDetails alloc]init];
     

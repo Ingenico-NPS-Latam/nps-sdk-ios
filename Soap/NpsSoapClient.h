@@ -20,7 +20,7 @@
 @property Configuration *conf;
 
 -(void)send:(Method*)method
-methodResponse:(void(^)(MethodResponse *methodResponse))response;
+methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response;
 
 
 @end

@@ -20,7 +20,7 @@
 
 
 -(void)send:(Method *)method
-methodResponse:(void (^)(MethodResponse *))response{
+methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
     
     NSString *soapMessage = @"";
     
@@ -48,14 +48,16 @@ methodResponse:(void (^)(MethodResponse *))response{
             {
                 [mr setResponse:dict];
                 [mr setRawResponse:body];
-                response(mr);
+                response(mr, nil);
+            } else {
+                mr.rawResponse = body;
+                response(mr, error);
             }
         }
     };
     request.errorBlock = ^(NSError *error) {
-        [mr setError:error];
         NSLog(@"%@", error);
-        response(mr);
+        response(nil, error);
     };
     [request startAsynchronous];
 }

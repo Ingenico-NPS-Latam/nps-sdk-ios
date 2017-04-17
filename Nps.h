@@ -30,19 +30,19 @@
 
 -(void)createPaymentMethodToken:(CardDetails*)card
                  billingDetails:(Billing*)billing
-                 methodResponse:(void(^)(CreatePaymentMethodTokenResponse *methodResponse))response;
+                 methodResponse:(void (^)(CreatePaymentMethodTokenResponse *methodResponse, NSError *error))response;
 
 -(void)retrievePaymentMethodToken:(NSString*)paymentMethodToken
-                   methodResponse:(void(^)(RetrievePaymentMethodTokenResponse *methodResponse))response;
+                   methodResponse:(void(^)(RetrievePaymentMethodTokenResponse *methodResponse, NSError *error))response;
 
 -(void)recachePaymentMethodToken:(NSString *)paymentMethodId
                 cardSecurityCode:(NSString *)securityCode
                   billingDetails:(Billing *)billing
-                  methodResponse:(void (^)(RecachePaymentMethodTokenResponse *))response;
+                  methodResponse:(void (^)(RecachePaymentMethodTokenResponse *methodResponse, NSError *error))response;
 
 -(void)getProduct:(NSString*)iin
      postDateTime:(NSString*)pDateTime
-   methodResponse:(void(^)(GetIINDetailsResponse *methodResponse))response;
+   methodResponse:(void(^)(GetIINDetailsResponse *methodResponse, NSError *error))response;
 
 -(Boolean)validateCardNumber:(NSString*)cardNumber;
 
