@@ -38,7 +38,6 @@ methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))respons
     [request setHeaderWithName:@"SOAPAction" value: [NSString stringWithFormat:@"%1$@%2$@", self.conf.baseAction, method.name]];
     [request setHeaderWithName:@"Content-Type" value:@"text/xml; charset=utf-8"];
     request.rawPOSTData = soapData;
-    NSLog(@"%@", soapMessage);
     request.completionBlock = ^(NSDictionary *headers, NSString *body) {
         if (body.length > 0)
         {
@@ -56,7 +55,6 @@ methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))respons
         }
     };
     request.errorBlock = ^(NSError *error) {
-        NSLog(@"%@", error);
         response(nil, error);
     };
     [request startAsynchronous];
