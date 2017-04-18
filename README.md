@@ -105,6 +105,46 @@ nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngR
 
 ```
 
+### Recreate your Payment Method Token 
+
+```obj-c
+Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+nps.merchantId = @"psp_test";
+nps.pspVersion = @"2.2";
+nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
+
+
+Billing *billingDetailss = [[Billing alloc]init];
+
+billingDetailss.pspPerson.firstName = @"JOHN DOE";
+
+[nps recachePaymentMethodToken:@"kWRZGcAxy5D7MoB6BDACugHYrlFzP9Eg"
+              cardSecurityCode:@"123"
+                billingDetails:billingDetailss
+                methodResponse:^(RecachePaymentMethodTokenResponse *methodResponse, NSError *error) {
+                    if (!error){
+                        NSLog(@"%@", [methodResponse responseCod]);
+                    }
+}];
+```
+
+
+### Get your Payment Method Token information
+```obj-c
+Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+nps.merchantId = @"psp_test";
+nps.pspVersion = @"2.2";
+nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
+
+
+[nps retrievePaymentMethodToken:@"2gOwo2esUsfZwFRy2QxqppRN0H0tHZ9v"
+                 methodResponse:^(RetrievePaymentMethodTokenResponse* methodResponse, NSError *error) {
+                    if(!error){
+                        NSLog(@"%@", [methodResponse responseCod]);
+                    }
+}];
+```
+
 ## 5. Validate input data manually
 
 ### Card number
