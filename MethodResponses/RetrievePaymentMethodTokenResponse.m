@@ -31,7 +31,7 @@
     self.alreadyUsed = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_AlreadyUsed"];
     [self.cardDetails hidrateWithResponseDict:self.dictResponse[@"psp_CardOutputDetails"]];
     self.merchantId = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_MerchantId"];
-    
+    self.responseExtended = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_ResponseExtended"];
     self.paymentMethodToken = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_PaymentMethodToken"];
     [self.person hidrateWithResponseDict:self.dictResponse[@"psp_Person"]];
     self.product = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_Product"];

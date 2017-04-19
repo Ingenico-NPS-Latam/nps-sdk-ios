@@ -29,13 +29,13 @@
     Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
     nps.merchantId = @"psp_test";
     nps.pspVersion = @"2.2";
-    nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
+    nps.clientSession = @"ib8P79uYxUlPZ90NmIgKkbwTZFHZZfeD9pioSSkAiPGv2ivMyD01aW9Eh37jq0Tz";
     
     
     [nps retrievePaymentMethodToken:@"2gOwo2esUsfZwFRy2QxqppRN0H0tHZ9v"
                       methodResponse:^(RetrievePaymentMethodTokenResponse* methodResponse, NSError *error) {
-                          NSLog(@"%@", [methodResponse responseCod]);
-                          retrieveLabel.text = [methodResponse responseMsg];
+                          NSLog(@"%@", [methodResponse responseExtended]);
+                          retrieveLabel.text = [methodResponse.cardDetails maskedNumber];
                       }];
     
 }
@@ -46,19 +46,19 @@
     Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
     nps.merchantId = @"psp_test";
     nps.pspVersion = @"2.2";
-    nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
+    nps.clientSession = @"ib8P79uYxUlPZ90NmIgKkbwTZFHZZfeD9pioSSkAiPGv2ivMyD01aW9Eh37jq0Tz";
     
     
     Billing *billingDetailss = [[Billing alloc]init];
     
     billingDetailss.pspPerson.firstName = @"JOHN DOE";
     
-    [nps recachePaymentMethodToken:@"kWRZGcAxy5D7MoB6BDACugHYrlFzP9Eg"
+    [nps recachePaymentMethodToken:@"BrMcwXgYtHEfgbHsuYF8WJUceD0s0nMc"
                    cardSecurityCode:@"123"
                      billingDetails:billingDetailss
                      methodResponse:^(RecachePaymentMethodTokenResponse *methodResponse, NSError *error) {
-                         NSLog(@"%@", [methodResponse responseCod]);
-                         recacheLabel.text = [methodResponse responseMsg];
+                         NSLog(@"%@", [methodResponse responseExtended]);
+                         recacheLabel.text = [methodResponse.cardDetails holderName];
                      }];
     
 }
@@ -69,14 +69,14 @@
     Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
     nps.merchantId = @"psp_test";
     nps.pspVersion = @"2.2";
-    nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
+    nps.clientSession = @"ib8P79uYxUlPZ90NmIgKkbwTZFHZZfeD9pioSSkAiPGv2ivMyD01aW9Eh37jq0Tz";
     
     
     [nps getProduct:@"424242"
         postDateTime:@"2016-12-01 12:00:00"
       methodResponse:^(GetIINDetailsResponse *methodResponse, NSError *error) {
-          NSLog(@"%@", [methodResponse responseCod]);
-          getProductLabel.text = [methodResponse responseMsg];
+          NSLog(@"%@", [methodResponse responseExtended]);
+          getProductLabel.text = [methodResponse product];
       }];
 }
 
@@ -85,7 +85,7 @@
     Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
     nps.merchantId = @"psp_test";
     nps.pspVersion = @"2.2";
-    nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
+    nps.clientSession = @"ib8P79uYxUlPZ90NmIgKkbwTZFHZZfeD9pioSSkAiPGv2ivMyD01aW9Eh37jq0Tz";
     
     CardDetails *card = [[CardDetails alloc]init];
     
@@ -102,8 +102,8 @@
                    billingDetails:billingDetails
                    methodResponse:^(CreatePaymentMethodTokenResponse* methodResponse, NSError *error) {
                        if(!error){
-                           NSLog(@"%@", [methodResponse responseCod]);
-                           responseLabel.text = [methodResponse responseMsg];
+                           NSLog(@"%@", [methodResponse responseExtended]);
+                           responseLabel.text = [methodResponse paymentMethodToken];
                        }
                    }];
  		

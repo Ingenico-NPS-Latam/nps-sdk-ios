@@ -22,6 +22,7 @@
 @property NSString* product;
 @property NSString* responseCod;
 @property NSString* responseMsg;
+@property NSString* responseExtended;
 @property NSString* updateAt;
 
 

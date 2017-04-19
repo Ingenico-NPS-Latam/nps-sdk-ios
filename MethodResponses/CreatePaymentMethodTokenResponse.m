@@ -37,6 +37,7 @@
     self.product = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_Product"];
     self.responseCod = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_ResponseCod"];
     self.responseMsg = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_ResponseMsg"];
+    self.responseExtended = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_ResponseExtended"];
     self.updateAt = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_UpdatedAt"];
 }
 

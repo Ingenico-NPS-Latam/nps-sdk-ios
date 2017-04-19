@@ -32,6 +32,7 @@
     self.responseCod = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_ResponseCod"];
     self.responseMsg = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_ResponseMsg"];
     self.posDateTime = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_PosDateTime"];
+    self.responseExtended = [Utilities getValueFromResponseDictionary:self.dictResponse key:@"psp_ResponseExtended"];
 }
 
 
