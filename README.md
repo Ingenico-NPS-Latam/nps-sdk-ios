@@ -5,6 +5,7 @@ With this authorization key (or token), you can do anything with our API that re
 ##  1. Download
 ###  Using the NpsSDK.framework
 1. Download the framework from the releases page.
+2. <a href="https://developer.apple.com/library/ios/recipes/xcode_help-structure_navigator/articles/Adding_a_Framework.html" target="_blank">Drop it in</a> your existing Xcode project.
 2. [Drop it in](https://developer.apple.com/library/ios/recipes/xcode_help-structure_navigator/articles/Adding_a_Framework.html) your existing Xcode project.
 3. NpsSDK needs the following frameworks:
     - Foundation
