@@ -118,6 +118,65 @@ billing.pspAddress.houseNumber = @"32123123";
 }];
 ```
 
+##  Get your product detail
+
+```objective_c
+Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+nps.merchantId = @"psp_test";
+nps.pspVersion = @"2.2";
+nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
+
+
+[nps getProduct:@"424242"
+   postDateTime:@"2016-12-01 12:00:00"
+ methodResponse:^(GetIINDetailsResponse *methodResponse, NSError *error) {
+    if(!error){
+        NSLog(@"%@", [methodResponse responseCod]);
+    }
+}];
+
+```
+
+##  Recreate your Payment Method Token 
+
+```objective_c
+Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+nps.merchantId = @"psp_test";
+nps.pspVersion = @"2.2";
+nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
+
+
+Billing *billingDetailss = [[Billing alloc]init];
+
+billingDetailss.pspPerson.firstName = @"JOHN DOE";
+
+[nps recachePaymentMethodToken:@"kWRZGcAxy5D7MoB6BDACugHYrlFzP9Eg"
+              cardSecurityCode:@"123"
+                billingDetails:billingDetailss
+                methodResponse:^(RecachePaymentMethodTokenResponse *methodResponse, NSError *error) {
+                    if (!error){
+                        NSLog(@"%@", [methodResponse responseCod]);
+                    }
+}];
+```
+
+##  Get your Payment Method Token information
+```objective_c
+Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+nps.merchantId = @"psp_test";
+nps.pspVersion = @"2.2";
+nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
+
+
+[nps retrievePaymentMethodToken:@"2gOwo2esUsfZwFRy2QxqppRN0H0tHZ9v"
+                 methodResponse:^(RetrievePaymentMethodTokenResponse* methodResponse, NSError *error) {
+                    if(!error){
+                        NSLog(@"%@", [methodResponse responseCod]);
+                    }
+}];
+```
+
+
 ##  Client-side Card Validation
 
 Form validation is mandatory. On form submition nps.validateCardNumber must be executed below sequence of validation :
@@ -162,65 +221,6 @@ if([nps validateCardSecurityCode:@"123"]) {
 }else{
     NSLog(@"CVV is invalid");
 }
-```
-
-
-###  Get your product detail
-
-```objective_c
-Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
-nps.merchantId = @"psp_test";
-nps.pspVersion = @"2.2";
-nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
-
-
-[nps getProduct:@"424242"
-   postDateTime:@"2016-12-01 12:00:00"
- methodResponse:^(GetIINDetailsResponse *methodResponse, NSError *error) {
-    if(!error){
-        NSLog(@"%@", [methodResponse responseCod]);
-    }
-}];
-
-```
-
-###  Recreate your Payment Method Token 
-
-```objective_c
-Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
-nps.merchantId = @"psp_test";
-nps.pspVersion = @"2.2";
-nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
-
-
-Billing *billingDetailss = [[Billing alloc]init];
-
-billingDetailss.pspPerson.firstName = @"JOHN DOE";
-
-[nps recachePaymentMethodToken:@"kWRZGcAxy5D7MoB6BDACugHYrlFzP9Eg"
-              cardSecurityCode:@"123"
-                billingDetails:billingDetailss
-                methodResponse:^(RecachePaymentMethodTokenResponse *methodResponse, NSError *error) {
-                    if (!error){
-                        NSLog(@"%@", [methodResponse responseCod]);
-                    }
-}];
-```
-
-###  Get your Payment Method Token information
-```objective_c
-Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
-nps.merchantId = @"psp_test";
-nps.pspVersion = @"2.2";
-nps.clientSession = @"oem3ezXmzqGnhkOsNPoAFKd0upncI6XzRaKDBQEFOGwi7x4H3ZVQoV2ngRqzY7LL";
-
-
-[nps retrievePaymentMethodToken:@"2gOwo2esUsfZwFRy2QxqppRN0H0tHZ9v"
-                 methodResponse:^(RetrievePaymentMethodTokenResponse* methodResponse, NSError *error) {
-                    if(!error){
-                        NSLog(@"%@", [methodResponse responseCod]);
-                    }
-}];
 ```
 
 ##  Validate input data manually
