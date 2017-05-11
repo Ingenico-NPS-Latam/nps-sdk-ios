@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <iovation/iovation.h>
 #import "Method.h"
 #import "MethodResponses/MethodResponse.h"
 #import "CardDetails.h"
@@ -52,6 +53,8 @@
 
 -(Boolean)validateCardExpDate:(int)year
                          month:(int)month;
+
++(NSString *)getDeviceFingerPrint;
 
 @end
 

@@ -27,12 +27,16 @@
     
     IBOutlet UIButton *getProductButton;
     IBOutlet UILabel *getProductLabel;
+    
+    IBOutlet UIButton *getDeviceFingerPrint;
 }
 
 -(IBAction)sendButton:(id)sender;
 -(IBAction)retrievePMT:(id)sender;
 -(IBAction)recachePMT:(id)sender;
 -(IBAction)getProduct:(id)sender;
+-(IBAction)getDeviceFingerPrint:(id)sender;
+
 
 @end
 

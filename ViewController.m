@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-
 #import "RootParameters.h"
 #import "Methods/CreatePaymentMethodToken.h"
 #import "Methods/RetrievePaymentMethodToken.h"
@@ -29,7 +28,11 @@
     Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
     nps.merchantId = @"psp_test";
     nps.pspVersion = @"2.2";
-    nps.clientSession = @"ib8P79uYxUlPZ90NmIgKkbwTZFHZZfeD9pioSSkAiPGv2ivMyD01aW9Eh37jq0Tz";
+    nps.clientSession = @"zqXc2jw3yXYZztlfLMcqjURaqudKz83kFIOlKkZ3UEcT0fRbqCfPzootb6SsTu3O";
+    
+    
+    NSLog(@"%@", [Nps getDeviceFingerPrint]);
+    NSLog(@"%@", @"ese era el iovation");
     
     
     [nps retrievePaymentMethodToken:@"2gOwo2esUsfZwFRy2QxqppRN0H0tHZ9v"
@@ -46,7 +49,7 @@
     Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
     nps.merchantId = @"psp_test";
     nps.pspVersion = @"2.2";
-    nps.clientSession = @"ib8P79uYxUlPZ90NmIgKkbwTZFHZZfeD9pioSSkAiPGv2ivMyD01aW9Eh37jq0Tz";
+    nps.clientSession = @"zqXc2jw3yXYZztlfLMcqjURaqudKz83kFIOlKkZ3UEcT0fRbqCfPzootb6SsTu3O";
     
     
     Billing *billingDetailss = [[Billing alloc]init];
@@ -69,7 +72,7 @@
     Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
     nps.merchantId = @"psp_test";
     nps.pspVersion = @"2.2";
-    nps.clientSession = @"ib8P79uYxUlPZ90NmIgKkbwTZFHZZfeD9pioSSkAiPGv2ivMyD01aW9Eh37jq0Tz";
+    nps.clientSession = @"zqXc2jw3yXYZztlfLMcqjURaqudKz83kFIOlKkZ3UEcT0fRbqCfPzootb6SsTu3O";
     
     
     [nps getProduct:@"424242"
@@ -85,7 +88,7 @@
     Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
     nps.merchantId = @"psp_test";
     nps.pspVersion = @"2.2";
-    nps.clientSession = @"ib8P79uYxUlPZ90NmIgKkbwTZFHZZfeD9pioSSkAiPGv2ivMyD01aW9Eh37jq0Tz";
+    nps.clientSession = @"zqXc2jw3yXYZztlfLMcqjURaqudKz83kFIOlKkZ3UEcT0fRbqCfPzootb6SsTu3O";
     
     CardDetails *card = [[CardDetails alloc]init];
     
@@ -102,13 +105,16 @@
                    billingDetails:billingDetails
                    methodResponse:^(CreatePaymentMethodTokenResponse* methodResponse, NSError *error) {
                        if(!error){
-                           NSLog(@"%@", [methodResponse responseExtended]);
+                           NSLog(@"%@", [methodResponse paymentMethodToken]);
                            responseLabel.text = [methodResponse paymentMethodToken];
                        }
                    }];
  		
 }
 
+-(IBAction)getDeviceFingerPrint:(id)sender{
+    NSLog(@"%@", [Nps getDeviceFingerPrint]);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

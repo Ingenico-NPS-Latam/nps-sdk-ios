@@ -15,6 +15,7 @@
 #import "Methods/GetIINDetails.h"
 #import "Utils/Utilities.h"
 
+
 @implementation Nps
 
 -(instancetype)initWithEnvironment:(int)environment{
@@ -115,6 +116,10 @@
     NSDate *expirationDate = [[NSCalendar currentCalendar] dateFromComponents:comp];
     
     return [expirationDate timeIntervalSinceNow] > 0;
+}
+
++(NSString*) getDeviceFingerPrint{
+    return [iovation ioBegin];
 }
 
 @end
