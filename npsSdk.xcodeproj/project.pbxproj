@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		107C82F3C24F6112197A6ADE /* Pods_npsSdkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB35E1E51832EE7581AFEF8 /* Pods_npsSdkTests.framework */; };
-		81673FE1206EDA9BA3923704 /* Pods_npsSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB58488938CB8B8D667FB00 /* Pods_npsSdk.framework */; };
 		B38B96FD1ECC849800A89908 /* Address.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96CF1ECC849800A89908 /* Address.h */; };
 		B38B96FE1ECC849800A89908 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D01ECC849800A89908 /* Address.m */; };
 		B38B96FF1ECC849800A89908 /* Billing.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D11ECC849800A89908 /* Billing.h */; };
@@ -33,7 +32,7 @@
 		B38B97121ECC849800A89908 /* Method.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E41ECC849800A89908 /* Method.m */; };
 		B38B97131ECC849800A89908 /* MethodResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E51ECC849800A89908 /* MethodResponse.h */; };
 		B38B97141ECC849800A89908 /* MethodResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E61ECC849800A89908 /* MethodResponse.m */; };
-		B38B97151ECC849800A89908 /* NpsSoapClient.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E71ECC849800A89908 /* NpsSoapClient.h */; };
+		B38B97151ECC849800A89908 /* NpsSoapClient.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E71ECC849800A89908 /* NpsSoapClient.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B38B97161ECC849800A89908 /* NpsSoapClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E81ECC849800A89908 /* NpsSoapClient.m */; };
 		B38B97171ECC849800A89908 /* Person.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E91ECC849800A89908 /* Person.h */; };
 		B38B97181ECC849800A89908 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96EA1ECC849800A89908 /* Person.m */; };
@@ -176,7 +175,6 @@
 				B38B97331ECC896600A89908 /* SystemConfiguration.framework in Frameworks */,
 				B38B97311ECC895D00A89908 /* CoreTelephony.framework in Frameworks */,
 				B38B972C1ECC865900A89908 /* iovation.framework in Frameworks */,
-				81673FE1206EDA9BA3923704 /* Pods_npsSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +324,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B38B97151ECC849800A89908 /* NpsSoapClient.h in Headers */,
 				B38B97051ECC849800A89908 /* CreateClientSession.h in Headers */,
+				B38B97151ECC849800A89908 /* NpsSoapClient.h in Headers */,
 				B38B96FF1ECC849800A89908 /* Billing.h in Headers */,
 				B38B97031ECC849800A89908 /* Configuration.h in Headers */,
 				B38B97111ECC849800A89908 /* Method.h in Headers */,
@@ -711,7 +709,10 @@
 				INFOPLIST_FILE = npsSdk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = "$(inherited) -ObjC";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ar.com.nps.npsSdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
