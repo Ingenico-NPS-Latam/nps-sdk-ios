@@ -16,7 +16,6 @@
 @property NSString *pspPaymentMethodToken;
 @property NSString *pspClientSession;
 
--(void) setPspVersion:(NSString*)pspVersion;
 -(void) setPspMerchantId:(NSString*)pspMerchantId;
 
 -(NSString*) getHeader;

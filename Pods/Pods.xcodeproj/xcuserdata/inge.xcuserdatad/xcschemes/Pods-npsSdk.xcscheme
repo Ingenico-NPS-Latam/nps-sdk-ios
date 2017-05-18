@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3E7F70A578C52FEF223BD6C04A28BDE9'
+               BlueprintIdentifier = '596EC1FE7B8A7F55C7F8015B6DFC378F'
                BlueprintName = 'Pods-npsSdk'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-npsSdk.a'>
+               BuildableName = 'Pods-npsSdk.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		107C82F3C24F6112197A6ADE /* Pods_npsSdkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB35E1E51832EE7581AFEF8 /* Pods_npsSdkTests.framework */; };
+		81673FE1206EDA9BA3923704 /* Pods_npsSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB58488938CB8B8D667FB00 /* Pods_npsSdk.framework */; };
 		B38B96FD1ECC849800A89908 /* Address.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96CF1ECC849800A89908 /* Address.h */; };
 		B38B96FE1ECC849800A89908 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D01ECC849800A89908 /* Address.m */; };
 		B38B96FF1ECC849800A89908 /* Billing.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D11ECC849800A89908 /* Billing.h */; };
@@ -87,6 +89,7 @@
 		066BA4F3B0A74A07908599E9 /* Pods-npsSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdk/Pods-npsSdk.debug.xcconfig"; sourceTree = "<group>"; };
 		1255D3994FBEA293E0AA7DA7 /* Pods-npsSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdk.release.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdk/Pods-npsSdk.release.xcconfig"; sourceTree = "<group>"; };
 		64E8856FBE7FEF84795B4794 /* Pods-npsSdkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdkTests/Pods-npsSdkTests.release.xcconfig"; sourceTree = "<group>"; };
+		AAB35E1E51832EE7581AFEF8 /* Pods_npsSdkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_npsSdkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAF9CDE826544BDAE2ECD0E /* Pods-npsSdkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdkTests/Pods-npsSdkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B38B96CF1ECC849800A89908 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
 		B38B96D01ECC849800A89908 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
@@ -156,6 +159,7 @@
 		B3DBD4CD1ECC751B000A7739 /* npsSdk.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = npsSdk.podspec; sourceTree = SOURCE_ROOT; };
 		B3DBD4CE1ECC751B000A7739 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		B3DBD4D11ECC75B1000A7739 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENCE; path = ../LICENCE; sourceTree = "<group>"; };
+		CEB58488938CB8B8D667FB00 /* Pods_npsSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_npsSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 				B38B97331ECC896600A89908 /* SystemConfiguration.framework in Frameworks */,
 				B38B97311ECC895D00A89908 /* CoreTelephony.framework in Frameworks */,
 				B38B972C1ECC865900A89908 /* iovation.framework in Frameworks */,
+				81673FE1206EDA9BA3923704 /* Pods_npsSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3DBD4741ECB20A3000A7739 /* npsSdk.framework in Frameworks */,
+				107C82F3C24F6112197A6ADE /* Pods_npsSdkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,12 +216,16 @@
 				B38B97301ECC895D00A89908 /* CoreTelephony.framework */,
 				B38B972D1ECC895500A89908 /* npsSdk.xcodeproj */,
 				B38B972B1ECC865900A89908 /* iovation.framework */,
+				CEB58488938CB8B8D667FB00 /* Pods_npsSdk.framework */,
+				AAB35E1E51832EE7581AFEF8 /* Pods_npsSdkTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B38B972E1ECC895500A89908 /* Products */ = {
 			isa = PBXGroup;
+			children = (
+			);
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -701,10 +711,7 @@
 				INFOPLIST_FILE = npsSdk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = (
-					"$(inherited)",
-					"-ObjC",
-				);
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited) -ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ar.com.nps.npsSdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

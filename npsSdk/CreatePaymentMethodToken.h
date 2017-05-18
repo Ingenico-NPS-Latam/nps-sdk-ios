@@ -22,7 +22,6 @@
 @property NSString *pspClientSession;
 
 
--(void) setPspVersion:(NSString*)version;
 -(void) setPspMerchantId:(NSString*)merchantId;
 
 -(NSString*) asXml;

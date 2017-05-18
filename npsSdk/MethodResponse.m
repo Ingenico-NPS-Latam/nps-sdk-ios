@@ -18,6 +18,10 @@
     return @"";
 }
 
+-(void) setResponse:(NSDictionary *)dict{
+    self.dictResponse = dict;
+}
+
 -(void) hidrate{};
 
 @end

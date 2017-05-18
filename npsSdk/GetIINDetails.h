@@ -23,7 +23,6 @@
 -(NSString*) getHeader;
 -(NSString*) getFooter;
 -(NSString*) getRootAsXml;
--(NSString*) getPspClentSessionAsXml;
 -(NSString*) getIINAsXml;
 -(NSString*) getPosDateTimeAsXml;
 

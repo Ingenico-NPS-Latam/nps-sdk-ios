@@ -32,7 +32,6 @@
     CreatePaymentMethodToken *cppt = [[CreatePaymentMethodToken alloc]init];
     
     [cppt setPspMerchantId:self.merchantId];
-    [cppt setPspVersion:self.pspVersion];
     [cppt setPspClientSession:self.clientSession];
     [cppt setPspCardInputDetails:card];
     [cppt setBillingDetails:billing];
@@ -46,7 +45,6 @@
     RetrievePaymentMethodToken *rppt = [[RetrievePaymentMethodToken alloc]init];
     
     [rppt setPspMerchantId:self.merchantId];
-    [rppt setPspVersion:self.pspVersion];
     [rppt setPspClientSession:self.clientSession];
     [rppt setPspPaymentMethodToken:paymentMethodToken];
     
@@ -61,7 +59,6 @@
     RecachePaymentMethodToken *rppt = [[RecachePaymentMethodToken alloc]init];
     
     [rppt setPspMerchantId:self.merchantId];
-    [rppt setPspVersion:self.pspVersion];
     [rppt setPspClientSession:self.clientSession];
     [rppt setPspPaymentMethodId:paymentMethodId];
     [rppt setPspCardSecurityCode:securityCode];
@@ -117,7 +114,7 @@
     return [expirationDate timeIntervalSinceNow] > 0;
 }
 
--(NSString *) getDeviceFingerPrint{
++(NSString *) getDeviceFingerPrint{
     //return [iovation ioBegin];
     return @"";
 }

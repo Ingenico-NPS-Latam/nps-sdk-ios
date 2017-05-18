@@ -33,11 +33,6 @@
     return @"</Requerimiento></ns3:RecachePaymentMethodToken>";
 }
 
-
--(void)setPspVersion:(NSString *)pspVersion{
-    self.root.pspVersion = pspVersion;
-}
-
 -(void)setPspMerchantId:(NSString *)pspMerchantId{
     self.root.pspMerchantId = pspMerchantId;
 }

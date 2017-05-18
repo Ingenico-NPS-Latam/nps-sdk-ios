@@ -27,10 +27,6 @@
     return self;
 }
 
--(void) setPspVersion:(NSString *)version{
-    [self.root setPspVersion:version];
-}
-
 -(void) setPspMerchantId:(NSString *)merchantId{
     [self.root setPspMerchantId:merchantId];
 }

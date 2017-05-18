@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C6B55D3472D8B304D6B32AD44E861BB1'
+               BlueprintIdentifier = '04ADC28A57B62DB3E17D8268DBD10D03'
                BlueprintName = 'Pods-npsSdkTests'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-npsSdkTests.a'>
+               BuildableName = 'Pods-npsSdkTests.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

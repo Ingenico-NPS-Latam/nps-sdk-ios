@@ -11,8 +11,6 @@
 
 @interface MethodResponse : NSObject
 
--(instancetype) initWithResponse:(NSDictionary*) dict;
-
 @property NSError* responseError;
 @property NSString* rawResponse;
 @property NSDictionary* dictResponse;
