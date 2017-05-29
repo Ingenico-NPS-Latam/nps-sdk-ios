@@ -16,7 +16,6 @@
 @interface CreatePaymentMethodToken : Method
 
 @property RootParameters *root;
-@property NSString *pspProduct;
 @property CardDetails *pspCardInputDetails;
 @property Billing *billingDetails;
 @property NSString *pspClientSession;
@@ -28,7 +27,6 @@
 -(NSString*) getHeader;
 -(NSString*) getFooter;
 -(NSString*) getRootAsXml;
--(NSString*) getPspProductAsXml;
 -(NSString*) getPspCardInputDetailsAsXml;
 -(NSString*) getPspPersonAsXml;
 -(NSString*) getPspAddressAsXml;

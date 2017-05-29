@@ -44,10 +44,6 @@
     return [self.root asXml];
 }
 
--(NSString*) getPspProductAsXml{
-    return [Utilities buildXml:@"psp_Product" value:self.pspProduct type:@"2"];
-}
-
 -(NSString*) getPspCardInputDetailsAsXml{
     return [self.pspCardInputDetails asXml];
 }
@@ -73,7 +69,6 @@
     NSString *xml = @"";
     xml = [xml stringByAppendingString:self.getHeader];
     xml = [xml stringByAppendingString:self.getRootAsXml];
-    xml = [xml stringByAppendingString:self.getPspProductAsXml];
     xml = [xml stringByAppendingString:[Utilities buildNodeHeaderAsXml:@"psp_CardInputDetails" nodoAsXml:self.getPspCardInputDetailsAsXml]];
     xml = [xml stringByAppendingString:[Utilities buildNodeHeaderAsXml:@"psp_Person" nodoAsXml:self.getPspPersonAsXml]];
     xml = [xml stringByAppendingString:[Utilities buildNodeHeaderAsXml:@"psp_Address" nodoAsXml:self.getPspAddressAsXml]];
