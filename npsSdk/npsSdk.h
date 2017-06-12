@@ -33,6 +33,6 @@ FOUNDATION_EXPORT const unsigned char npsSdkVersionString[];
 #import <npsSdk/Billing.h>
 #import <npsSdk/CardDetails.h>
 #import <npsSdk/Person.h>
-#import <npsSdk/Installments>
+#import <npsSdk/Installments.h>
 
 #import <npsSdk/Configuration.h>
