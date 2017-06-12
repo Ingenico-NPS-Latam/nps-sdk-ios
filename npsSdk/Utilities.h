@@ -39,4 +39,11 @@
 
 +(NSDictionary*) removeTrashFromResponse:(NSDictionary*) response
                              responseKey:(NSString*) responseKey;
+
++(NSString*) getDate;
+
++(Boolean) isValidLuhn:(NSString*) number;
+
++(NSString*) reverseString:(NSString*) texto;
+
 @end

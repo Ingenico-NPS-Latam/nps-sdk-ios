@@ -22,6 +22,7 @@ FOUNDATION_EXPORT const unsigned char npsSdkVersionString[];
 #import <npsSdk/RecachePaymentMethodTokenResponse.h>
 #import <npsSdk/RetrievePaymentMethodTokenResponse.h>
 #import <npsSdk/GetIINDetailsResponse.h>
+#import <npsSdk/GetProductResponse.h>
 
 #import <npsSdk/CreatePaymentMethodToken.h>
 #import <npsSdk/RecachePaymentMethodToken.h>
@@ -32,5 +33,6 @@ FOUNDATION_EXPORT const unsigned char npsSdkVersionString[];
 #import <npsSdk/Billing.h>
 #import <npsSdk/CardDetails.h>
 #import <npsSdk/Person.h>
+#import <npsSdk/Installments>
 
 #import <npsSdk/Configuration.h>

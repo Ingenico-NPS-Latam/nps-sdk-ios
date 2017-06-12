@@ -29,6 +29,7 @@ methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))respons
     soapMessage = [soapMessage stringByAppendingString:method.superHeader];
     soapMessage = [soapMessage stringByAppendingString:method.asXml];
     soapMessage = [soapMessage stringByAppendingString:method.superFooter];
+    //NSLog(@"%@", soapMessage);
     NSData *soapData = [soapMessage dataUsingEncoding:NSUTF8StringEncoding];
     
     NSURL *url = [NSURL URLWithString:self.conf.url];
@@ -37,7 +38,9 @@ methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))respons
     [request setHeaderWithName:@"Host" value:self.conf.host];
     [request setHeaderWithName:@"SOAPAction" value: [NSString stringWithFormat:@"%1$@%2$@", self.conf.baseAction, method.name]];
     [request setHeaderWithName:@"Content-Type" value:@"text/xml; charset=utf-8"];
+    [request setTimeoutSeconds:30];
     request.rawPOSTData = soapData;
+    
     request.completionBlock = ^(NSDictionary *headers, NSString *body) {
         if (body.length > 0)
         {

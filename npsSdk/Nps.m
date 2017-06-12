@@ -12,6 +12,7 @@
 #import "RetrievePaymentMethodToken.h"
 #import "RecachePaymentMethodToken.h"
 #import "GetIINDetails.h"
+#import "GetInstallmentsOptions.h"
 #import "Utilities.h"
 
 
@@ -21,6 +22,7 @@
     self = [super init];
     if (self) {
         self.client = [[NpsSoapClient alloc]initWithConfiguration:[Utilities getEnvironmentConfiguration:environment]];
+        self.pspVersion = @"2.2";
     }
     return self;
 }
@@ -67,8 +69,7 @@
     [self.client send:rppt methodResponse:response];
 }
 
--(void)getProduct:(NSString *)iin
-     postDateTime:(NSString *)pDateTime
+-(void)getIINDetails:(NSString *)iin
    methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
     
     GetIINDetails *giid = [[GetIINDetails alloc]init];
@@ -77,13 +78,51 @@
     [giid setPspVersion:self.pspVersion];
     [giid setPspClientSession:self.clientSession];
     [giid setIin:iin];
-    [giid setPosDateTime:pDateTime];
+    [giid setPosDateTime: [Utilities getDate]];
     
     [self.client send:giid methodResponse:response];
 }
 
+-(void)getProduct:(NSString *)iin
+      methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
+    
+    GetIINDetails *giid = [[GetIINDetails alloc]init];
+    
+    [giid setPspMerchantId:self.merchantId];
+    [giid setPspVersion:self.pspVersion];
+    [giid setPspClientSession:self.clientSession];
+    [giid setIin:iin];
+    [giid setPosDateTime:[Utilities getDate]];
+    
+    [self.client send:giid methodResponse:response];
+}
+
+-(void)getInstallmentsOptions:(NSString *)amount
+                      product:(NSString *)product
+                     currency:(NSString *)currency
+                      country:(NSString *)country
+                  numPayments:(NSString *)numPayments
+           paymentMethodToken:(NSString *)paymentMethodToken
+               methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
+    
+    GetInstallmentsOptions *gio = [[GetInstallmentsOptions alloc]init];
+    
+    [gio setPspAmount:amount];
+    [gio setPspProduct:product];
+    [gio setPspCurrency:currency];
+    [gio setPspCountry:country];
+    [gio setPspNumPayments:numPayments];
+    [gio setPspPaymentMethodToken:paymentMethodToken];
+    [gio setPspClientSession:self.clientSession];
+    [gio setPspPosDateTime:[Utilities getDate]];
+                                  
+    [self.client send:gio methodResponse:response];
+    
+}
+
+
 -(Boolean)validateCardNumber:(NSString *)cardNumber{
-    return [Utilities hazCorrectSize:cardNumber max:24 minimum:9];
+    return [Utilities hazCorrectSize:cardNumber max:24 minimum:9] && [Utilities isValidLuhn:cardNumber];
 }
 
 -(Boolean)validateCardHolderName:(NSString *)cardHolderName{

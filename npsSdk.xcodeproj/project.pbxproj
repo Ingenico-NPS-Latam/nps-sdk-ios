@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		107C82F3C24F6112197A6ADE /* Pods_npsSdkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB35E1E51832EE7581AFEF8 /* Pods_npsSdkTests.framework */; };
+		B34C2D801EE849C3005A4DC8 /* GetProductResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D7E1EE849C3005A4DC8 /* GetProductResponse.h */; };
+		B34C2D811EE849C3005A4DC8 /* GetProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C2D7F1EE849C3005A4DC8 /* GetProductResponse.m */; };
+		B34C2D841EE86B4E005A4DC8 /* GetInstallmentsOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D821EE86B4E005A4DC8 /* GetInstallmentsOptions.h */; };
+		B34C2D851EE86B4E005A4DC8 /* GetInstallmentsOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C2D831EE86B4E005A4DC8 /* GetInstallmentsOptions.m */; };
+		B34C2D881EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D861EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.h */; };
+		B34C2D891EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C2D871EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.m */; };
 		B38B96FD1ECC849800A89908 /* Address.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96CF1ECC849800A89908 /* Address.h */; };
 		B38B96FE1ECC849800A89908 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D01ECC849800A89908 /* Address.m */; };
 		B38B96FF1ECC849800A89908 /* Billing.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D11ECC849800A89908 /* Billing.h */; };
@@ -72,6 +77,8 @@
 		B3DBD4CF1ECC751B000A7739 /* npsSdk.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B3DBD4CD1ECC751B000A7739 /* npsSdk.podspec */; };
 		B3DBD4D01ECC751B000A7739 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B3DBD4CE1ECC751B000A7739 /* Podfile */; };
 		B3DBD4D21ECC75B1000A7739 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = B3DBD4D11ECC75B1000A7739 /* LICENCE */; };
+		B3EADBB91EEEC27500386E16 /* Installments.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBB71EEEC27500386E16 /* Installments.h */; };
+		B3EADBBA1EEEC27500386E16 /* Installments.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EADBB81EEEC27500386E16 /* Installments.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +95,13 @@
 		066BA4F3B0A74A07908599E9 /* Pods-npsSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdk/Pods-npsSdk.debug.xcconfig"; sourceTree = "<group>"; };
 		1255D3994FBEA293E0AA7DA7 /* Pods-npsSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdk.release.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdk/Pods-npsSdk.release.xcconfig"; sourceTree = "<group>"; };
 		64E8856FBE7FEF84795B4794 /* Pods-npsSdkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdkTests/Pods-npsSdkTests.release.xcconfig"; sourceTree = "<group>"; };
-		AAB35E1E51832EE7581AFEF8 /* Pods_npsSdkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_npsSdkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAF9CDE826544BDAE2ECD0E /* Pods-npsSdkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdkTests/Pods-npsSdkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B34C2D7E1EE849C3005A4DC8 /* GetProductResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetProductResponse.h; sourceTree = "<group>"; };
+		B34C2D7F1EE849C3005A4DC8 /* GetProductResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetProductResponse.m; sourceTree = "<group>"; };
+		B34C2D821EE86B4E005A4DC8 /* GetInstallmentsOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetInstallmentsOptions.h; sourceTree = "<group>"; };
+		B34C2D831EE86B4E005A4DC8 /* GetInstallmentsOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInstallmentsOptions.m; sourceTree = "<group>"; };
+		B34C2D861EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetInstallmentsOptionsResponse.h; sourceTree = "<group>"; };
+		B34C2D871EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInstallmentsOptionsResponse.m; sourceTree = "<group>"; };
 		B38B96CF1ECC849800A89908 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
 		B38B96D01ECC849800A89908 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
 		B38B96D11ECC849800A89908 /* Billing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Billing.h; sourceTree = "<group>"; };
@@ -156,8 +168,10 @@
 		B3DBD4BB1ECB3662000A7739 /* Nps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nps.m; sourceTree = "<group>"; };
 		B3DBD4BC1ECB3662000A7739 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B3DBD4CD1ECC751B000A7739 /* npsSdk.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = npsSdk.podspec; sourceTree = SOURCE_ROOT; };
-		B3DBD4CE1ECC751B000A7739 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		B3DBD4CE1ECC751B000A7739 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B3DBD4D11ECC75B1000A7739 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENCE; path = ../LICENCE; sourceTree = "<group>"; };
+		B3EADBB71EEEC27500386E16 /* Installments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Installments.h; sourceTree = "<group>"; };
+		B3EADBB81EEEC27500386E16 /* Installments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Installments.m; sourceTree = "<group>"; };
 		CEB58488938CB8B8D667FB00 /* Pods_npsSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_npsSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -183,7 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3DBD4741ECB20A3000A7739 /* npsSdk.framework in Frameworks */,
-				107C82F3C24F6112197A6ADE /* Pods_npsSdkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +228,6 @@
 				B38B972D1ECC895500A89908 /* npsSdk.xcodeproj */,
 				B38B972B1ECC865900A89908 /* iovation.framework */,
 				CEB58488938CB8B8D667FB00 /* Pods_npsSdk.framework */,
-				AAB35E1E51832EE7581AFEF8 /* Pods_npsSdkTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,6 +274,8 @@
 				B38B96D81ECC849800A89908 /* CreateClientSession.m */,
 				B38B96D91ECC849800A89908 /* CreatePaymentMethodToken.h */,
 				B38B96DA1ECC849800A89908 /* CreatePaymentMethodToken.m */,
+				B34C2D821EE86B4E005A4DC8 /* GetInstallmentsOptions.h */,
+				B34C2D831EE86B4E005A4DC8 /* GetInstallmentsOptions.m */,
 				B38B96DB1ECC849800A89908 /* CreatePaymentMethodTokenResponse.h */,
 				B38B96DC1ECC849800A89908 /* CreatePaymentMethodTokenResponse.m */,
 				B38B96DD1ECC849800A89908 /* Environments.h */,
@@ -270,6 +284,12 @@
 				B38B96E01ECC849800A89908 /* GetIINDetails.m */,
 				B38B96E11ECC849800A89908 /* GetIINDetailsResponse.h */,
 				B38B96E21ECC849800A89908 /* GetIINDetailsResponse.m */,
+				B34C2D861EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.h */,
+				B34C2D871EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.m */,
+				B3EADBB71EEEC27500386E16 /* Installments.h */,
+				B3EADBB81EEEC27500386E16 /* Installments.m */,
+				B34C2D7E1EE849C3005A4DC8 /* GetProductResponse.h */,
+				B34C2D7F1EE849C3005A4DC8 /* GetProductResponse.m */,
 				B38B96E31ECC849800A89908 /* Method.h */,
 				B38B96E41ECC849800A89908 /* Method.m */,
 				B38B96E51ECC849800A89908 /* MethodResponse.h */,
@@ -326,6 +346,7 @@
 			files = (
 				B38B97051ECC849800A89908 /* CreateClientSession.h in Headers */,
 				B38B97151ECC849800A89908 /* NpsSoapClient.h in Headers */,
+				B34C2D801EE849C3005A4DC8 /* GetProductResponse.h in Headers */,
 				B38B96FF1ECC849800A89908 /* Billing.h in Headers */,
 				B38B97031ECC849800A89908 /* Configuration.h in Headers */,
 				B38B97111ECC849800A89908 /* Method.h in Headers */,
@@ -333,9 +354,12 @@
 				B38B97271ECC849800A89908 /* XmlNode.h in Headers */,
 				B38B96FD1ECC849800A89908 /* Address.h in Headers */,
 				B38B97231ECC849800A89908 /* STHTTPRequest.h in Headers */,
+				B34C2D881EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.h in Headers */,
 				B38B970B1ECC849800A89908 /* Environments.h in Headers */,
+				B34C2D841EE86B4E005A4DC8 /* GetInstallmentsOptions.h in Headers */,
 				B38B97131ECC849800A89908 /* MethodResponse.h in Headers */,
 				B38B97211ECC849800A89908 /* RootParameters.h in Headers */,
+				B3EADBB91EEEC27500386E16 /* Installments.h in Headers */,
 				B38B97291ECC849800A89908 /* XMLReader.h in Headers */,
 				B38B971D1ECC849800A89908 /* RetrievePaymentMethodToken.h in Headers */,
 				B38B97071ECC849800A89908 /* CreatePaymentMethodToken.h in Headers */,
@@ -554,12 +578,16 @@
 				B38B97001ECC849800A89908 /* Billing.m in Sources */,
 				B38B970A1ECC849800A89908 /* CreatePaymentMethodTokenResponse.m in Sources */,
 				B38B97021ECC849800A89908 /* CardDetails.m in Sources */,
+				B34C2D851EE86B4E005A4DC8 /* GetInstallmentsOptions.m in Sources */,
 				B38B971C1ECC849800A89908 /* RecachePaymentMethodTokenResponse.m in Sources */,
+				B34C2D811EE849C3005A4DC8 /* GetProductResponse.m in Sources */,
+				B3EADBBA1EEEC27500386E16 /* Installments.m in Sources */,
 				B38B97221ECC849800A89908 /* RootParameters.m in Sources */,
 				B38B97061ECC849800A89908 /* CreateClientSession.m in Sources */,
 				B38B97141ECC849800A89908 /* MethodResponse.m in Sources */,
 				B3DBD4C51ECB3662000A7739 /* README.md in Sources */,
 				B38B97181ECC849800A89908 /* Person.m in Sources */,
+				B34C2D891EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.m in Sources */,
 				B38B97101ECC849800A89908 /* GetIINDetailsResponse.m in Sources */,
 				B38B970E1ECC849800A89908 /* GetIINDetails.m in Sources */,
 				B38B97201ECC849800A89908 /* RetrievePaymentMethodTokenResponse.m in Sources */,

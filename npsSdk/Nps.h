@@ -16,7 +16,9 @@
 #import "CreatePaymentMethodTokenResponse.h"
 #import "RetrievePaymentMethodTokenResponse.h"
 #import "RecachePaymentMethodTokenResponse.h"
+#import "GetInstallmentsOptionsResponse.h"
 #import "GetIINDetailsResponse.h"
+#import "GetProductResponse.h"
 #import "Environments.h"
 
 @interface Nps : NSObject
@@ -41,9 +43,19 @@
                   billingDetails:(Billing *)billing
                   methodResponse:(void (^)(RecachePaymentMethodTokenResponse *methodResponse, NSError *error))response;
 
--(void)getProduct:(NSString*)iin
-     postDateTime:(NSString*)pDateTime
+-(void)getIINDetails:(NSString*)iin
    methodResponse:(void(^)(GetIINDetailsResponse *methodResponse, NSError *error))response;
+
+-(void)getProduct:(NSString*)iin
+      methodResponse:(void(^)(GetProductResponse *methodResponse, NSError *error))response;
+
+-(void)getInstallmentsOptions:(NSString*)amount
+                      product:(NSString*)product
+                     currency:(NSString*)currency
+                      country:(NSString*)country
+                  numPayments:(NSString*)numPayments
+           paymentMethodToken:(NSString*)paymentMethodToken
+               methodResponse:(void(^)(GetInstallmentsOptionsResponse *methodResponse, NSError *error))response;
 
 -(Boolean)validateCardNumber:(NSString*)cardNumber;
 

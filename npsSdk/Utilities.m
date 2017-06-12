@@ -5,6 +5,7 @@
 //  Created by Gustavo Diaz on 3/27/17.
 //  Copyright © 2017 Gustavo Diaz. All rights reserved.
 //
+#define kMagicSubtractionNumber 48
 
 #import "Utilities.h"
 #import "Environments.h"
@@ -70,6 +71,11 @@
             conf.baseAction = @"http://sandbox.com.ar/ws.php/";
             conf.host = @"www.sandbox.nps.com.ar";
             conf.url = @"https://sandbox.nps.com.ar";
+            /*
+            conf.baseAction = @"http://psp.nps.com.ar/ws.php/";
+            conf.host = @"www.psp.nps.com.ar";
+            conf.url = @"https://psp.nps.com.ar/ws.php";
+            */
             break;
         case 1:
             conf.baseAction = @"http://implementacion.com.ar/ws.php/";
@@ -84,5 +90,49 @@
     }
     
     return conf;
+}
+
++(Boolean) isValidLuhn:(NSString *)number{
+    int Luhn = 0;
+    for (int i=0;i<[number length];i++)
+    {
+        NSUInteger count = [number length]-1;
+        int doubled = [[NSNumber numberWithUnsignedChar:[number characterAtIndex:count-i]] intValue] - kMagicSubtractionNumber;
+        if (i % 2){
+            doubled = doubled*2;
+        }
+        NSString *double_digit = [NSString stringWithFormat:@"%d",doubled];
+        if ([[NSString stringWithFormat:@"%d",doubled] length] > 1)
+        {
+            Luhn = Luhn + [[NSNumber numberWithUnsignedChar:[double_digit characterAtIndex:0]] intValue]-kMagicSubtractionNumber;
+            Luhn = Luhn + [[NSNumber numberWithUnsignedChar:[double_digit characterAtIndex:1]] intValue]-kMagicSubtractionNumber;}
+        else{
+            Luhn = Luhn + doubled;
+        }
+    }
+    if (Luhn%10 == 0)
+        return true;
+    else
+        return false;
+}
+
++(NSString*) reverseString:(NSString*) texto{
+    NSMutableString *reversedString = [NSMutableString string];
+    NSInteger charIndex = [texto length];
+    while (charIndex > 0){
+        charIndex--;
+        NSRange subStrRange = NSMakeRange(charIndex, 1);
+        [reversedString appendString:[texto substringWithRange:subStrRange]];
+    }
+    
+    return reversedString;
+}
+
+
++(NSString*)getDate{
+    NSDate *now = [NSDate date];
+    NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+    [outputFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *dateString = [outputFormatter stringFromDate:now];    return dateString;
 }
 @end
