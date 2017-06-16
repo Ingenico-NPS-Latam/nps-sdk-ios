@@ -56,8 +56,8 @@ pod install
 
 Import The Nps Module
 
-```objective_c
-#import "Nps.h"
+```swift
+import npsSdk
 ```
 
 ##  Configure
@@ -65,10 +65,10 @@ Import The Nps Module
 To be able to use nps-ios-sdk methods you need to get a new instance of the class an pass by parameters your client session and your merchant id.
 Follow the next sections to get the parameters.
 
-```objective_c
-Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
-nps.merchantId = @"__YOUR_NPS_MERCHANT_ID__";
-nps.clientSession = @"__YOUR_NPS_CLIENT_SESSION__";
+```swift
+let nps = Nps(environment: SANDBOX)!
+nps.merchantId = "__YOUR_NPS_MERCHANT_ID__"
+nps.clientSession = "__YOUR_NPS_CLIENT_SESSION__"
 ```
 
 ###  Configure Your Client Session
@@ -93,46 +93,45 @@ Once the PaymentMethoToken has been generated, you can safely pass it to your se
 
 > Create a PaymentMethodToken by passing a card object with the payment method data. Also an optional billing object
 
-```objective_c
+```swift
+let nps = Nps(environment: SANDBOX)!
+nps.merchantId = "__YOUR_NPS_MERCHANT_ID__"
+nps.clientSession = "__YOUR_NPS_CLIENT_SESSION__"
 
-Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
-nps.merchantId = @"__YOUR_NPS_MERCHANT_ID__";
-nps.clientSession = @"__YOUR_NPS_CLIENT_SESSION__";
+let card = CardDetails()
+        
+card.number = "4507990000000010";
+card.holderName = "JOHN DOE";
+card.securityCode = "123";
+card.expirationDate = "1909";
 
-CardDetails *card = [[CardDetails alloc]init];
 
-card.number = @"4507990000000010";
-card.holderName = @"JOHN DOE";
-card.securityCode = @"123";
-card.expirationDate = @"1909";
+let billing = Billing()
 
-Billing *billing = [[Billing alloc]init];
+billing.pspPerson.firstName = "JOHN";
+billing.pspPerson.lastName = "Smith";
+billing.pspPerson.dateOfBirth = "1987-01-01";
+billing.pspPerson.gender = "M";
+billing.pspPerson.nationality = "ARG";
+billing.pspPerson.idType = "200";
+billing.pspPerson.idNumber = "95665091";
+billing.pspPerson.phoneNumber1 = "4123-1234";
+billing.pspPerson.phoneNumber2 = "4123-5678";
 
-billing.pspPerson.firstName = @"JOHN";
-billing.pspPerson.lastName = @"Smith";
-billing.pspPerson.dateOfBirth = @"1987-01-01";
-billing.pspPerson.gender = @"M";
-billing.pspPerson.nationality = @"ARG";
-billing.pspPerson.idType = @"DNI";
-billing.pspPerson.idNumber = @"32123123";
-billing.pspPerson.phoneNumber1 = @"4123-1234";
-billing.pspPerson.phoneNumber2 = @"4123-5678";
+billing.pspAddress.additionalInfo = "JOHN";
+billing.pspAddress.city = "Buenos Aires";
+billing.pspAddress.stateProvince = "CABA";
+billing.pspAddress.country = "ARG";
+billing.pspAddress.zipCode = "1425";
+billing.pspAddress.street = "suipacha";
+billing.pspAddress.houseNumber = "32123123";
 
-billing.pspAddress.additionalInfo = @"JOHN";
-billing.pspAddress.city = @"Smith";
-billing.pspAddress.stateProvince = @"Buenos Aires";
-billing.pspAddress.country = @"M";
-billing.pspAddress.zipCode = @"ARG";
-billing.pspAddress.street = @"DNI";
-billing.pspAddress.houseNumber = @"32123123";
+nps.createPaymentMethodToken(card, billingDetails: billing, methodResponse: {( methodResponse: CreatePaymentMethodTokenResponse?, error: Error?) -> Void in
+    if error == nil{
+        print(methodResponse?.responseExtended as Any)
+    }
+})
 
-[nps createPaymentMethodToken:card
-               billingDetails:billing
-              methodResponse:^(CreatePaymentMethodTokenResponse* methodResponse, NSError *error) {
-                if(!error){
-                    NSLog(@"%@", [methodResponse responseCod]);
-                }
-}];
 ```
 
 The **methodResponse** receives the PaymentMethodToken response as an object. The main attribute of this object is the methodResponse.id, which you will need to process the payment through the API.
@@ -149,25 +148,23 @@ Behaviour and capabilities of recache has been cloned from original createPaymen
 
 > Recache a PaymentMethodToken by passing a PaymentMethod Object with the PaymentMethod data
 
-```objective_c
+```swift
+let nps = Nps(environment: SANDBOX)!
+nps.merchantId = "__YOUR_NPS_MERCHANT_ID__"
+nps.clientSession = "__YOUR_NPS_CLIENT_SESSION__"
 
-Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
-nps.merchantId = @"__YOUR_NPS_MERCHANT_ID__";
-nps.clientSession = @"__YOUR_NPS_CLIENT_SESSION__";
+let billing = Billing()
+billing.pspPerson.firstName = "JOHN DOE"
 
-
-Billing *billingDetailss = [[Billing alloc]init];
-
-billingDetailss.pspPerson.firstName = @"JOHN DOE";
-
-[nps recachePaymentMethodToken:@"kWRZGcAxy5D7MoB6BDACugHYrlFzP9Eg"
-              cardSecurityCode:@"123"
-                billingDetails:billingDetailss
-                methodResponse:^(RecachePaymentMethodTokenResponse *methodResponse, NSError *error) {
-                    if (!error){
-                        NSLog(@"%@", [methodResponse responseCod]);
+nps.recachePaymentMethodToken("kWRZGcAxy5D7MoB6BDACugHYrlFzP9Eg", 
+            cardSecurityCode: "123", 
+              billingDetails: billing,
+              methodResponse: {( methodResponse: RecachePaymentMethodTokenResponse?, error: Error?) -> Void in
+                    if error == nil{
+                        print(methodResponse?.responseCod as Any)
                     }
-}];
+})
+
 ```
 
 
@@ -180,21 +177,21 @@ Form validation is mandatory. On form submition nps.validateCardNumber must be e
 
 This validator checks if the name on card is a valid name with min-length of 2 and max-length of 26
 
-```objective_c
-if([nps validateCardHolderName:@"JOHN DOE"]) {
-    NSLog(@"Holder name is valid");
-}else{
-    NSLog(@"Holder Name is invalid");
+```swift
+if(nps.validateCardHolderName("JOHN DOE")){
+    print("Holder name is valid")
+} else {
+    print("Holder name is invalid")
 }
 ```
 
 ###  card.validateCardNumber
 
-```objective_c
-if([nps validateCardNumber:@"4111000000000010"]) {
-    NSLog(@"Card number is valid");
-}else{
-    NSLog(@"Card number is invalid");
+```swift
+if(nps.validateCardNumber("4111000000000010")){
+    print("Card number is valid")
+} else {
+    print("Card number is invalid")
 }
 ```
 
@@ -205,27 +202,29 @@ This method will also call the webservice method "GetIINDetails":
 [GetIINDetails (Request)](#panel-parameters-reference)
 [GetIINDetails (Response)](#panel-parameters-reference)
 
-```objective_c
-Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+```swift
+let nps = Nps(environment: SANDBOX)!
+nps.merchantId = "__YOUR_NPS_MERCHANT_ID__"
+nps.clientSession = "__YOUR_NPS_CLIENT_SESSION__"
 
-[nps getIIDetails:@"424242"
-   postDateTime:@"2016-12-01 12:00:00"
- methodResponse:^(GetIINDetailsResponse *methodResponse, NSError *error) {
-    if(!error){
-        NSLog(@"%@", [methodResponse responseCod]);
-    }
-}];
+nps.getProduct("424242",
+    methodResponse:{( methodResponse: GetIProductResponse?, error: Error?) -> Void in
+        if error == nil{
+            print(methodResponse?.responseCod as Any)
+        }
+    })
+
 ```
 
 ###  card.validateCardExpDate
 
 This validator checks if the expiration date is a valid month and not expired.
 
-```objective_c
-if([nps validateCardExpDate:2017 month:12]) {
-    NSLog(@"Expiration date is valid");
-}else{
-    NSLog(@"Expiration date is invalid");
+```swift
+if(nps.validateCardExpDate("2017", month:12)){
+    print("Expiration is valid")
+} else {
+    print("Expiration is invalid")
 }
 ```
 
@@ -233,11 +232,12 @@ if([nps validateCardExpDate:2017 month:12]) {
 
 This validator checks if the security code is a valid integer (size 3-4 characters).
 
-```objective_c
-if([nps validateCardSecurityCode:@"123"]) {
-    NSLog(@"CVV is valid");
-}else{
-    NSLog(@"CVV is invalid");
+```swift
+
+if(nps.validateCardSecurityCode("132")){
+    print("CVV is valid")
+} else {
+    print("CVV is invalid")
 }
 ```
 
@@ -245,29 +245,27 @@ if([nps validateCardSecurityCode:@"123"]) {
 
 if you require card installment in the specific case that the customer must view the installment payment amount you can follow the next example:
 
-```objective_c
-Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
-nps.merchantId = @"__YOUR_NPS_MERCHANT_ID__";
-nps.clientSession = @"__YOUR_NPS_CLIENT_SESSION__";
+```swift
+let nps = Nps(environment: SANDBOX)!
+nps.merchantId = "__YOUR_NPS_MERCHANT_ID__"
+nps.clientSession = "__YOUR_NPS_CLIENT_SESSION__"
 
-[nps getInstallmentsOptions:@"100"
-                    product:@"14"
-                   currency:@"152"
-                    country:@"CHL"
-                numPayments:@"2"
-         paymentMethodToken:@"kkvKuOfD2bNKXCBYDkunIRqImvNFNxB3"
-             methodResponse:^(GetInstallmentsOptionsResponse *methodResponse, NSError *error) {
-                     if (!error){
-                         NSLog(@"%@", [methodResponse responseCod]);
-                         for (Installments *inst in [methodResponse installments]){
-                             NSLog(@"%@", [inst installmentAmount]);
-                             NSLog(@"%@", [inst interestRate]);
-                             NSLog(@"%@", [inst numPayments]);
+nps.getInstallmentsOptions("100", 
+                    product:@"14",
+                   currency:@"152",
+                    country:@"CHL",
+                numPayments:@"2",
+         paymentMethodToken:@"kkvKuOfD2bNKXCBYDkunIRqImvNFNxB3",
+              methodResponse: {( methodResponse: GetInstallmentsOptionsResponse?, error: Error?) -> Void in
+                    if error == nil{
+                         print(methodResponse?.responseCod as Any)
+                         for inst in methodResponse?.installments{
+                            print(inst.installmentAmount)
+                            print(inst.interestRate)
+                            print(inst.numPayments)
                          }
                      }
-                 }];
-
-
+})
 ```
 
 
@@ -281,6 +279,6 @@ your back-end servers using the psp_CustomerAdditionalDetails.DeviceFingerPrint 
 
 This method allows you to get de Device Figerprint of the end-user's device.
 
-```objective_c
-[Nps getDeviceFingerprint];
+```swift
+Nps.getDeviceFingerprint()
 ```
