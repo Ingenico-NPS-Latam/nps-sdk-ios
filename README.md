@@ -18,7 +18,7 @@ With this One-time-use PaymentMethodToken, you can do anything with our API that
 
 **To Process payments with nps-ios-sdk you should follow the following steps**
 
-<%= tag :img, :src => "/images/diagrams/SDK-clientes.png" %>
+ 
 
 1. Customer device ask to Merchant Backend for a clientSession ID
 2. Merchant Backend does CreateClientSession() on Ingenico NPS Latam
