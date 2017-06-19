@@ -17,8 +17,6 @@ FOUNDATION_EXPORT const unsigned char npsSdkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <npsSdk/PublicHeader.h>
 
 #import <npsSdk/Nps.h>
-#import <iovation/iovation.h>
-
 #import <npsSdk/CreatePaymentMethodTokenResponse.h>
 #import <npsSdk/RecachePaymentMethodTokenResponse.h>
 #import <npsSdk/RetrievePaymentMethodTokenResponse.h>
