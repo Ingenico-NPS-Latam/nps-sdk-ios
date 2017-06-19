@@ -154,8 +154,8 @@
 }
 
 +(NSString *) getDeviceFingerPrint{
-    //return [iovation ioBegin];
-    return @"";
+    return [iovation ioBegin];
+    //return @"";
 }
 
 @end

@@ -143,6 +143,12 @@
     
 }
 
+-(void)testIovation{
+    NSLog(@"fuck me");
+    NSLog(@"%@", [Nps getDeviceFingerPrint]);
+    NSLog(@"fuck me");
+}
+
 -(void)testReverseString{
     NSLog(@"%@", [Utilities reverseString:@"4111000000000010"]);
 }
