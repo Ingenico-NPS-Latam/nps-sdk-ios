@@ -776,7 +776,7 @@
 		};
 		B3DBD4821ECB20A3000A7739 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFAF9CDE826544BDAE2ECD0E /* Pods-npsSdkTests.debug.xcconfig */;
+			baseConfigurationReference = 066BA4F3B0A74A07908599E9 /* Pods-npsSdk.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = npsSdkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
