@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Frameworks/iovation.framework/Headers/iovation.h"
+#import "iovation.h"
+//#import "Frameworks/iovation.framework/Headers/iovation.h"
 #import "Method.h"
 #import "MethodResponse.h"
 #import "CardDetails.h"

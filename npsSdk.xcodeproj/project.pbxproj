@@ -79,6 +79,8 @@
 		B3DBD4D21ECC75B1000A7739 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = B3DBD4D11ECC75B1000A7739 /* LICENCE */; };
 		B3EADBB91EEEC27500386E16 /* Installments.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBB71EEEC27500386E16 /* Installments.h */; };
 		B3EADBBA1EEEC27500386E16 /* Installments.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EADBB81EEEC27500386E16 /* Installments.m */; };
+		B3EADBC01EF802AB00386E16 /* DevicePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBBE1EF802AB00386E16 /* DevicePrint.h */; };
+		B3EADBC11EF802AB00386E16 /* iovation.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBBF1EF802AB00386E16 /* iovation.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +174,8 @@
 		B3DBD4D11ECC75B1000A7739 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENCE; path = ../LICENCE; sourceTree = "<group>"; };
 		B3EADBB71EEEC27500386E16 /* Installments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Installments.h; sourceTree = "<group>"; };
 		B3EADBB81EEEC27500386E16 /* Installments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Installments.m; sourceTree = "<group>"; };
+		B3EADBBE1EF802AB00386E16 /* DevicePrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePrint.h; sourceTree = "<group>"; };
+		B3EADBBF1EF802AB00386E16 /* iovation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iovation.h; sourceTree = "<group>"; };
 		CEB58488938CB8B8D667FB00 /* Pods_npsSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_npsSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -262,6 +266,8 @@
 		B3DBD46C1ECB20A3000A7739 /* npsSdk */ = {
 			isa = PBXGroup;
 			children = (
+				B3EADBBE1EF802AB00386E16 /* DevicePrint.h */,
+				B3EADBBF1EF802AB00386E16 /* iovation.h */,
 				B38B96CF1ECC849800A89908 /* Address.h */,
 				B38B96D01ECC849800A89908 /* Address.m */,
 				B38B96D11ECC849800A89908 /* Billing.h */,
@@ -363,6 +369,7 @@
 				B38B97291ECC849800A89908 /* XMLReader.h in Headers */,
 				B38B971D1ECC849800A89908 /* RetrievePaymentMethodToken.h in Headers */,
 				B38B97071ECC849800A89908 /* CreatePaymentMethodToken.h in Headers */,
+				B3EADBC11EF802AB00386E16 /* iovation.h in Headers */,
 				B38B971F1ECC849800A89908 /* RetrievePaymentMethodTokenResponse.h in Headers */,
 				B38B97191ECC849800A89908 /* RecachePaymentMethodToken.h in Headers */,
 				B38B97091ECC849800A89908 /* CreatePaymentMethodTokenResponse.h in Headers */,
@@ -370,6 +377,7 @@
 				B38B97011ECC849800A89908 /* CardDetails.h in Headers */,
 				B3DBD4C31ECB3662000A7739 /* Nps.h in Headers */,
 				B38B97251ECC849800A89908 /* Utilities.h in Headers */,
+				B3EADBC01EF802AB00386E16 /* DevicePrint.h in Headers */,
 				B38B970F1ECC849800A89908 /* GetIINDetailsResponse.h in Headers */,
 				B3DBD47B1ECB20A3000A7739 /* npsSdk.h in Headers */,
 				B38B971B1ECC849800A89908 /* RecachePaymentMethodTokenResponse.h in Headers */,
