@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0196055A3F409C72DD5F96F409F5B91D /* RetrievePaymentMethodToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 744FA1F9A8DBE2059E93BD9F9D0B2F54 /* RetrievePaymentMethodToken.m */; };
+		052F6834407EC5107E353E70F1153119 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 879234E634C5BBB6AD017C03DE86074C /* Configuration.m */; };
+		054A64AB6696483DE4519F89324A82E7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BDA59BF5E505DD328D93B3141CE63A /* SystemConfiguration.framework */; };
+		0E17E45666A18313588ACC29A9E04BCD /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FA3AECECD751F1685CE3149EC95C7C /* STHTTPRequest.m */; };
+		0E2989CA162E1DAD1F039257E422499D /* CreatePaymentMethodToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8AE332AF1983D0C44146140E29BC8E /* CreatePaymentMethodToken.m */; };
+		14C08DEC461904CFEBC217AC132D10C3 /* GetProductResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BB511BA8068F27C140D7760696602FB1 /* GetProductResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1518BBE8913CE5038722F2EA35568E4F /* MethodResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F619356987959B467E4B9F8AD1C0B6C /* MethodResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17A5A4110B5DC14032BEB6D8CDF4D853 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 27979CD7591D98887C429CD5C5DB6FE7 /* XMLReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A267B7C203E2A63FAC79AEBC4A4031E /* npsSdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA337D1768D15917BB5F4575724E0623 /* npsSdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B176AC92448DDF83CBC901D9A982160 /* RecachePaymentMethodToken.h in Headers */ = {isa = PBXBuildFile; fileRef = A7719256B80BED45F411EA724CF079DB /* RecachePaymentMethodToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BD12E38761B20F08650B19EC6FDE807 /* Installments.h in Headers */ = {isa = PBXBuildFile; fileRef = A87A36E3F5ACA8D77E7D5B87870F73E4 /* Installments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CE99340A6176CBAAAAAAAF41F350DF /* NpsSoapClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D987B4783CC64CAC08C7366CA5C364E2 /* NpsSoapClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20FECD7E8191C312A045BF0295FEBA63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1894B9097F0BC5E361FA87320463C9 /* Foundation.framework */; };
+		288900270EF0961270420E0558958092 /* RootParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A42AEA6062641C37C9D8A53D544D89 /* RootParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29AFCCB8E5C7A2277D257F2000A9A9E4 /* npsSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = B536118F286118C940DCDBF2EE003C65 /* npsSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AC0FCBA3D9FFDD0FCCDFE7BFE2D3AFD /* GetIINDetailsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CB524347EC66CEAB577E120CC9634C96 /* GetIINDetailsResponse.m */; };
+		3DA0D0CF555D04D2895CB9A3ED8CED80 /* RootParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D70419464A07C1233D320BEB70F3AC /* RootParameters.m */; };
+		40936FC0F33EDE488B28B2C2E6C3EAB7 /* Pods-testPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5472D3BC1F97AF48302E6CF9F279E /* Pods-testPod-dummy.m */; };
+		426F33ED60C0FED97EF4C68EE92718FF /* MethodResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BCDE13EEABD09710602752E17B216F /* MethodResponse.m */; };
+		46A51DF2B4A8896EB12789BE2AA893E1 /* STHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CC397DCD95EEA7903D289F13CAEC706 /* STHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B5D6D5AC981394137114B525FA6158B /* RecachePaymentMethodToken.m in Sources */ = {isa = PBXBuildFile; fileRef = F09691E6DF38326A2145201D934E528E /* RecachePaymentMethodToken.m */; };
+		5F79737E3131B0A1A865164C3641A894 /* RetrievePaymentMethodTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 709A6D00DA267BDDEA6DB1BEBF41CEA0 /* RetrievePaymentMethodTokenResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6158C3B7894076055062CDF113D9367B /* GetIINDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E39BAF4716ADB72885E319D7D0429FAA /* GetIINDetails.m */; };
+		691F28D1EBFA06E0E8B5EA96C6940B24 /* CreateClientSession.h in Headers */ = {isa = PBXBuildFile; fileRef = F35E1A8A86574F8E6543B4D0B2BF05E0 /* CreateClientSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69F2B1158D4DE0C0C891487E0ECF946F /* RecachePaymentMethodTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 41FD7DEA95D8444F3658C90B7D50E5E6 /* RecachePaymentMethodTokenResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CFDB7B51D94A1BAD5D6B152768510AF /* GetIINDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 00BB1969567290BF0AF2430F11E72BC3 /* GetIINDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EA27C107FF5E35888B0227C919269EA /* CreatePaymentMethodToken.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E294B2E605AF02980B908378258C86 /* CreatePaymentMethodToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7118070515021573845E7D401407FBB9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A48CEC57FFF5DC4DF0C3BD4D724BB9 /* CoreTelephony.framework */; };
+		740CC80BE63C0D1A7E27B82C71152293 /* RetrievePaymentMethodTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C6500E6002F8E887EB1992AAAF8D0BCD /* RetrievePaymentMethodTokenResponse.m */; };
+		7822B5298ED903AF908C01BFAEE1F874 /* Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = B6383FD671122E6BF5F2F3EB07E2A8A2 /* Configuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A661D91E3E47A3C90750677D2E22198 /* Environments.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCBD9FEE9C54C228A906C5235F00CE4 /* Environments.m */; };
+		7ACDD1A621AC876DA14F635F9CAF0B67 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B31ABF359AE4DFF7A468330AD553A663 /* XMLReader.m */; };
+		827D7DC755D9FF636952730B2F781741 /* CardDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C021439B9A1097AD85F4900FB0287D /* CardDetails.m */; };
+		8326755DCF2F7742DB89E31DB089FAE7 /* XmlNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE1ADBB982F37A665C5DDCF84412903 /* XmlNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A5566B66BBCBB8B1C2C61BFCCAD6BB5 /* DevicePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 387413DFAB50DE0D6DA5DE7B891F4730 /* DevicePrint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AA0FC0710F99F288FBAF55DE12C9FBF /* CardDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 7764A5BB0E776322F9DAF00BACC9005F /* CardDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94B3D127105C737937CA6A2B8B632DF3 /* npsSdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB340D31DEF7FC8EE50D3591549854 /* npsSdk-dummy.m */; };
+		9C4D077851163D211A6B99806828D078 /* NpsSoapClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 814FDA975E0FB15ACFF56C11D8911CF3 /* NpsSoapClient.m */; };
+		A4EE5F2A87325D0C482D84DB6940537B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1894B9097F0BC5E361FA87320463C9 /* Foundation.framework */; };
+		A712371FCA6823F860FDC2C0883D5D52 /* Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D9E9C4FD81CAF3F0BDD286BFCA9458 /* Method.m */; };
+		AA0E9FE56DB7E5BB29C42AF942F2FFD0 /* Billing.m in Sources */ = {isa = PBXBuildFile; fileRef = D86DB5159E4A9A1D43BD3636688DC5B1 /* Billing.m */; };
+		AA0F37B05CAE931DAAE48EB8E6B0B3D9 /* GetIINDetailsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = ADF2310F6714D708353B19C7CD3FC06A /* GetIINDetailsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B41013B59718B7F9529289A6A656073F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FA387E07933DC64872B2E0C70A444694 /* Person.m */; };
+		B51412149A9928397FCEE38BDC3B236C /* RecachePaymentMethodTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AC329EBEEB817E3315C894E44C1945A5 /* RecachePaymentMethodTokenResponse.m */; };
+		B51B6C05BA13D24A9CFDE45A645204E4 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 551FD9DD9B305725763FD236252909D8 /* Utilities.m */; };
+		B8F16AF39449C07CB404314E5A8E80FA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C460A250608CD7F2FFA980FEE7C69635 /* CoreFoundation.framework */; };
+		BA9DA242FE41E9D56A59A83DF7386BDC /* GetProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DFBBD78E6F5E954F7619C7E417F69B /* GetProductResponse.m */; };
+		BBA04B08862FE83E938B8EB9E1BABF38 /* CreatePaymentMethodTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B4769818E4FBFE0F31123A77A0BD42 /* CreatePaymentMethodTokenResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE37148F578C48DB1AFC7AB3D0090636 /* RetrievePaymentMethodToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9E4EB89DB6C7E5312F34E09732321F /* RetrievePaymentMethodToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C58BA08D60F14FE42324354E13B2B6B5 /* GetInstallmentsOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = A21A3987399F6F7DFB3C68A288387884 /* GetInstallmentsOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9D2D2DAF1A23D00B64739CE4F15EA88 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11F32A1A0C07419257368B057759AB9 /* CoreLocation.framework */; };
+		CE1749E2FED64ED65F76915A62D8F9AA /* Billing.h in Headers */ = {isa = PBXBuildFile; fileRef = 86507A3FF2632964B9F67BEFA1257FF6 /* Billing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF372DB96F9F398D2C2CE0BC5AC4941B /* GetInstallmentsOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B86EAF4743511EEC8445AB5852F1D643 /* GetInstallmentsOptions.m */; };
+		D02A1D90D531FCF81362BADE74FBDFDB /* CreatePaymentMethodTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A53FC809BD2CCBF9B20005C94B9C18 /* CreatePaymentMethodTokenResponse.m */; };
+		D1C536A8D2A90BD591B7004768A57A21 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34518B201F20AC883757EE07C07FE3BB /* ExternalAccessory.framework */; };
+		D3CBCB7A845B2ED567AC6EB13E9BBFF3 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9CF3BF4C98FF01D2D633D8AA35B635 /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6654651CD0AD1C0F8C4C80BED3A085F /* iovation.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA661494A13887F55E49F2DA69FA257 /* iovation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D738862907298287071B0BCB9286D496 /* GetInstallmentsOptionsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 767887CF5032BEF0BED70489A50DAB07 /* GetInstallmentsOptionsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB3FF0E61A4D41E29CB84C3180703CB2 /* XmlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ED78F6F8BE01D7DCD585B2F1191A20D6 /* XmlNode.m */; };
+		DD540E10BBB327EA64C54F1EA29B5D3B /* Person.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEDF6C17F96A8D854C6A7CCA96EC60D /* Person.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDC2676F64A88824E6726502EF937D6F /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 509C5BAB238EDEC5872211BD6B975FCE /* Address.m */; };
+		DE910BF39C5A38E4561565A241DE4DFA /* Installments.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A7B97E1A932B802DE313619788CA8A /* Installments.m */; };
+		E01AF92E6E7305CF58F01FD5590CC208 /* CreateClientSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AB10E3BA1B88A9FBEF356D0F8924BA25 /* CreateClientSession.m */; };
+		E0E55573A6083791794F97A65A2042DD /* GetInstallmentsOptionsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 069036E3E7D4DC2D479F1A5B0540278B /* GetInstallmentsOptionsResponse.m */; };
+		E3660A7859BC6E2B743F9AA2190E8716 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17E33ADEBA9222A7D62C033D3349F6F /* AdSupport.framework */; };
+		E728A755802D31028E6AE9EFB550FC8D /* Nps.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0479FECFB64F2D978059E98ECC3123 /* Nps.m */; };
+		EB7FB9B3AD93977F4496C07271774BC1 /* Nps.h in Headers */ = {isa = PBXBuildFile; fileRef = DE357653808AB6E30272EA37CF23FA33 /* Nps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDCF2A7ACC5F1654272F228172D77850 /* Address.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C12EB7144D35C6D7051D37122B97B09 /* Address.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F465141037533D54B702FAA7DDE4DC54 /* Pods-testPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4BBAAE1E3897C96A5066207ED67B66E /* Pods-testPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5F6CDE76350391605985E059A14F87E /* Environments.h in Headers */ = {isa = PBXBuildFile; fileRef = B0BCB053029142FC5FBA70D4912A76C1 /* Environments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBA625649D06F0F2908F256F78DE4CCF /* Method.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53C95B65B32F32452CE2880596E791 /* Method.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC26EA54B6A33BD3506A92710B81982 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0638A028D6C989CF844FE3AB3A8B1FE3 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31E7B8C8F62C4677A2C0A67D24BA742D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8A63E918EF0A710F86A26476CA2C696;
+			remoteInfo = npsSdk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A48CEC57FFF5DC4DF0C3BD4D724BB9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		00BB1969567290BF0AF2430F11E72BC3 /* GetIINDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GetIINDetails.h; path = npsSdk/GetIINDetails.h; sourceTree = "<group>"; };
+		0638A028D6C989CF844FE3AB3A8B1FE3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		069036E3E7D4DC2D479F1A5B0540278B /* GetInstallmentsOptionsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetInstallmentsOptionsResponse.m; path = npsSdk/GetInstallmentsOptionsResponse.m; sourceTree = "<group>"; };
+		0CC397DCD95EEA7903D289F13CAEC706 /* STHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STHTTPRequest.h; path = npsSdk/STHTTPRequest.h; sourceTree = "<group>"; };
+		16DE7D9C866F47BBC5B99CD93A913393 /* Pods-testPod-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testPod-acknowledgements.plist"; sourceTree = "<group>"; };
+		19D9E9C4FD81CAF3F0BDD286BFCA9458 /* Method.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Method.m; path = npsSdk/Method.m; sourceTree = "<group>"; };
+		1B1894B9097F0BC5E361FA87320463C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1C53C95B65B32F32452CE2880596E791 /* Method.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Method.h; path = npsSdk/Method.h; sourceTree = "<group>"; };
+		22E4EC1C36124638DADE33B49A7579A8 /* Pods-testPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testPod.debug.xcconfig"; sourceTree = "<group>"; };
+		2538A73F13FC9C941CB4C6CB0A750134 /* Pods-testPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-testPod.modulemap"; sourceTree = "<group>"; };
+		26A53FC809BD2CCBF9B20005C94B9C18 /* CreatePaymentMethodTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CreatePaymentMethodTokenResponse.m; path = npsSdk/CreatePaymentMethodTokenResponse.m; sourceTree = "<group>"; };
+		27979CD7591D98887C429CD5C5DB6FE7 /* XMLReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMLReader.h; path = npsSdk/XMLReader.h; sourceTree = "<group>"; };
+		29CF2E5856BD3841845B47135F35DE68 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE5472D3BC1F97AF48302E6CF9F279E /* Pods-testPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testPod-dummy.m"; sourceTree = "<group>"; };
+		32D70419464A07C1233D320BEB70F3AC /* RootParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RootParameters.m; path = npsSdk/RootParameters.m; sourceTree = "<group>"; };
+		34518B201F20AC883757EE07C07FE3BB /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ExternalAccessory.framework; sourceTree = DEVELOPER_DIR; };
+		387413DFAB50DE0D6DA5DE7B891F4730 /* DevicePrint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DevicePrint.h; path = npsSdk/DevicePrint.h; sourceTree = "<group>"; };
+		3B8AE332AF1983D0C44146140E29BC8E /* CreatePaymentMethodToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CreatePaymentMethodToken.m; path = npsSdk/CreatePaymentMethodToken.m; sourceTree = "<group>"; };
+		41FD7DEA95D8444F3658C90B7D50E5E6 /* RecachePaymentMethodTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RecachePaymentMethodTokenResponse.h; path = npsSdk/RecachePaymentMethodTokenResponse.h; sourceTree = "<group>"; };
+		4AEDF6C17F96A8D854C6A7CCA96EC60D /* Person.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Person.h; path = npsSdk/Person.h; sourceTree = "<group>"; };
+		4E0479FECFB64F2D978059E98ECC3123 /* Nps.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Nps.m; path = npsSdk/Nps.m; sourceTree = "<group>"; };
+		509C5BAB238EDEC5872211BD6B975FCE /* Address.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Address.m; path = npsSdk/Address.m; sourceTree = "<group>"; };
+		50B4769818E4FBFE0F31123A77A0BD42 /* CreatePaymentMethodTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CreatePaymentMethodTokenResponse.h; path = npsSdk/CreatePaymentMethodTokenResponse.h; sourceTree = "<group>"; };
+		551FD9DD9B305725763FD236252909D8 /* Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = npsSdk/Utilities.m; sourceTree = "<group>"; };
+		568738B513E149D3DE3D38955B36D7AE /* npsSdk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = npsSdk.xcconfig; sourceTree = "<group>"; };
+		6F619356987959B467E4B9F8AD1C0B6C /* MethodResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MethodResponse.h; path = npsSdk/MethodResponse.h; sourceTree = "<group>"; };
+		709A6D00DA267BDDEA6DB1BEBF41CEA0 /* RetrievePaymentMethodTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RetrievePaymentMethodTokenResponse.h; path = npsSdk/RetrievePaymentMethodTokenResponse.h; sourceTree = "<group>"; };
+		744FA1F9A8DBE2059E93BD9F9D0B2F54 /* RetrievePaymentMethodToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RetrievePaymentMethodToken.m; path = npsSdk/RetrievePaymentMethodToken.m; sourceTree = "<group>"; };
+		767887CF5032BEF0BED70489A50DAB07 /* GetInstallmentsOptionsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GetInstallmentsOptionsResponse.h; path = npsSdk/GetInstallmentsOptionsResponse.h; sourceTree = "<group>"; };
+		7764A5BB0E776322F9DAF00BACC9005F /* CardDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardDetails.h; path = npsSdk/CardDetails.h; sourceTree = "<group>"; };
+		7DE1ADBB982F37A665C5DDCF84412903 /* XmlNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XmlNode.h; path = npsSdk/XmlNode.h; sourceTree = "<group>"; };
+		814FDA975E0FB15ACFF56C11D8911CF3 /* NpsSoapClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NpsSoapClient.m; path = npsSdk/NpsSoapClient.m; sourceTree = "<group>"; };
+		84BDA59BF5E505DD328D93B3141CE63A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		84C021439B9A1097AD85F4900FB0287D /* CardDetails.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CardDetails.m; path = npsSdk/CardDetails.m; sourceTree = "<group>"; };
+		86507A3FF2632964B9F67BEFA1257FF6 /* Billing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Billing.h; path = npsSdk/Billing.h; sourceTree = "<group>"; };
+		879234E634C5BBB6AD017C03DE86074C /* Configuration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Configuration.m; path = npsSdk/Configuration.m; sourceTree = "<group>"; };
+		8800EEA59EAF8C4881AECF27C9A01955 /* Pods-testPod-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testPod-frameworks.sh"; sourceTree = "<group>"; };
+		8AEB340D31DEF7FC8EE50D3591549854 /* npsSdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "npsSdk-dummy.m"; sourceTree = "<group>"; };
+		8B9E4EB89DB6C7E5312F34E09732321F /* RetrievePaymentMethodToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RetrievePaymentMethodToken.h; path = npsSdk/RetrievePaymentMethodToken.h; sourceTree = "<group>"; };
+		91E770AE82EB69FD1B76D84003346FED /* Pods-testPod-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testPod-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95FA3AECECD751F1685CE3149EC95C7C /* STHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STHTTPRequest.m; path = npsSdk/STHTTPRequest.m; sourceTree = "<group>"; };
+		99A7B97E1A932B802DE313619788CA8A /* Installments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Installments.m; path = npsSdk/Installments.m; sourceTree = "<group>"; };
+		9C12EB7144D35C6D7051D37122B97B09 /* Address.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Address.h; path = npsSdk/Address.h; sourceTree = "<group>"; };
+		A21A3987399F6F7DFB3C68A288387884 /* GetInstallmentsOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GetInstallmentsOptions.h; path = npsSdk/GetInstallmentsOptions.h; sourceTree = "<group>"; };
+		A40B10B20ED61177D025FE79FAFB4DA3 /* iovation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iovation.framework; path = Frameworks/iovation.framework; sourceTree = "<group>"; };
+		A7719256B80BED45F411EA724CF079DB /* RecachePaymentMethodToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RecachePaymentMethodToken.h; path = npsSdk/RecachePaymentMethodToken.h; sourceTree = "<group>"; };
+		A87A36E3F5ACA8D77E7D5B87870F73E4 /* Installments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Installments.h; path = npsSdk/Installments.h; sourceTree = "<group>"; };
+		AA337D1768D15917BB5F4575724E0623 /* npsSdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "npsSdk-umbrella.h"; sourceTree = "<group>"; };
+		AAAAD5BCE54DF875507C83683FB249FC /* Pods-testPod-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testPod-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB10E3BA1B88A9FBEF356D0F8924BA25 /* CreateClientSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CreateClientSession.m; path = npsSdk/CreateClientSession.m; sourceTree = "<group>"; };
+		ABA661494A13887F55E49F2DA69FA257 /* iovation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iovation.h; path = npsSdk/iovation.h; sourceTree = "<group>"; };
+		AC329EBEEB817E3315C894E44C1945A5 /* RecachePaymentMethodTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RecachePaymentMethodTokenResponse.m; path = npsSdk/RecachePaymentMethodTokenResponse.m; sourceTree = "<group>"; };
+		ADF2310F6714D708353B19C7CD3FC06A /* GetIINDetailsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GetIINDetailsResponse.h; path = npsSdk/GetIINDetailsResponse.h; sourceTree = "<group>"; };
+		B0BCB053029142FC5FBA70D4912A76C1 /* Environments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Environments.h; path = npsSdk/Environments.h; sourceTree = "<group>"; };
+		B31ABF359AE4DFF7A468330AD553A663 /* XMLReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMLReader.m; path = npsSdk/XMLReader.m; sourceTree = "<group>"; };
+		B3BCDE13EEABD09710602752E17B216F /* MethodResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MethodResponse.m; path = npsSdk/MethodResponse.m; sourceTree = "<group>"; };
+		B4BBAAE1E3897C96A5066207ED67B66E /* Pods-testPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testPod-umbrella.h"; sourceTree = "<group>"; };
+		B536118F286118C940DCDBF2EE003C65 /* npsSdk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = npsSdk.h; path = npsSdk/npsSdk.h; sourceTree = "<group>"; };
+		B6383FD671122E6BF5F2F3EB07E2A8A2 /* Configuration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Configuration.h; path = npsSdk/Configuration.h; sourceTree = "<group>"; };
+		B86EAF4743511EEC8445AB5852F1D643 /* GetInstallmentsOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetInstallmentsOptions.m; path = npsSdk/GetInstallmentsOptions.m; sourceTree = "<group>"; };
+		B9069508F2CDDF638D742FC4DE6E14B3 /* npsSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = npsSdk.framework; path = npsSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB511BA8068F27C140D7760696602FB1 /* GetProductResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GetProductResponse.h; path = npsSdk/GetProductResponse.h; sourceTree = "<group>"; };
+		C11F32A1A0C07419257368B057759AB9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		C144758003946BB44464A07D3DC3FB81 /* Pods_testPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testPod.framework; path = "Pods-testPod.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A42AEA6062641C37C9D8A53D544D89 /* RootParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RootParameters.h; path = npsSdk/RootParameters.h; sourceTree = "<group>"; };
+		C460A250608CD7F2FFA980FEE7C69635 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		C6500E6002F8E887EB1992AAAF8D0BCD /* RetrievePaymentMethodTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RetrievePaymentMethodTokenResponse.m; path = npsSdk/RetrievePaymentMethodTokenResponse.m; sourceTree = "<group>"; };
+		CB524347EC66CEAB577E120CC9634C96 /* GetIINDetailsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetIINDetailsResponse.m; path = npsSdk/GetIINDetailsResponse.m; sourceTree = "<group>"; };
+		CBCBD9FEE9C54C228A906C5235F00CE4 /* Environments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Environments.m; path = npsSdk/Environments.m; sourceTree = "<group>"; };
+		CDFAA1D6E2C09B0929E3DC3B4A4B7B28 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED13E84B62D2EC5CFF4C6F3F5D62D92 /* npsSdk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "npsSdk-prefix.pch"; sourceTree = "<group>"; };
+		D3E294B2E605AF02980B908378258C86 /* CreatePaymentMethodToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CreatePaymentMethodToken.h; path = npsSdk/CreatePaymentMethodToken.h; sourceTree = "<group>"; };
+		D86DB5159E4A9A1D43BD3636688DC5B1 /* Billing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Billing.m; path = npsSdk/Billing.m; sourceTree = "<group>"; };
+		D987B4783CC64CAC08C7366CA5C364E2 /* NpsSoapClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NpsSoapClient.h; path = npsSdk/NpsSoapClient.h; sourceTree = "<group>"; };
+		DC9CF3BF4C98FF01D2D633D8AA35B635 /* Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = npsSdk/Utilities.h; sourceTree = "<group>"; };
+		DE357653808AB6E30272EA37CF23FA33 /* Nps.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nps.h; path = npsSdk/Nps.h; sourceTree = "<group>"; };
+		E17E33ADEBA9222A7D62C033D3349F6F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		E39BAF4716ADB72885E319D7D0429FAA /* GetIINDetails.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetIINDetails.m; path = npsSdk/GetIINDetails.m; sourceTree = "<group>"; };
+		ED78F6F8BE01D7DCD585B2F1191A20D6 /* XmlNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XmlNode.m; path = npsSdk/XmlNode.m; sourceTree = "<group>"; };
+		EF29E6A3028CDF07BB82067313BAA0FD /* npsSdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = npsSdk.modulemap; sourceTree = "<group>"; };
+		F09691E6DF38326A2145201D934E528E /* RecachePaymentMethodToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RecachePaymentMethodToken.m; path = npsSdk/RecachePaymentMethodToken.m; sourceTree = "<group>"; };
+		F35E1A8A86574F8E6543B4D0B2BF05E0 /* CreateClientSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CreateClientSession.h; path = npsSdk/CreateClientSession.h; sourceTree = "<group>"; };
+		F3DFBBD78E6F5E954F7619C7E417F69B /* GetProductResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetProductResponse.m; path = npsSdk/GetProductResponse.m; sourceTree = "<group>"; };
+		F70260D9187B4A230E42D8583136614C /* Pods-testPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testPod.release.xcconfig"; sourceTree = "<group>"; };
+		FA387E07933DC64872B2E0C70A444694 /* Person.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = npsSdk/Person.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		726685D40E15F06C5481A2C460004850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3660A7859BC6E2B743F9AA2190E8716 /* AdSupport.framework in Frameworks */,
+				B8F16AF39449C07CB404314E5A8E80FA /* CoreFoundation.framework in Frameworks */,
+				C9D2D2DAF1A23D00B64739CE4F15EA88 /* CoreLocation.framework in Frameworks */,
+				7118070515021573845E7D401407FBB9 /* CoreTelephony.framework in Frameworks */,
+				D1C536A8D2A90BD591B7004768A57A21 /* ExternalAccessory.framework in Frameworks */,
+				20FECD7E8191C312A045BF0295FEBA63 /* Foundation.framework in Frameworks */,
+				054A64AB6696483DE4519F89324A82E7 /* SystemConfiguration.framework in Frameworks */,
+				FBC26EA54B6A33BD3506A92710B81982 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F0663C928144643D105606E9A752DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4EE5F2A87325D0C482D84DB6940537B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1652A9AD1178773E8A366DEAB3DCF210 /* Pods-testPod */ = {
+			isa = PBXGroup;
+			children = (
+				CDFAA1D6E2C09B0929E3DC3B4A4B7B28 /* Info.plist */,
+				2538A73F13FC9C941CB4C6CB0A750134 /* Pods-testPod.modulemap */,
+				AAAAD5BCE54DF875507C83683FB249FC /* Pods-testPod-acknowledgements.markdown */,
+				16DE7D9C866F47BBC5B99CD93A913393 /* Pods-testPod-acknowledgements.plist */,
+				2BE5472D3BC1F97AF48302E6CF9F279E /* Pods-testPod-dummy.m */,
+				8800EEA59EAF8C4881AECF27C9A01955 /* Pods-testPod-frameworks.sh */,
+				91E770AE82EB69FD1B76D84003346FED /* Pods-testPod-resources.sh */,
+				B4BBAAE1E3897C96A5066207ED67B66E /* Pods-testPod-umbrella.h */,
+				22E4EC1C36124638DADE33B49A7579A8 /* Pods-testPod.debug.xcconfig */,
+				F70260D9187B4A230E42D8583136614C /* Pods-testPod.release.xcconfig */,
+			);
+			name = "Pods-testPod";
+			path = "Target Support Files/Pods-testPod";
+			sourceTree = "<group>";
+		};
+		17B66127DBEA6811D2270642BC514758 /* npsSdk */ = {
+			isa = PBXGroup;
+			children = (
+				9C12EB7144D35C6D7051D37122B97B09 /* Address.h */,
+				509C5BAB238EDEC5872211BD6B975FCE /* Address.m */,
+				86507A3FF2632964B9F67BEFA1257FF6 /* Billing.h */,
+				D86DB5159E4A9A1D43BD3636688DC5B1 /* Billing.m */,
+				7764A5BB0E776322F9DAF00BACC9005F /* CardDetails.h */,
+				84C021439B9A1097AD85F4900FB0287D /* CardDetails.m */,
+				B6383FD671122E6BF5F2F3EB07E2A8A2 /* Configuration.h */,
+				879234E634C5BBB6AD017C03DE86074C /* Configuration.m */,
+				F35E1A8A86574F8E6543B4D0B2BF05E0 /* CreateClientSession.h */,
+				AB10E3BA1B88A9FBEF356D0F8924BA25 /* CreateClientSession.m */,
+				D3E294B2E605AF02980B908378258C86 /* CreatePaymentMethodToken.h */,
+				3B8AE332AF1983D0C44146140E29BC8E /* CreatePaymentMethodToken.m */,
+				50B4769818E4FBFE0F31123A77A0BD42 /* CreatePaymentMethodTokenResponse.h */,
+				26A53FC809BD2CCBF9B20005C94B9C18 /* CreatePaymentMethodTokenResponse.m */,
+				387413DFAB50DE0D6DA5DE7B891F4730 /* DevicePrint.h */,
+				B0BCB053029142FC5FBA70D4912A76C1 /* Environments.h */,
+				CBCBD9FEE9C54C228A906C5235F00CE4 /* Environments.m */,
+				00BB1969567290BF0AF2430F11E72BC3 /* GetIINDetails.h */,
+				E39BAF4716ADB72885E319D7D0429FAA /* GetIINDetails.m */,
+				ADF2310F6714D708353B19C7CD3FC06A /* GetIINDetailsResponse.h */,
+				CB524347EC66CEAB577E120CC9634C96 /* GetIINDetailsResponse.m */,
+				A21A3987399F6F7DFB3C68A288387884 /* GetInstallmentsOptions.h */,
+				B86EAF4743511EEC8445AB5852F1D643 /* GetInstallmentsOptions.m */,
+				767887CF5032BEF0BED70489A50DAB07 /* GetInstallmentsOptionsResponse.h */,
+				069036E3E7D4DC2D479F1A5B0540278B /* GetInstallmentsOptionsResponse.m */,
+				BB511BA8068F27C140D7760696602FB1 /* GetProductResponse.h */,
+				F3DFBBD78E6F5E954F7619C7E417F69B /* GetProductResponse.m */,
+				A87A36E3F5ACA8D77E7D5B87870F73E4 /* Installments.h */,
+				99A7B97E1A932B802DE313619788CA8A /* Installments.m */,
+				ABA661494A13887F55E49F2DA69FA257 /* iovation.h */,
+				1C53C95B65B32F32452CE2880596E791 /* Method.h */,
+				19D9E9C4FD81CAF3F0BDD286BFCA9458 /* Method.m */,
+				6F619356987959B467E4B9F8AD1C0B6C /* MethodResponse.h */,
+				B3BCDE13EEABD09710602752E17B216F /* MethodResponse.m */,
+				DE357653808AB6E30272EA37CF23FA33 /* Nps.h */,
+				4E0479FECFB64F2D978059E98ECC3123 /* Nps.m */,
+				B536118F286118C940DCDBF2EE003C65 /* npsSdk.h */,
+				D987B4783CC64CAC08C7366CA5C364E2 /* NpsSoapClient.h */,
+				814FDA975E0FB15ACFF56C11D8911CF3 /* NpsSoapClient.m */,
+				4AEDF6C17F96A8D854C6A7CCA96EC60D /* Person.h */,
+				FA387E07933DC64872B2E0C70A444694 /* Person.m */,
+				A7719256B80BED45F411EA724CF079DB /* RecachePaymentMethodToken.h */,
+				F09691E6DF38326A2145201D934E528E /* RecachePaymentMethodToken.m */,
+				41FD7DEA95D8444F3658C90B7D50E5E6 /* RecachePaymentMethodTokenResponse.h */,
+				AC329EBEEB817E3315C894E44C1945A5 /* RecachePaymentMethodTokenResponse.m */,
+				8B9E4EB89DB6C7E5312F34E09732321F /* RetrievePaymentMethodToken.h */,
+				744FA1F9A8DBE2059E93BD9F9D0B2F54 /* RetrievePaymentMethodToken.m */,
+				709A6D00DA267BDDEA6DB1BEBF41CEA0 /* RetrievePaymentMethodTokenResponse.h */,
+				C6500E6002F8E887EB1992AAAF8D0BCD /* RetrievePaymentMethodTokenResponse.m */,
+				C3A42AEA6062641C37C9D8A53D544D89 /* RootParameters.h */,
+				32D70419464A07C1233D320BEB70F3AC /* RootParameters.m */,
+				0CC397DCD95EEA7903D289F13CAEC706 /* STHTTPRequest.h */,
+				95FA3AECECD751F1685CE3149EC95C7C /* STHTTPRequest.m */,
+				DC9CF3BF4C98FF01D2D633D8AA35B635 /* Utilities.h */,
+				551FD9DD9B305725763FD236252909D8 /* Utilities.m */,
+				7DE1ADBB982F37A665C5DDCF84412903 /* XmlNode.h */,
+				ED78F6F8BE01D7DCD585B2F1191A20D6 /* XmlNode.m */,
+				27979CD7591D98887C429CD5C5DB6FE7 /* XMLReader.h */,
+				B31ABF359AE4DFF7A468330AD553A663 /* XMLReader.m */,
+				AE21628FC44CB7ED2D9463C45BA63044 /* Frameworks */,
+				F5763A5216ADB349B74C8D146B339D92 /* Support Files */,
+			);
+			name = npsSdk;
+			path = npsSdk;
+			sourceTree = "<group>";
+		};
+		367E70452C4C38CC3ED61A60AC5ADDC1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E17E33ADEBA9222A7D62C033D3349F6F /* AdSupport.framework */,
+				C460A250608CD7F2FFA980FEE7C69635 /* CoreFoundation.framework */,
+				C11F32A1A0C07419257368B057759AB9 /* CoreLocation.framework */,
+				00A48CEC57FFF5DC4DF0C3BD4D724BB9 /* CoreTelephony.framework */,
+				34518B201F20AC883757EE07C07FE3BB /* ExternalAccessory.framework */,
+				1B1894B9097F0BC5E361FA87320463C9 /* Foundation.framework */,
+				84BDA59BF5E505DD328D93B3141CE63A /* SystemConfiguration.framework */,
+				0638A028D6C989CF844FE3AB3A8B1FE3 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		785553737B06AFC3DA711DDEB7D56194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				367E70452C4C38CC3ED61A60AC5ADDC1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				785553737B06AFC3DA711DDEB7D56194 /* Frameworks */,
+				A66645B650A862810DB7E096459431B5 /* Pods */,
+				E6E5A55DFC57CAFEBDF8E7CFE07EF4B0 /* Products */,
+				A57CBE808A8949C55064850F1471CE3D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A57CBE808A8949C55064850F1471CE3D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1652A9AD1178773E8A366DEAB3DCF210 /* Pods-testPod */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A66645B650A862810DB7E096459431B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17B66127DBEA6811D2270642BC514758 /* npsSdk */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE21628FC44CB7ED2D9463C45BA63044 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A40B10B20ED61177D025FE79FAFB4DA3 /* iovation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6E5A55DFC57CAFEBDF8E7CFE07EF4B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9069508F2CDDF638D742FC4DE6E14B3 /* npsSdk.framework */,
+				C144758003946BB44464A07D3DC3FB81 /* Pods_testPod.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5763A5216ADB349B74C8D146B339D92 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				29CF2E5856BD3841845B47135F35DE68 /* Info.plist */,
+				EF29E6A3028CDF07BB82067313BAA0FD /* npsSdk.modulemap */,
+				568738B513E149D3DE3D38955B36D7AE /* npsSdk.xcconfig */,
+				8AEB340D31DEF7FC8EE50D3591549854 /* npsSdk-dummy.m */,
+				CED13E84B62D2EC5CFF4C6F3F5D62D92 /* npsSdk-prefix.pch */,
+				AA337D1768D15917BB5F4575724E0623 /* npsSdk-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/npsSdk";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		116BCBE071850675073F544340A61270 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCF2A7ACC5F1654272F228172D77850 /* Address.h in Headers */,
+				CE1749E2FED64ED65F76915A62D8F9AA /* Billing.h in Headers */,
+				8AA0FC0710F99F288FBAF55DE12C9FBF /* CardDetails.h in Headers */,
+				7822B5298ED903AF908C01BFAEE1F874 /* Configuration.h in Headers */,
+				691F28D1EBFA06E0E8B5EA96C6940B24 /* CreateClientSession.h in Headers */,
+				6EA27C107FF5E35888B0227C919269EA /* CreatePaymentMethodToken.h in Headers */,
+				BBA04B08862FE83E938B8EB9E1BABF38 /* CreatePaymentMethodTokenResponse.h in Headers */,
+				8A5566B66BBCBB8B1C2C61BFCCAD6BB5 /* DevicePrint.h in Headers */,
+				F5F6CDE76350391605985E059A14F87E /* Environments.h in Headers */,
+				6CFDB7B51D94A1BAD5D6B152768510AF /* GetIINDetails.h in Headers */,
+				AA0F37B05CAE931DAAE48EB8E6B0B3D9 /* GetIINDetailsResponse.h in Headers */,
+				C58BA08D60F14FE42324354E13B2B6B5 /* GetInstallmentsOptions.h in Headers */,
+				D738862907298287071B0BCB9286D496 /* GetInstallmentsOptionsResponse.h in Headers */,
+				14C08DEC461904CFEBC217AC132D10C3 /* GetProductResponse.h in Headers */,
+				1BD12E38761B20F08650B19EC6FDE807 /* Installments.h in Headers */,
+				D6654651CD0AD1C0F8C4C80BED3A085F /* iovation.h in Headers */,
+				FBA625649D06F0F2908F256F78DE4CCF /* Method.h in Headers */,
+				1518BBE8913CE5038722F2EA35568E4F /* MethodResponse.h in Headers */,
+				EB7FB9B3AD93977F4496C07271774BC1 /* Nps.h in Headers */,
+				1A267B7C203E2A63FAC79AEBC4A4031E /* npsSdk-umbrella.h in Headers */,
+				29AFCCB8E5C7A2277D257F2000A9A9E4 /* npsSdk.h in Headers */,
+				20CE99340A6176CBAAAAAAAF41F350DF /* NpsSoapClient.h in Headers */,
+				DD540E10BBB327EA64C54F1EA29B5D3B /* Person.h in Headers */,
+				1B176AC92448DDF83CBC901D9A982160 /* RecachePaymentMethodToken.h in Headers */,
+				69F2B1158D4DE0C0C891487E0ECF946F /* RecachePaymentMethodTokenResponse.h in Headers */,
+				BE37148F578C48DB1AFC7AB3D0090636 /* RetrievePaymentMethodToken.h in Headers */,
+				5F79737E3131B0A1A865164C3641A894 /* RetrievePaymentMethodTokenResponse.h in Headers */,
+				288900270EF0961270420E0558958092 /* RootParameters.h in Headers */,
+				46A51DF2B4A8896EB12789BE2AA893E1 /* STHTTPRequest.h in Headers */,
+				D3CBCB7A845B2ED567AC6EB13E9BBFF3 /* Utilities.h in Headers */,
+				8326755DCF2F7742DB89E31DB089FAE7 /* XmlNode.h in Headers */,
+				17A5A4110B5DC14032BEB6D8CDF4D853 /* XMLReader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		116EF30B2673930D992C37318A9BD116 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F465141037533D54B702FAA7DDE4DC54 /* Pods-testPod-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3550FBAD1116A885DBB0ECBCFAD61E30 /* Pods-testPod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD07B13D840418DF5433B51868DE574E /* Build configuration list for PBXNativeTarget "Pods-testPod" */;
+			buildPhases = (
+				08B1A3F31FD13AD2A30CDEBF39243CE0 /* Sources */,
+				D1F0663C928144643D105606E9A752DB /* Frameworks */,
+				116EF30B2673930D992C37318A9BD116 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				252C76C1B017C0D278ADBFA07562487B /* PBXTargetDependency */,
+			);
+			name = "Pods-testPod";
+			productName = "Pods-testPod";
+			productReference = C144758003946BB44464A07D3DC3FB81 /* Pods_testPod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8A63E918EF0A710F86A26476CA2C696 /* npsSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ED3B16641685919C34C97B8FBFD43FA /* Build configuration list for PBXNativeTarget "npsSdk" */;
+			buildPhases = (
+				9CC33FF08F8AFB0CFC37C46F87C3D879 /* Sources */,
+				726685D40E15F06C5481A2C460004850 /* Frameworks */,
+				116BCBE071850675073F544340A61270 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = npsSdk;
+			productName = npsSdk;
+			productReference = B9069508F2CDDF638D742FC4DE6E14B3 /* npsSdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E6E5A55DFC57CAFEBDF8E7CFE07EF4B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8A63E918EF0A710F86A26476CA2C696 /* npsSdk */,
+				3550FBAD1116A885DBB0ECBCFAD61E30 /* Pods-testPod */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08B1A3F31FD13AD2A30CDEBF39243CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40936FC0F33EDE488B28B2C2E6C3EAB7 /* Pods-testPod-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC33FF08F8AFB0CFC37C46F87C3D879 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC2676F64A88824E6726502EF937D6F /* Address.m in Sources */,
+				AA0E9FE56DB7E5BB29C42AF942F2FFD0 /* Billing.m in Sources */,
+				827D7DC755D9FF636952730B2F781741 /* CardDetails.m in Sources */,
+				052F6834407EC5107E353E70F1153119 /* Configuration.m in Sources */,
+				E01AF92E6E7305CF58F01FD5590CC208 /* CreateClientSession.m in Sources */,
+				0E2989CA162E1DAD1F039257E422499D /* CreatePaymentMethodToken.m in Sources */,
+				D02A1D90D531FCF81362BADE74FBDFDB /* CreatePaymentMethodTokenResponse.m in Sources */,
+				7A661D91E3E47A3C90750677D2E22198 /* Environments.m in Sources */,
+				6158C3B7894076055062CDF113D9367B /* GetIINDetails.m in Sources */,
+				2AC0FCBA3D9FFDD0FCCDFE7BFE2D3AFD /* GetIINDetailsResponse.m in Sources */,
+				CF372DB96F9F398D2C2CE0BC5AC4941B /* GetInstallmentsOptions.m in Sources */,
+				E0E55573A6083791794F97A65A2042DD /* GetInstallmentsOptionsResponse.m in Sources */,
+				BA9DA242FE41E9D56A59A83DF7386BDC /* GetProductResponse.m in Sources */,
+				DE910BF39C5A38E4561565A241DE4DFA /* Installments.m in Sources */,
+				A712371FCA6823F860FDC2C0883D5D52 /* Method.m in Sources */,
+				426F33ED60C0FED97EF4C68EE92718FF /* MethodResponse.m in Sources */,
+				E728A755802D31028E6AE9EFB550FC8D /* Nps.m in Sources */,
+				94B3D127105C737937CA6A2B8B632DF3 /* npsSdk-dummy.m in Sources */,
+				9C4D077851163D211A6B99806828D078 /* NpsSoapClient.m in Sources */,
+				B41013B59718B7F9529289A6A656073F /* Person.m in Sources */,
+				5B5D6D5AC981394137114B525FA6158B /* RecachePaymentMethodToken.m in Sources */,
+				B51412149A9928397FCEE38BDC3B236C /* RecachePaymentMethodTokenResponse.m in Sources */,
+				0196055A3F409C72DD5F96F409F5B91D /* RetrievePaymentMethodToken.m in Sources */,
+				740CC80BE63C0D1A7E27B82C71152293 /* RetrievePaymentMethodTokenResponse.m in Sources */,
+				3DA0D0CF555D04D2895CB9A3ED8CED80 /* RootParameters.m in Sources */,
+				0E17E45666A18313588ACC29A9E04BCD /* STHTTPRequest.m in Sources */,
+				B51B6C05BA13D24A9CFDE45A645204E4 /* Utilities.m in Sources */,
+				DB3FF0E61A4D41E29CB84C3180703CB2 /* XmlNode.m in Sources */,
+				7ACDD1A621AC876DA14F635F9CAF0B67 /* XMLReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		252C76C1B017C0D278ADBFA07562487B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = npsSdk;
+			target = C8A63E918EF0A710F86A26476CA2C696 /* npsSdk */;
+			targetProxy = 31E7B8C8F62C4677A2C0A67D24BA742D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B23B13FE6EA33F3F9BD652A672E78CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 568738B513E149D3DE3D38955B36D7AE /* npsSdk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/npsSdk/npsSdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/npsSdk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/npsSdk/npsSdk.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = npsSdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9FDE802ECF9339766BDA9C856B932820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 568738B513E149D3DE3D38955B36D7AE /* npsSdk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/npsSdk/npsSdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/npsSdk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/npsSdk/npsSdk.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = npsSdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B211D608837E4A02309EE1EF87825FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70260D9187B4A230E42D8583136614C /* Pods-testPod.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-testPod/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testPod/Pods-testPod.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_testPod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDAB99E11E440636A1E3EC89D4F8D57F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22E4EC1C36124638DADE33B49A7579A8 /* Pods-testPod.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-testPod/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testPod/Pods-testPod.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_testPod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ED3B16641685919C34C97B8FBFD43FA /* Build configuration list for PBXNativeTarget "npsSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B23B13FE6EA33F3F9BD652A672E78CB /* Debug */,
+				9FDE802ECF9339766BDA9C856B932820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD07B13D840418DF5433B51868DE574E /* Build configuration list for PBXNativeTarget "Pods-testPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAB99E11E440636A1E3EC89D4F8D57F /* Debug */,
+				B211D608837E4A02309EE1EF87825FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

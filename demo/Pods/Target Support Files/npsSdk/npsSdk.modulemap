@@ -1,0 +1,6 @@
+framework module npsSdk {
+  umbrella header "npsSdk-umbrella.h"
+
+  export *
+  module * { export * }
+}

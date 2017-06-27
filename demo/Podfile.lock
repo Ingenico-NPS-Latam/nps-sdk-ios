@@ -1,0 +1,12 @@
+PODS:
+  - npsSdk (1.0.11)
+
+DEPENDENCIES:
+  - npsSdk (= 1.0.11)
+
+SPEC CHECKSUMS:
+  npsSdk: a7d848eaf73101578f8f56c7acda5e63c3d5d1da
+
+PODFILE CHECKSUM: 0173aeff02c68a56eb65d1ff1edf86dab677b19f
+
+COCOAPODS: 1.2.1
