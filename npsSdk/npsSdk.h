@@ -2,8 +2,8 @@
 //  npsSdk.h
 //  npsSdk
 //
-//  Created by Gustavo Diaz on 5/16/17.
-//  Copyright © 2017 Gustavo Diaz. All rights reserved.
+//  Created by Ingenico on 5/16/17.
+//  Copyright © 2017 Ingenico. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

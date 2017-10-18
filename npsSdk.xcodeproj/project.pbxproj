@@ -59,7 +59,6 @@
 		B38B97281ECC849800A89908 /* XmlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96FA1ECC849800A89908 /* XmlNode.m */; };
 		B38B97291ECC849800A89908 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96FB1ECC849800A89908 /* XMLReader.h */; };
 		B38B972A1ECC849800A89908 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96FC1ECC849800A89908 /* XMLReader.m */; };
-		B38B972C1ECC865900A89908 /* iovation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B972B1ECC865900A89908 /* iovation.framework */; };
 		B38B97311ECC895D00A89908 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B97301ECC895D00A89908 /* CoreTelephony.framework */; };
 		B38B97331ECC896600A89908 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B97321ECC896600A89908 /* SystemConfiguration.framework */; };
 		B38B97351ECC896C00A89908 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B97341ECC896C00A89908 /* CoreLocation.framework */; };
@@ -81,6 +80,7 @@
 		B3EADBBA1EEEC27500386E16 /* Installments.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EADBB81EEEC27500386E16 /* Installments.m */; };
 		B3EADBC01EF802AB00386E16 /* DevicePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBBE1EF802AB00386E16 /* DevicePrint.h */; };
 		B3EADBC11EF802AB00386E16 /* iovation.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBBF1EF802AB00386E16 /* iovation.h */; };
+		B3EADBC51EF8062400386E16 /* iovation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EADBC41EF8062400386E16 /* iovation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,7 +150,6 @@
 		B38B96FA1ECC849800A89908 /* XmlNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlNode.m; sourceTree = "<group>"; };
 		B38B96FB1ECC849800A89908 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		B38B96FC1ECC849800A89908 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
-		B38B972B1ECC865900A89908 /* iovation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iovation.framework; path = Frameworks/iovation.framework; sourceTree = "<group>"; };
 		B38B972D1ECC895500A89908 /* npsSdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = npsSdk.xcodeproj; sourceTree = "<group>"; };
 		B38B97301ECC895D00A89908 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B38B97321ECC896600A89908 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -176,6 +175,7 @@
 		B3EADBB81EEEC27500386E16 /* Installments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Installments.m; sourceTree = "<group>"; };
 		B3EADBBE1EF802AB00386E16 /* DevicePrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePrint.h; sourceTree = "<group>"; };
 		B3EADBBF1EF802AB00386E16 /* iovation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iovation.h; sourceTree = "<group>"; };
+		B3EADBC41EF8062400386E16 /* iovation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iovation.framework; path = Frameworks/iovation.framework; sourceTree = "<group>"; };
 		CEB58488938CB8B8D667FB00 /* Pods_npsSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_npsSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,13 +186,13 @@
 			files = (
 				B38B97461ECC8F2900A89908 /* UIKit.framework in Frameworks */,
 				B38B973D1ECC8A1B00A89908 /* CoreFoundation.framework in Frameworks */,
+				B3EADBC51EF8062400386E16 /* iovation.framework in Frameworks */,
 				B38B973B1ECC89C800A89908 /* ExternalAccessory.framework in Frameworks */,
 				B38B97391ECC89BB00A89908 /* Foundation.framework in Frameworks */,
 				B38B97371ECC89B100A89908 /* AdSupport.framework in Frameworks */,
 				B38B97351ECC896C00A89908 /* CoreLocation.framework in Frameworks */,
 				B38B97331ECC896600A89908 /* SystemConfiguration.framework in Frameworks */,
 				B38B97311ECC895D00A89908 /* CoreTelephony.framework in Frameworks */,
-				B38B972C1ECC865900A89908 /* iovation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +221,7 @@
 		37D2DCC53C1D6A00613CF4A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3EADBC41EF8062400386E16 /* iovation.framework */,
 				B38B97451ECC8F2900A89908 /* UIKit.framework */,
 				B38B973C1ECC8A1B00A89908 /* CoreFoundation.framework */,
 				B38B973A1ECC89C800A89908 /* ExternalAccessory.framework */,
@@ -230,7 +231,6 @@
 				B38B97321ECC896600A89908 /* SystemConfiguration.framework */,
 				B38B97301ECC895D00A89908 /* CoreTelephony.framework */,
 				B38B972D1ECC895500A89908 /* npsSdk.xcodeproj */,
-				B38B972B1ECC865900A89908 /* iovation.framework */,
 				CEB58488938CB8B8D667FB00 /* Pods_npsSdk.framework */,
 			);
 			name = Frameworks;

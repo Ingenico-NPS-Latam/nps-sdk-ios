@@ -2,8 +2,8 @@
 //  RetrievePaymentMethodToken.h
 //  ingeSDK
 //
-//  Created by Gustavo Diaz on 3/28/17.
-//  Copyright © 2017 Gustavo Diaz. All rights reserved.
+//  Created by Ingenico on 3/28/17.
+//  Copyright © 2017 Ingenico. All rights reserved.
 //
 
 #import "Method.h"

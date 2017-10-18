@@ -2,8 +2,8 @@
 //  NpsSoapClient.m
 //  ingeSDK
 //
-//  Created by Gustavo Diaz on 4/3/17.
-//  Copyright © 2017 Gustavo Diaz. All rights reserved.
+//  Created by Ingenico on 4/3/17.
+//  Copyright © 2017 Ingenico. All rights reserved.
 //
 
 #import "NpsSoapClient.h"
@@ -29,7 +29,6 @@ methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))respons
     soapMessage = [soapMessage stringByAppendingString:method.superHeader];
     soapMessage = [soapMessage stringByAppendingString:method.asXml];
     soapMessage = [soapMessage stringByAppendingString:method.superFooter];
-    //NSLog(@"%@", soapMessage);
     NSData *soapData = [soapMessage dataUsingEncoding:NSUTF8StringEncoding];
     
     NSURL *url = [NSURL URLWithString:self.conf.url];
