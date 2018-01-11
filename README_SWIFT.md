@@ -66,7 +66,7 @@ To be able to use nps-ios-sdk methods you need to get a new instance of the clas
 Follow the next sections to get the parameters.
 
 ```swift
-let nps = Nps(environment: SANDBOX)!
+let nps = Nps(environment: NPSSANDBOX)!
 nps.merchantId = "__YOUR_NPS_MERCHANT_ID__"
 nps.clientSession = "__YOUR_NPS_CLIENT_SESSION__"
 ```
@@ -94,11 +94,11 @@ Once the PaymentMethoToken has been generated, you can safely pass it to your se
 > Create a PaymentMethodToken by passing a card object with the payment method data. Also an optional billing object
 
 ```swift
-let nps = Nps(environment: SANDBOX)!
+let nps = Nps(environment: NPSSANDBOX)!
 nps.merchantId = "__YOUR_NPS_MERCHANT_ID__"
 nps.clientSession = "__YOUR_NPS_CLIENT_SESSION__"
 
-let card = CardDetails()
+let card = NpsCardDetails()
         
 card.number = "4507990000000010";
 card.holderName = "JOHN DOE";
@@ -106,7 +106,7 @@ card.securityCode = "123";
 card.expirationDate = "1909";
 
 
-let billing = Billing()
+let billing = NpsBilling()
 
 billing.pspPerson.firstName = "JOHN";
 billing.pspPerson.lastName = "Smith";
@@ -126,7 +126,7 @@ billing.pspAddress.zipCode = "1425";
 billing.pspAddress.street = "suipacha";
 billing.pspAddress.houseNumber = "32123123";
 
-nps.createPaymentMethodToken(card, billingDetails: billing, methodResponse: {( methodResponse: CreatePaymentMethodTokenResponse?, error: Error?) -> Void in
+nps.createPaymentMethodToken(card, billingDetails: billing, methodResponse: {( methodResponse: NpsCreatePaymentMethodTokenResponse?, error: Error?) -> Void in
     if error == nil{
         print(methodResponse?.responseExtended as Any)
     }
@@ -149,17 +149,17 @@ Behaviour and capabilities of recache has been cloned from original createPaymen
 > Recache a PaymentMethodToken by passing a PaymentMethod Object with the PaymentMethod data
 
 ```swift
-let nps = Nps(environment: SANDBOX)!
+let nps = Nps(environment: NPSSANDBOX)!
 nps.merchantId = "__YOUR_NPS_MERCHANT_ID__"
 nps.clientSession = "__YOUR_NPS_CLIENT_SESSION__"
 
-let billing = Billing()
+let billing = NpsBilling()
 billing.pspPerson.firstName = "JOHN DOE"
 
 nps.recachePaymentMethodToken("kWRZGcAxy5D7MoB6BDACugHYrlFzP9Eg", 
             cardSecurityCode: "123", 
               billingDetails: billing,
-              methodResponse: {( methodResponse: RecachePaymentMethodTokenResponse?, error: Error?) -> Void in
+              methodResponse: {( methodResponse: NpsRecachePaymentMethodTokenResponse?, error: Error?) -> Void in
                     if error == nil{
                         print(methodResponse?.responseCod as Any)
                     }
@@ -203,12 +203,12 @@ This method will also call the webservice method "GetIINDetails":
 [GetIINDetails (Response)](#panel-parameters-reference)
 
 ```swift
-let nps = Nps(environment: SANDBOX)!
+let nps = Nps(environment: NPSSANDBOX)!
 nps.merchantId = "__YOUR_NPS_MERCHANT_ID__"
 nps.clientSession = "__YOUR_NPS_CLIENT_SESSION__"
 
 nps.getProduct("424242",
-    methodResponse:{( methodResponse: GetIProductResponse?, error: Error?) -> Void in
+    methodResponse:{( methodResponse: NpsGetIProductResponse?, error: Error?) -> Void in
         if error == nil{
             print(methodResponse?.responseCod as Any)
         }
@@ -246,7 +246,7 @@ if(nps.validateCardSecurityCode("132")){
 if you require card installment in the specific case that the customer must view the installment payment amount you can follow the next example:
 
 ```swift
-let nps = Nps(environment: SANDBOX)!
+let nps = Nps(environment: NPSSANDBOX)!
 nps.merchantId = "__YOUR_NPS_MERCHANT_ID__"
 nps.clientSession = "__YOUR_NPS_CLIENT_SESSION__"
 
@@ -256,7 +256,7 @@ nps.getInstallmentsOptions("100",
                     country:@"CHL",
                 numPayments:@"2",
          paymentMethodToken:@"kkvKuOfD2bNKXCBYDkunIRqImvNFNxB3",
-              methodResponse: {( methodResponse: GetInstallmentsOptionsResponse?, error: Error?) -> Void in
+              methodResponse: {( methodResponse: NpsGetInstallmentsOptionsResponse?, error: Error?) -> Void in
                     if error == nil{
                          print(methodResponse?.responseCod as Any)
                          for inst in methodResponse?.installments{
