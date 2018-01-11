@@ -7,56 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B34C2D801EE849C3005A4DC8 /* GetProductResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D7E1EE849C3005A4DC8 /* GetProductResponse.h */; };
-		B34C2D811EE849C3005A4DC8 /* GetProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C2D7F1EE849C3005A4DC8 /* GetProductResponse.m */; };
-		B34C2D841EE86B4E005A4DC8 /* GetInstallmentsOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D821EE86B4E005A4DC8 /* GetInstallmentsOptions.h */; };
-		B34C2D851EE86B4E005A4DC8 /* GetInstallmentsOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C2D831EE86B4E005A4DC8 /* GetInstallmentsOptions.m */; };
-		B34C2D881EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D861EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.h */; };
-		B34C2D891EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C2D871EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.m */; };
-		B38B96FD1ECC849800A89908 /* Address.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96CF1ECC849800A89908 /* Address.h */; };
-		B38B96FE1ECC849800A89908 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D01ECC849800A89908 /* Address.m */; };
-		B38B96FF1ECC849800A89908 /* Billing.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D11ECC849800A89908 /* Billing.h */; };
-		B38B97001ECC849800A89908 /* Billing.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D21ECC849800A89908 /* Billing.m */; };
-		B38B97011ECC849800A89908 /* CardDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D31ECC849800A89908 /* CardDetails.h */; };
-		B38B97021ECC849800A89908 /* CardDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D41ECC849800A89908 /* CardDetails.m */; };
-		B38B97031ECC849800A89908 /* Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D51ECC849800A89908 /* Configuration.h */; };
-		B38B97041ECC849800A89908 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D61ECC849800A89908 /* Configuration.m */; };
-		B38B97051ECC849800A89908 /* CreateClientSession.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D71ECC849800A89908 /* CreateClientSession.h */; };
-		B38B97061ECC849800A89908 /* CreateClientSession.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D81ECC849800A89908 /* CreateClientSession.m */; };
-		B38B97071ECC849800A89908 /* CreatePaymentMethodToken.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D91ECC849800A89908 /* CreatePaymentMethodToken.h */; };
-		B38B97081ECC849800A89908 /* CreatePaymentMethodToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96DA1ECC849800A89908 /* CreatePaymentMethodToken.m */; };
-		B38B97091ECC849800A89908 /* CreatePaymentMethodTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96DB1ECC849800A89908 /* CreatePaymentMethodTokenResponse.h */; };
-		B38B970A1ECC849800A89908 /* CreatePaymentMethodTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96DC1ECC849800A89908 /* CreatePaymentMethodTokenResponse.m */; };
-		B38B970B1ECC849800A89908 /* Environments.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96DD1ECC849800A89908 /* Environments.h */; };
-		B38B970C1ECC849800A89908 /* Environments.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96DE1ECC849800A89908 /* Environments.m */; };
-		B38B970D1ECC849800A89908 /* GetIINDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96DF1ECC849800A89908 /* GetIINDetails.h */; };
-		B38B970E1ECC849800A89908 /* GetIINDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E01ECC849800A89908 /* GetIINDetails.m */; };
-		B38B970F1ECC849800A89908 /* GetIINDetailsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E11ECC849800A89908 /* GetIINDetailsResponse.h */; };
-		B38B97101ECC849800A89908 /* GetIINDetailsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E21ECC849800A89908 /* GetIINDetailsResponse.m */; };
-		B38B97111ECC849800A89908 /* Method.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E31ECC849800A89908 /* Method.h */; };
-		B38B97121ECC849800A89908 /* Method.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E41ECC849800A89908 /* Method.m */; };
-		B38B97131ECC849800A89908 /* MethodResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E51ECC849800A89908 /* MethodResponse.h */; };
-		B38B97141ECC849800A89908 /* MethodResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E61ECC849800A89908 /* MethodResponse.m */; };
+		B34C2D801EE849C3005A4DC8 /* NpsGetProductResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D7E1EE849C3005A4DC8 /* NpsGetProductResponse.h */; };
+		B34C2D811EE849C3005A4DC8 /* NpsGetProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C2D7F1EE849C3005A4DC8 /* NpsGetProductResponse.m */; };
+		B34C2D841EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D821EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.h */; };
+		B34C2D851EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C2D831EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.m */; };
+		B34C2D881EE86B9F005A4DC8 /* NpsGetInstallmentsOptionsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D861EE86B9F005A4DC8 /* NpsGetInstallmentsOptionsResponse.h */; };
+		B34C2D891EE86B9F005A4DC8 /* NpsGetInstallmentsOptionsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C2D871EE86B9F005A4DC8 /* NpsGetInstallmentsOptionsResponse.m */; };
+		B38B96FD1ECC849800A89908 /* NpsAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96CF1ECC849800A89908 /* NpsAddress.h */; };
+		B38B96FE1ECC849800A89908 /* NpsAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D01ECC849800A89908 /* NpsAddress.m */; };
+		B38B96FF1ECC849800A89908 /* NpsBilling.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D11ECC849800A89908 /* NpsBilling.h */; };
+		B38B97001ECC849800A89908 /* NpsBilling.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D21ECC849800A89908 /* NpsBilling.m */; };
+		B38B97011ECC849800A89908 /* NpsCardDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D31ECC849800A89908 /* NpsCardDetails.h */; };
+		B38B97021ECC849800A89908 /* NpsCardDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D41ECC849800A89908 /* NpsCardDetails.m */; };
+		B38B97031ECC849800A89908 /* NpsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D51ECC849800A89908 /* NpsConfiguration.h */; };
+		B38B97041ECC849800A89908 /* NpsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D61ECC849800A89908 /* NpsConfiguration.m */; };
+		B38B97051ECC849800A89908 /* NpsCreateClientSession.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D71ECC849800A89908 /* NpsCreateClientSession.h */; };
+		B38B97061ECC849800A89908 /* NpsCreateClientSession.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96D81ECC849800A89908 /* NpsCreateClientSession.m */; };
+		B38B97071ECC849800A89908 /* NpsCreatePaymentMethodToken.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96D91ECC849800A89908 /* NpsCreatePaymentMethodToken.h */; };
+		B38B97081ECC849800A89908 /* NpsCreatePaymentMethodToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96DA1ECC849800A89908 /* NpsCreatePaymentMethodToken.m */; };
+		B38B97091ECC849800A89908 /* NpsCreatePaymentMethodTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96DB1ECC849800A89908 /* NpsCreatePaymentMethodTokenResponse.h */; };
+		B38B970A1ECC849800A89908 /* NpsCreatePaymentMethodTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96DC1ECC849800A89908 /* NpsCreatePaymentMethodTokenResponse.m */; };
+		B38B970B1ECC849800A89908 /* NpsEnvironments.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96DD1ECC849800A89908 /* NpsEnvironments.h */; };
+		B38B970C1ECC849800A89908 /* NpsEnvironments.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96DE1ECC849800A89908 /* NpsEnvironments.m */; };
+		B38B970D1ECC849800A89908 /* NpsGetIINDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96DF1ECC849800A89908 /* NpsGetIINDetails.h */; };
+		B38B970E1ECC849800A89908 /* NpsGetIINDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E01ECC849800A89908 /* NpsGetIINDetails.m */; };
+		B38B970F1ECC849800A89908 /* NpsGetIINDetailsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E11ECC849800A89908 /* NpsGetIINDetailsResponse.h */; };
+		B38B97101ECC849800A89908 /* NpsGetIINDetailsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E21ECC849800A89908 /* NpsGetIINDetailsResponse.m */; };
+		B38B97111ECC849800A89908 /* NpsMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E31ECC849800A89908 /* NpsMethod.h */; };
+		B38B97121ECC849800A89908 /* NpsMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E41ECC849800A89908 /* NpsMethod.m */; };
+		B38B97131ECC849800A89908 /* NpsMethodResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E51ECC849800A89908 /* NpsMethodResponse.h */; };
+		B38B97141ECC849800A89908 /* NpsMethodResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E61ECC849800A89908 /* NpsMethodResponse.m */; };
 		B38B97151ECC849800A89908 /* NpsSoapClient.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E71ECC849800A89908 /* NpsSoapClient.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B38B97161ECC849800A89908 /* NpsSoapClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96E81ECC849800A89908 /* NpsSoapClient.m */; };
-		B38B97171ECC849800A89908 /* Person.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E91ECC849800A89908 /* Person.h */; };
-		B38B97181ECC849800A89908 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96EA1ECC849800A89908 /* Person.m */; };
-		B38B97191ECC849800A89908 /* RecachePaymentMethodToken.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96EB1ECC849800A89908 /* RecachePaymentMethodToken.h */; };
-		B38B971A1ECC849800A89908 /* RecachePaymentMethodToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96EC1ECC849800A89908 /* RecachePaymentMethodToken.m */; };
-		B38B971B1ECC849800A89908 /* RecachePaymentMethodTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96ED1ECC849800A89908 /* RecachePaymentMethodTokenResponse.h */; };
-		B38B971C1ECC849800A89908 /* RecachePaymentMethodTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96EE1ECC849800A89908 /* RecachePaymentMethodTokenResponse.m */; };
-		B38B971D1ECC849800A89908 /* RetrievePaymentMethodToken.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96EF1ECC849800A89908 /* RetrievePaymentMethodToken.h */; };
-		B38B971E1ECC849800A89908 /* RetrievePaymentMethodToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96F01ECC849800A89908 /* RetrievePaymentMethodToken.m */; };
-		B38B971F1ECC849800A89908 /* RetrievePaymentMethodTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96F11ECC849800A89908 /* RetrievePaymentMethodTokenResponse.h */; };
-		B38B97201ECC849800A89908 /* RetrievePaymentMethodTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96F21ECC849800A89908 /* RetrievePaymentMethodTokenResponse.m */; };
-		B38B97211ECC849800A89908 /* RootParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96F31ECC849800A89908 /* RootParameters.h */; };
-		B38B97221ECC849800A89908 /* RootParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96F41ECC849800A89908 /* RootParameters.m */; };
+		B38B97171ECC849800A89908 /* NpsPerson.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96E91ECC849800A89908 /* NpsPerson.h */; };
+		B38B97181ECC849800A89908 /* NpsPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96EA1ECC849800A89908 /* NpsPerson.m */; };
+		B38B97191ECC849800A89908 /* NpsRecachePaymentMethodToken.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96EB1ECC849800A89908 /* NpsRecachePaymentMethodToken.h */; };
+		B38B971A1ECC849800A89908 /* NpsRecachePaymentMethodToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96EC1ECC849800A89908 /* NpsRecachePaymentMethodToken.m */; };
+		B38B971B1ECC849800A89908 /* NpsRecachePaymentMethodTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96ED1ECC849800A89908 /* NpsRecachePaymentMethodTokenResponse.h */; };
+		B38B971C1ECC849800A89908 /* NpsRecachePaymentMethodTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96EE1ECC849800A89908 /* NpsRecachePaymentMethodTokenResponse.m */; };
+		B38B971D1ECC849800A89908 /* NpsRetrievePaymentMethodToken.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96EF1ECC849800A89908 /* NpsRetrievePaymentMethodToken.h */; };
+		B38B971E1ECC849800A89908 /* NpsRetrievePaymentMethodToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96F01ECC849800A89908 /* NpsRetrievePaymentMethodToken.m */; };
+		B38B971F1ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96F11ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.h */; };
+		B38B97201ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96F21ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.m */; };
+		B38B97211ECC849800A89908 /* NpsRootParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96F31ECC849800A89908 /* NpsRootParameters.h */; };
+		B38B97221ECC849800A89908 /* NpsRootParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96F41ECC849800A89908 /* NpsRootParameters.m */; };
 		B38B97231ECC849800A89908 /* STHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96F51ECC849800A89908 /* STHTTPRequest.h */; };
 		B38B97241ECC849800A89908 /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96F61ECC849800A89908 /* STHTTPRequest.m */; };
-		B38B97251ECC849800A89908 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96F71ECC849800A89908 /* Utilities.h */; };
-		B38B97261ECC849800A89908 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96F81ECC849800A89908 /* Utilities.m */; };
-		B38B97271ECC849800A89908 /* XmlNode.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96F91ECC849800A89908 /* XmlNode.h */; };
-		B38B97281ECC849800A89908 /* XmlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96FA1ECC849800A89908 /* XmlNode.m */; };
+		B38B97251ECC849800A89908 /* NpsUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96F71ECC849800A89908 /* NpsUtilities.h */; };
+		B38B97261ECC849800A89908 /* NpsUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96F81ECC849800A89908 /* NpsUtilities.m */; };
+		B38B97271ECC849800A89908 /* NpsXmlNode.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96F91ECC849800A89908 /* NpsXmlNode.h */; };
+		B38B97281ECC849800A89908 /* NpsXmlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96FA1ECC849800A89908 /* NpsXmlNode.m */; };
 		B38B97291ECC849800A89908 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B96FB1ECC849800A89908 /* XMLReader.h */; };
 		B38B972A1ECC849800A89908 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B96FC1ECC849800A89908 /* XMLReader.m */; };
 		B38B97311ECC895D00A89908 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B97301ECC895D00A89908 /* CoreTelephony.framework */; };
@@ -76,8 +76,8 @@
 		B3DBD4CF1ECC751B000A7739 /* npsSdk.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B3DBD4CD1ECC751B000A7739 /* npsSdk.podspec */; };
 		B3DBD4D01ECC751B000A7739 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B3DBD4CE1ECC751B000A7739 /* Podfile */; };
 		B3DBD4D21ECC75B1000A7739 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = B3DBD4D11ECC75B1000A7739 /* LICENCE */; };
-		B3EADBB91EEEC27500386E16 /* Installments.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBB71EEEC27500386E16 /* Installments.h */; };
-		B3EADBBA1EEEC27500386E16 /* Installments.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EADBB81EEEC27500386E16 /* Installments.m */; };
+		B3EADBB91EEEC27500386E16 /* NpsInstallments.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBB71EEEC27500386E16 /* NpsInstallments.h */; };
+		B3EADBBA1EEEC27500386E16 /* NpsInstallments.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EADBB81EEEC27500386E16 /* NpsInstallments.m */; };
 		B3EADBC01EF802AB00386E16 /* DevicePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBBE1EF802AB00386E16 /* DevicePrint.h */; };
 		B3EADBC11EF802AB00386E16 /* iovation.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBBF1EF802AB00386E16 /* iovation.h */; };
 		B3EADBC51EF8062400386E16 /* iovation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EADBC41EF8062400386E16 /* iovation.framework */; };
@@ -98,56 +98,56 @@
 		1255D3994FBEA293E0AA7DA7 /* Pods-npsSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdk.release.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdk/Pods-npsSdk.release.xcconfig"; sourceTree = "<group>"; };
 		64E8856FBE7FEF84795B4794 /* Pods-npsSdkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdkTests/Pods-npsSdkTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFAF9CDE826544BDAE2ECD0E /* Pods-npsSdkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdkTests/Pods-npsSdkTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B34C2D7E1EE849C3005A4DC8 /* GetProductResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetProductResponse.h; sourceTree = "<group>"; };
-		B34C2D7F1EE849C3005A4DC8 /* GetProductResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetProductResponse.m; sourceTree = "<group>"; };
-		B34C2D821EE86B4E005A4DC8 /* GetInstallmentsOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetInstallmentsOptions.h; sourceTree = "<group>"; };
-		B34C2D831EE86B4E005A4DC8 /* GetInstallmentsOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInstallmentsOptions.m; sourceTree = "<group>"; };
-		B34C2D861EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetInstallmentsOptionsResponse.h; sourceTree = "<group>"; };
-		B34C2D871EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInstallmentsOptionsResponse.m; sourceTree = "<group>"; };
-		B38B96CF1ECC849800A89908 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
-		B38B96D01ECC849800A89908 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
-		B38B96D11ECC849800A89908 /* Billing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Billing.h; sourceTree = "<group>"; };
-		B38B96D21ECC849800A89908 /* Billing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Billing.m; sourceTree = "<group>"; };
-		B38B96D31ECC849800A89908 /* CardDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardDetails.h; sourceTree = "<group>"; };
-		B38B96D41ECC849800A89908 /* CardDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardDetails.m; sourceTree = "<group>"; };
-		B38B96D51ECC849800A89908 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
-		B38B96D61ECC849800A89908 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
-		B38B96D71ECC849800A89908 /* CreateClientSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateClientSession.h; sourceTree = "<group>"; };
-		B38B96D81ECC849800A89908 /* CreateClientSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateClientSession.m; sourceTree = "<group>"; };
-		B38B96D91ECC849800A89908 /* CreatePaymentMethodToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePaymentMethodToken.h; sourceTree = "<group>"; };
-		B38B96DA1ECC849800A89908 /* CreatePaymentMethodToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePaymentMethodToken.m; sourceTree = "<group>"; };
-		B38B96DB1ECC849800A89908 /* CreatePaymentMethodTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePaymentMethodTokenResponse.h; sourceTree = "<group>"; };
-		B38B96DC1ECC849800A89908 /* CreatePaymentMethodTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePaymentMethodTokenResponse.m; sourceTree = "<group>"; };
-		B38B96DD1ECC849800A89908 /* Environments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Environments.h; sourceTree = "<group>"; };
-		B38B96DE1ECC849800A89908 /* Environments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Environments.m; sourceTree = "<group>"; };
-		B38B96DF1ECC849800A89908 /* GetIINDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetIINDetails.h; sourceTree = "<group>"; };
-		B38B96E01ECC849800A89908 /* GetIINDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetIINDetails.m; sourceTree = "<group>"; };
-		B38B96E11ECC849800A89908 /* GetIINDetailsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetIINDetailsResponse.h; sourceTree = "<group>"; };
-		B38B96E21ECC849800A89908 /* GetIINDetailsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetIINDetailsResponse.m; sourceTree = "<group>"; };
-		B38B96E31ECC849800A89908 /* Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Method.h; sourceTree = "<group>"; };
-		B38B96E41ECC849800A89908 /* Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Method.m; sourceTree = "<group>"; };
-		B38B96E51ECC849800A89908 /* MethodResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodResponse.h; sourceTree = "<group>"; };
-		B38B96E61ECC849800A89908 /* MethodResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodResponse.m; sourceTree = "<group>"; };
+		B34C2D7E1EE849C3005A4DC8 /* NpsGetProductResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsGetProductResponse.h; sourceTree = "<group>"; };
+		B34C2D7F1EE849C3005A4DC8 /* NpsGetProductResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsGetProductResponse.m; sourceTree = "<group>"; };
+		B34C2D821EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsGetInstallmentsOptions.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B34C2D831EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NpsGetInstallmentsOptions.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B34C2D861EE86B9F005A4DC8 /* NpsGetInstallmentsOptionsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsGetInstallmentsOptionsResponse.h; sourceTree = "<group>"; };
+		B34C2D871EE86B9F005A4DC8 /* NpsGetInstallmentsOptionsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsGetInstallmentsOptionsResponse.m; sourceTree = "<group>"; };
+		B38B96CF1ECC849800A89908 /* NpsAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsAddress.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B38B96D01ECC849800A89908 /* NpsAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NpsAddress.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B38B96D11ECC849800A89908 /* NpsBilling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsBilling.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B38B96D21ECC849800A89908 /* NpsBilling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NpsBilling.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B38B96D31ECC849800A89908 /* NpsCardDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsCardDetails.h; sourceTree = "<group>"; };
+		B38B96D41ECC849800A89908 /* NpsCardDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NpsCardDetails.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B38B96D51ECC849800A89908 /* NpsConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsConfiguration.h; sourceTree = "<group>"; };
+		B38B96D61ECC849800A89908 /* NpsConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsConfiguration.m; sourceTree = "<group>"; };
+		B38B96D71ECC849800A89908 /* NpsCreateClientSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsCreateClientSession.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B38B96D81ECC849800A89908 /* NpsCreateClientSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsCreateClientSession.m; sourceTree = "<group>"; };
+		B38B96D91ECC849800A89908 /* NpsCreatePaymentMethodToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsCreatePaymentMethodToken.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B38B96DA1ECC849800A89908 /* NpsCreatePaymentMethodToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NpsCreatePaymentMethodToken.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B38B96DB1ECC849800A89908 /* NpsCreatePaymentMethodTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsCreatePaymentMethodTokenResponse.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B38B96DC1ECC849800A89908 /* NpsCreatePaymentMethodTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NpsCreatePaymentMethodTokenResponse.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B38B96DD1ECC849800A89908 /* NpsEnvironments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsEnvironments.h; sourceTree = "<group>"; };
+		B38B96DE1ECC849800A89908 /* NpsEnvironments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsEnvironments.m; sourceTree = "<group>"; };
+		B38B96DF1ECC849800A89908 /* NpsGetIINDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsGetIINDetails.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B38B96E01ECC849800A89908 /* NpsGetIINDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NpsGetIINDetails.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B38B96E11ECC849800A89908 /* NpsGetIINDetailsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsGetIINDetailsResponse.h; sourceTree = "<group>"; };
+		B38B96E21ECC849800A89908 /* NpsGetIINDetailsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NpsGetIINDetailsResponse.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B38B96E31ECC849800A89908 /* NpsMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsMethod.h; sourceTree = "<group>"; };
+		B38B96E41ECC849800A89908 /* NpsMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsMethod.m; sourceTree = "<group>"; };
+		B38B96E51ECC849800A89908 /* NpsMethodResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsMethodResponse.h; sourceTree = "<group>"; };
+		B38B96E61ECC849800A89908 /* NpsMethodResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsMethodResponse.m; sourceTree = "<group>"; };
 		B38B96E71ECC849800A89908 /* NpsSoapClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsSoapClient.h; sourceTree = "<group>"; };
 		B38B96E81ECC849800A89908 /* NpsSoapClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsSoapClient.m; sourceTree = "<group>"; };
-		B38B96E91ECC849800A89908 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		B38B96EA1ECC849800A89908 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		B38B96EB1ECC849800A89908 /* RecachePaymentMethodToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecachePaymentMethodToken.h; sourceTree = "<group>"; };
-		B38B96EC1ECC849800A89908 /* RecachePaymentMethodToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecachePaymentMethodToken.m; sourceTree = "<group>"; };
-		B38B96ED1ECC849800A89908 /* RecachePaymentMethodTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecachePaymentMethodTokenResponse.h; sourceTree = "<group>"; };
-		B38B96EE1ECC849800A89908 /* RecachePaymentMethodTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecachePaymentMethodTokenResponse.m; sourceTree = "<group>"; };
-		B38B96EF1ECC849800A89908 /* RetrievePaymentMethodToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrievePaymentMethodToken.h; sourceTree = "<group>"; };
-		B38B96F01ECC849800A89908 /* RetrievePaymentMethodToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrievePaymentMethodToken.m; sourceTree = "<group>"; };
-		B38B96F11ECC849800A89908 /* RetrievePaymentMethodTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrievePaymentMethodTokenResponse.h; sourceTree = "<group>"; };
-		B38B96F21ECC849800A89908 /* RetrievePaymentMethodTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrievePaymentMethodTokenResponse.m; sourceTree = "<group>"; };
-		B38B96F31ECC849800A89908 /* RootParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootParameters.h; sourceTree = "<group>"; };
-		B38B96F41ECC849800A89908 /* RootParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootParameters.m; sourceTree = "<group>"; };
+		B38B96E91ECC849800A89908 /* NpsPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsPerson.h; sourceTree = "<group>"; };
+		B38B96EA1ECC849800A89908 /* NpsPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NpsPerson.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B38B96EB1ECC849800A89908 /* NpsRecachePaymentMethodToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsRecachePaymentMethodToken.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B38B96EC1ECC849800A89908 /* NpsRecachePaymentMethodToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NpsRecachePaymentMethodToken.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B38B96ED1ECC849800A89908 /* NpsRecachePaymentMethodTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsRecachePaymentMethodTokenResponse.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B38B96EE1ECC849800A89908 /* NpsRecachePaymentMethodTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NpsRecachePaymentMethodTokenResponse.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B38B96EF1ECC849800A89908 /* NpsRetrievePaymentMethodToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsRetrievePaymentMethodToken.h; sourceTree = "<group>"; };
+		B38B96F01ECC849800A89908 /* NpsRetrievePaymentMethodToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsRetrievePaymentMethodToken.m; sourceTree = "<group>"; };
+		B38B96F11ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsRetrievePaymentMethodTokenResponse.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B38B96F21ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsRetrievePaymentMethodTokenResponse.m; sourceTree = "<group>"; };
+		B38B96F31ECC849800A89908 /* NpsRootParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsRootParameters.h; sourceTree = "<group>"; };
+		B38B96F41ECC849800A89908 /* NpsRootParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsRootParameters.m; sourceTree = "<group>"; };
 		B38B96F51ECC849800A89908 /* STHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHTTPRequest.h; sourceTree = "<group>"; };
 		B38B96F61ECC849800A89908 /* STHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHTTPRequest.m; sourceTree = "<group>"; };
-		B38B96F71ECC849800A89908 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
-		B38B96F81ECC849800A89908 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
-		B38B96F91ECC849800A89908 /* XmlNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlNode.h; sourceTree = "<group>"; };
-		B38B96FA1ECC849800A89908 /* XmlNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlNode.m; sourceTree = "<group>"; };
+		B38B96F71ECC849800A89908 /* NpsUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsUtilities.h; sourceTree = "<group>"; };
+		B38B96F81ECC849800A89908 /* NpsUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsUtilities.m; sourceTree = "<group>"; };
+		B38B96F91ECC849800A89908 /* NpsXmlNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsXmlNode.h; sourceTree = "<group>"; };
+		B38B96FA1ECC849800A89908 /* NpsXmlNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsXmlNode.m; sourceTree = "<group>"; };
 		B38B96FB1ECC849800A89908 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		B38B96FC1ECC849800A89908 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		B38B972D1ECC895500A89908 /* npsSdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = npsSdk.xcodeproj; sourceTree = "<group>"; };
@@ -160,19 +160,19 @@
 		B38B973C1ECC8A1B00A89908 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		B38B97451ECC8F2900A89908 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B3DBD46A1ECB20A3000A7739 /* npsSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = npsSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3DBD46D1ECB20A3000A7739 /* npsSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = npsSdk.h; sourceTree = "<group>"; };
+		B3DBD46D1ECB20A3000A7739 /* npsSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = npsSdk.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		B3DBD46E1ECB20A3000A7739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3DBD4731ECB20A3000A7739 /* npsSdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = npsSdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3DBD4781ECB20A3000A7739 /* npsSdkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = npsSdkTests.m; sourceTree = "<group>"; };
+		B3DBD4781ECB20A3000A7739 /* npsSdkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = npsSdkTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		B3DBD47A1ECB20A3000A7739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3DBD4BA1ECB3662000A7739 /* Nps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nps.h; sourceTree = "<group>"; };
-		B3DBD4BB1ECB3662000A7739 /* Nps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nps.m; sourceTree = "<group>"; };
+		B3DBD4BB1ECB3662000A7739 /* Nps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Nps.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		B3DBD4BC1ECB3662000A7739 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B3DBD4CD1ECC751B000A7739 /* npsSdk.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = npsSdk.podspec; sourceTree = SOURCE_ROOT; };
+		B3DBD4CD1ECC751B000A7739 /* npsSdk.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = npsSdk.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = "<none>"; };
 		B3DBD4CE1ECC751B000A7739 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B3DBD4D11ECC75B1000A7739 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENCE; path = ../LICENCE; sourceTree = "<group>"; };
-		B3EADBB71EEEC27500386E16 /* Installments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Installments.h; sourceTree = "<group>"; };
-		B3EADBB81EEEC27500386E16 /* Installments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Installments.m; sourceTree = "<group>"; };
+		B3EADBB71EEEC27500386E16 /* NpsInstallments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsInstallments.h; sourceTree = "<group>"; };
+		B3EADBB81EEEC27500386E16 /* NpsInstallments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsInstallments.m; sourceTree = "<group>"; };
 		B3EADBBE1EF802AB00386E16 /* DevicePrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePrint.h; sourceTree = "<group>"; };
 		B3EADBBF1EF802AB00386E16 /* iovation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iovation.h; sourceTree = "<group>"; };
 		B3EADBC41EF8062400386E16 /* iovation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iovation.framework; path = Frameworks/iovation.framework; sourceTree = "<group>"; };
@@ -268,58 +268,58 @@
 			children = (
 				B3EADBBE1EF802AB00386E16 /* DevicePrint.h */,
 				B3EADBBF1EF802AB00386E16 /* iovation.h */,
-				B38B96CF1ECC849800A89908 /* Address.h */,
-				B38B96D01ECC849800A89908 /* Address.m */,
-				B38B96D11ECC849800A89908 /* Billing.h */,
-				B38B96D21ECC849800A89908 /* Billing.m */,
-				B38B96D31ECC849800A89908 /* CardDetails.h */,
-				B38B96D41ECC849800A89908 /* CardDetails.m */,
-				B38B96D51ECC849800A89908 /* Configuration.h */,
-				B38B96D61ECC849800A89908 /* Configuration.m */,
-				B38B96D71ECC849800A89908 /* CreateClientSession.h */,
-				B38B96D81ECC849800A89908 /* CreateClientSession.m */,
-				B38B96D91ECC849800A89908 /* CreatePaymentMethodToken.h */,
-				B38B96DA1ECC849800A89908 /* CreatePaymentMethodToken.m */,
-				B34C2D821EE86B4E005A4DC8 /* GetInstallmentsOptions.h */,
-				B34C2D831EE86B4E005A4DC8 /* GetInstallmentsOptions.m */,
-				B38B96DB1ECC849800A89908 /* CreatePaymentMethodTokenResponse.h */,
-				B38B96DC1ECC849800A89908 /* CreatePaymentMethodTokenResponse.m */,
-				B38B96DD1ECC849800A89908 /* Environments.h */,
-				B38B96DE1ECC849800A89908 /* Environments.m */,
-				B38B96DF1ECC849800A89908 /* GetIINDetails.h */,
-				B38B96E01ECC849800A89908 /* GetIINDetails.m */,
-				B38B96E11ECC849800A89908 /* GetIINDetailsResponse.h */,
-				B38B96E21ECC849800A89908 /* GetIINDetailsResponse.m */,
-				B34C2D861EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.h */,
-				B34C2D871EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.m */,
-				B3EADBB71EEEC27500386E16 /* Installments.h */,
-				B3EADBB81EEEC27500386E16 /* Installments.m */,
-				B34C2D7E1EE849C3005A4DC8 /* GetProductResponse.h */,
-				B34C2D7F1EE849C3005A4DC8 /* GetProductResponse.m */,
-				B38B96E31ECC849800A89908 /* Method.h */,
-				B38B96E41ECC849800A89908 /* Method.m */,
-				B38B96E51ECC849800A89908 /* MethodResponse.h */,
-				B38B96E61ECC849800A89908 /* MethodResponse.m */,
+				B38B96CF1ECC849800A89908 /* NpsAddress.h */,
+				B38B96D01ECC849800A89908 /* NpsAddress.m */,
+				B38B96D11ECC849800A89908 /* NpsBilling.h */,
+				B38B96D21ECC849800A89908 /* NpsBilling.m */,
+				B38B96D31ECC849800A89908 /* NpsCardDetails.h */,
+				B38B96D41ECC849800A89908 /* NpsCardDetails.m */,
+				B38B96D51ECC849800A89908 /* NpsConfiguration.h */,
+				B38B96D61ECC849800A89908 /* NpsConfiguration.m */,
+				B38B96D71ECC849800A89908 /* NpsCreateClientSession.h */,
+				B38B96D81ECC849800A89908 /* NpsCreateClientSession.m */,
+				B38B96D91ECC849800A89908 /* NpsCreatePaymentMethodToken.h */,
+				B38B96DA1ECC849800A89908 /* NpsCreatePaymentMethodToken.m */,
+				B34C2D821EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.h */,
+				B34C2D831EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.m */,
+				B38B96DB1ECC849800A89908 /* NpsCreatePaymentMethodTokenResponse.h */,
+				B38B96DC1ECC849800A89908 /* NpsCreatePaymentMethodTokenResponse.m */,
+				B38B96DD1ECC849800A89908 /* NpsEnvironments.h */,
+				B38B96DE1ECC849800A89908 /* NpsEnvironments.m */,
+				B38B96DF1ECC849800A89908 /* NpsGetIINDetails.h */,
+				B38B96E01ECC849800A89908 /* NpsGetIINDetails.m */,
+				B38B96E11ECC849800A89908 /* NpsGetIINDetailsResponse.h */,
+				B38B96E21ECC849800A89908 /* NpsGetIINDetailsResponse.m */,
+				B34C2D861EE86B9F005A4DC8 /* NpsGetInstallmentsOptionsResponse.h */,
+				B34C2D871EE86B9F005A4DC8 /* NpsGetInstallmentsOptionsResponse.m */,
+				B3EADBB71EEEC27500386E16 /* NpsInstallments.h */,
+				B3EADBB81EEEC27500386E16 /* NpsInstallments.m */,
+				B34C2D7E1EE849C3005A4DC8 /* NpsGetProductResponse.h */,
+				B34C2D7F1EE849C3005A4DC8 /* NpsGetProductResponse.m */,
+				B38B96E31ECC849800A89908 /* NpsMethod.h */,
+				B38B96E41ECC849800A89908 /* NpsMethod.m */,
+				B38B96E51ECC849800A89908 /* NpsMethodResponse.h */,
+				B38B96E61ECC849800A89908 /* NpsMethodResponse.m */,
 				B38B96E71ECC849800A89908 /* NpsSoapClient.h */,
 				B38B96E81ECC849800A89908 /* NpsSoapClient.m */,
-				B38B96E91ECC849800A89908 /* Person.h */,
-				B38B96EA1ECC849800A89908 /* Person.m */,
-				B38B96EB1ECC849800A89908 /* RecachePaymentMethodToken.h */,
-				B38B96EC1ECC849800A89908 /* RecachePaymentMethodToken.m */,
-				B38B96ED1ECC849800A89908 /* RecachePaymentMethodTokenResponse.h */,
-				B38B96EE1ECC849800A89908 /* RecachePaymentMethodTokenResponse.m */,
-				B38B96EF1ECC849800A89908 /* RetrievePaymentMethodToken.h */,
-				B38B96F01ECC849800A89908 /* RetrievePaymentMethodToken.m */,
-				B38B96F11ECC849800A89908 /* RetrievePaymentMethodTokenResponse.h */,
-				B38B96F21ECC849800A89908 /* RetrievePaymentMethodTokenResponse.m */,
-				B38B96F31ECC849800A89908 /* RootParameters.h */,
-				B38B96F41ECC849800A89908 /* RootParameters.m */,
+				B38B96E91ECC849800A89908 /* NpsPerson.h */,
+				B38B96EA1ECC849800A89908 /* NpsPerson.m */,
+				B38B96EB1ECC849800A89908 /* NpsRecachePaymentMethodToken.h */,
+				B38B96EC1ECC849800A89908 /* NpsRecachePaymentMethodToken.m */,
+				B38B96ED1ECC849800A89908 /* NpsRecachePaymentMethodTokenResponse.h */,
+				B38B96EE1ECC849800A89908 /* NpsRecachePaymentMethodTokenResponse.m */,
+				B38B96EF1ECC849800A89908 /* NpsRetrievePaymentMethodToken.h */,
+				B38B96F01ECC849800A89908 /* NpsRetrievePaymentMethodToken.m */,
+				B38B96F11ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.h */,
+				B38B96F21ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.m */,
+				B38B96F31ECC849800A89908 /* NpsRootParameters.h */,
+				B38B96F41ECC849800A89908 /* NpsRootParameters.m */,
 				B38B96F51ECC849800A89908 /* STHTTPRequest.h */,
 				B38B96F61ECC849800A89908 /* STHTTPRequest.m */,
-				B38B96F71ECC849800A89908 /* Utilities.h */,
-				B38B96F81ECC849800A89908 /* Utilities.m */,
-				B38B96F91ECC849800A89908 /* XmlNode.h */,
-				B38B96FA1ECC849800A89908 /* XmlNode.m */,
+				B38B96F71ECC849800A89908 /* NpsUtilities.h */,
+				B38B96F81ECC849800A89908 /* NpsUtilities.m */,
+				B38B96F91ECC849800A89908 /* NpsXmlNode.h */,
+				B38B96FA1ECC849800A89908 /* NpsXmlNode.m */,
 				B38B96FB1ECC849800A89908 /* XMLReader.h */,
 				B38B96FC1ECC849800A89908 /* XMLReader.m */,
 				B3DBD4CD1ECC751B000A7739 /* npsSdk.podspec */,
@@ -350,37 +350,37 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B38B97051ECC849800A89908 /* CreateClientSession.h in Headers */,
+				B38B97051ECC849800A89908 /* NpsCreateClientSession.h in Headers */,
 				B38B97151ECC849800A89908 /* NpsSoapClient.h in Headers */,
-				B34C2D801EE849C3005A4DC8 /* GetProductResponse.h in Headers */,
-				B38B96FF1ECC849800A89908 /* Billing.h in Headers */,
-				B38B97031ECC849800A89908 /* Configuration.h in Headers */,
-				B38B97111ECC849800A89908 /* Method.h in Headers */,
-				B38B97171ECC849800A89908 /* Person.h in Headers */,
-				B38B97271ECC849800A89908 /* XmlNode.h in Headers */,
-				B38B96FD1ECC849800A89908 /* Address.h in Headers */,
+				B34C2D801EE849C3005A4DC8 /* NpsGetProductResponse.h in Headers */,
+				B38B96FF1ECC849800A89908 /* NpsBilling.h in Headers */,
+				B38B97031ECC849800A89908 /* NpsConfiguration.h in Headers */,
+				B38B97111ECC849800A89908 /* NpsMethod.h in Headers */,
+				B38B97171ECC849800A89908 /* NpsPerson.h in Headers */,
+				B38B97271ECC849800A89908 /* NpsXmlNode.h in Headers */,
+				B38B96FD1ECC849800A89908 /* NpsAddress.h in Headers */,
 				B38B97231ECC849800A89908 /* STHTTPRequest.h in Headers */,
-				B34C2D881EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.h in Headers */,
-				B38B970B1ECC849800A89908 /* Environments.h in Headers */,
-				B34C2D841EE86B4E005A4DC8 /* GetInstallmentsOptions.h in Headers */,
-				B38B97131ECC849800A89908 /* MethodResponse.h in Headers */,
-				B38B97211ECC849800A89908 /* RootParameters.h in Headers */,
-				B3EADBB91EEEC27500386E16 /* Installments.h in Headers */,
+				B34C2D881EE86B9F005A4DC8 /* NpsGetInstallmentsOptionsResponse.h in Headers */,
+				B38B970B1ECC849800A89908 /* NpsEnvironments.h in Headers */,
+				B34C2D841EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.h in Headers */,
+				B38B97131ECC849800A89908 /* NpsMethodResponse.h in Headers */,
+				B38B97211ECC849800A89908 /* NpsRootParameters.h in Headers */,
+				B3EADBB91EEEC27500386E16 /* NpsInstallments.h in Headers */,
 				B38B97291ECC849800A89908 /* XMLReader.h in Headers */,
-				B38B971D1ECC849800A89908 /* RetrievePaymentMethodToken.h in Headers */,
-				B38B97071ECC849800A89908 /* CreatePaymentMethodToken.h in Headers */,
+				B38B971D1ECC849800A89908 /* NpsRetrievePaymentMethodToken.h in Headers */,
+				B38B97071ECC849800A89908 /* NpsCreatePaymentMethodToken.h in Headers */,
 				B3EADBC11EF802AB00386E16 /* iovation.h in Headers */,
-				B38B971F1ECC849800A89908 /* RetrievePaymentMethodTokenResponse.h in Headers */,
-				B38B97191ECC849800A89908 /* RecachePaymentMethodToken.h in Headers */,
-				B38B97091ECC849800A89908 /* CreatePaymentMethodTokenResponse.h in Headers */,
-				B38B970D1ECC849800A89908 /* GetIINDetails.h in Headers */,
-				B38B97011ECC849800A89908 /* CardDetails.h in Headers */,
+				B38B971F1ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.h in Headers */,
+				B38B97191ECC849800A89908 /* NpsRecachePaymentMethodToken.h in Headers */,
+				B38B97091ECC849800A89908 /* NpsCreatePaymentMethodTokenResponse.h in Headers */,
+				B38B970D1ECC849800A89908 /* NpsGetIINDetails.h in Headers */,
+				B38B97011ECC849800A89908 /* NpsCardDetails.h in Headers */,
 				B3DBD4C31ECB3662000A7739 /* Nps.h in Headers */,
-				B38B97251ECC849800A89908 /* Utilities.h in Headers */,
+				B38B97251ECC849800A89908 /* NpsUtilities.h in Headers */,
 				B3EADBC01EF802AB00386E16 /* DevicePrint.h in Headers */,
-				B38B970F1ECC849800A89908 /* GetIINDetailsResponse.h in Headers */,
+				B38B970F1ECC849800A89908 /* NpsGetIINDetailsResponse.h in Headers */,
 				B3DBD47B1ECB20A3000A7739 /* npsSdk.h in Headers */,
-				B38B971B1ECC849800A89908 /* RecachePaymentMethodTokenResponse.h in Headers */,
+				B38B971B1ECC849800A89908 /* NpsRecachePaymentMethodTokenResponse.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,34 +575,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				B38B97161ECC849800A89908 /* NpsSoapClient.m in Sources */,
-				B38B96FE1ECC849800A89908 /* Address.m in Sources */,
-				B38B97121ECC849800A89908 /* Method.m in Sources */,
-				B38B97281ECC849800A89908 /* XmlNode.m in Sources */,
-				B38B97081ECC849800A89908 /* CreatePaymentMethodToken.m in Sources */,
-				B38B971E1ECC849800A89908 /* RetrievePaymentMethodToken.m in Sources */,
-				B38B971A1ECC849800A89908 /* RecachePaymentMethodToken.m in Sources */,
+				B38B96FE1ECC849800A89908 /* NpsAddress.m in Sources */,
+				B38B97121ECC849800A89908 /* NpsMethod.m in Sources */,
+				B38B97281ECC849800A89908 /* NpsXmlNode.m in Sources */,
+				B38B97081ECC849800A89908 /* NpsCreatePaymentMethodToken.m in Sources */,
+				B38B971E1ECC849800A89908 /* NpsRetrievePaymentMethodToken.m in Sources */,
+				B38B971A1ECC849800A89908 /* NpsRecachePaymentMethodToken.m in Sources */,
 				B38B972A1ECC849800A89908 /* XMLReader.m in Sources */,
-				B38B97261ECC849800A89908 /* Utilities.m in Sources */,
-				B38B97001ECC849800A89908 /* Billing.m in Sources */,
-				B38B970A1ECC849800A89908 /* CreatePaymentMethodTokenResponse.m in Sources */,
-				B38B97021ECC849800A89908 /* CardDetails.m in Sources */,
-				B34C2D851EE86B4E005A4DC8 /* GetInstallmentsOptions.m in Sources */,
-				B38B971C1ECC849800A89908 /* RecachePaymentMethodTokenResponse.m in Sources */,
-				B34C2D811EE849C3005A4DC8 /* GetProductResponse.m in Sources */,
-				B3EADBBA1EEEC27500386E16 /* Installments.m in Sources */,
-				B38B97221ECC849800A89908 /* RootParameters.m in Sources */,
-				B38B97061ECC849800A89908 /* CreateClientSession.m in Sources */,
-				B38B97141ECC849800A89908 /* MethodResponse.m in Sources */,
+				B38B97261ECC849800A89908 /* NpsUtilities.m in Sources */,
+				B38B97001ECC849800A89908 /* NpsBilling.m in Sources */,
+				B38B970A1ECC849800A89908 /* NpsCreatePaymentMethodTokenResponse.m in Sources */,
+				B38B97021ECC849800A89908 /* NpsCardDetails.m in Sources */,
+				B34C2D851EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.m in Sources */,
+				B38B971C1ECC849800A89908 /* NpsRecachePaymentMethodTokenResponse.m in Sources */,
+				B34C2D811EE849C3005A4DC8 /* NpsGetProductResponse.m in Sources */,
+				B3EADBBA1EEEC27500386E16 /* NpsInstallments.m in Sources */,
+				B38B97221ECC849800A89908 /* NpsRootParameters.m in Sources */,
+				B38B97061ECC849800A89908 /* NpsCreateClientSession.m in Sources */,
+				B38B97141ECC849800A89908 /* NpsMethodResponse.m in Sources */,
 				B3DBD4C51ECB3662000A7739 /* README.md in Sources */,
-				B38B97181ECC849800A89908 /* Person.m in Sources */,
-				B34C2D891EE86B9F005A4DC8 /* GetInstallmentsOptionsResponse.m in Sources */,
-				B38B97101ECC849800A89908 /* GetIINDetailsResponse.m in Sources */,
-				B38B970E1ECC849800A89908 /* GetIINDetails.m in Sources */,
-				B38B97201ECC849800A89908 /* RetrievePaymentMethodTokenResponse.m in Sources */,
+				B38B97181ECC849800A89908 /* NpsPerson.m in Sources */,
+				B34C2D891EE86B9F005A4DC8 /* NpsGetInstallmentsOptionsResponse.m in Sources */,
+				B38B97101ECC849800A89908 /* NpsGetIINDetailsResponse.m in Sources */,
+				B38B970E1ECC849800A89908 /* NpsGetIINDetails.m in Sources */,
+				B38B97201ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.m in Sources */,
 				B38B97241ECC849800A89908 /* STHTTPRequest.m in Sources */,
-				B38B97041ECC849800A89908 /* Configuration.m in Sources */,
+				B38B97041ECC849800A89908 /* NpsConfiguration.m in Sources */,
 				B3DBD4C41ECB3662000A7739 /* Nps.m in Sources */,
-				B38B970C1ECC849800A89908 /* Environments.m in Sources */,
+				B38B970C1ECC849800A89908 /* NpsEnvironments.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

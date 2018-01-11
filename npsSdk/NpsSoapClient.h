@@ -9,18 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "STHTTPRequest.h"
 #import "XMLReader.h"
-#import "MethodResponse.h"
-#import "Method.h"
-#import "Configuration.h"
+#import "NpsMethodResponse.h"
+#import "NpsMethod.h"
+#import "NpsConfiguration.h"
 
 @interface NpsSoapClient : NSObject
 
--(instancetype) initWithConfiguration:(Configuration*) conf;
+-(instancetype) initWithConfiguration:(NpsConfiguration*) conf;
 
-@property Configuration *conf;
+@property NpsConfiguration *conf;
 
--(void)send:(Method*)method
-methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response;
+-(void)send:(NpsMethod*)method
+methodResponse:(void (^)(NpsMethodResponse *methodResponse, NSError *error))response;
 
 
 @end

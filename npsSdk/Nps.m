@@ -7,13 +7,13 @@
 //
 
 #import "Nps.h"
-#import "Method.h"
-#import "CreatePaymentMethodToken.h"
-#import "RetrievePaymentMethodToken.h"
-#import "RecachePaymentMethodToken.h"
-#import "GetIINDetails.h"
-#import "GetInstallmentsOptions.h"
-#import "Utilities.h"
+#import "NpsMethod.h"
+#import "NpsCreatePaymentMethodToken.h"
+#import "NpsRetrievePaymentMethodToken.h"
+#import "NpsRecachePaymentMethodToken.h"
+#import "NpsGetIINDetails.h"
+#import "NpsGetInstallmentsOptions.h"
+#import "NpsUtilities.h"
 
 
 @implementation Nps
@@ -21,17 +21,17 @@
 -(instancetype)initWithEnvironment:(int)environment{
     self = [super init];
     if (self) {
-        self.client = [[NpsSoapClient alloc]initWithConfiguration:[Utilities getEnvironmentConfiguration:environment]];
+        self.client = [[NpsSoapClient alloc]initWithConfiguration:[NpsUtilities getEnvironmentConfiguration:environment]];
         self.pspVersion = @"2.2";
     }
     return self;
 }
 
--(void)createPaymentMethodToken:(CardDetails *)card
-                 billingDetails:(Billing *)billing
-                 methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
+-(void)createPaymentMethodToken:(NpsCardDetails *)card
+                 billingDetails:(NpsBilling *)billing
+                 methodResponse:(void (^)(NpsMethodResponse *methodResponse, NSError *error))response{
     
-    CreatePaymentMethodToken *cppt = [[CreatePaymentMethodToken alloc]init];
+    NpsCreatePaymentMethodToken *cppt = [[NpsCreatePaymentMethodToken alloc]init];
     
     [cppt setPspMerchantId:self.merchantId];
     [cppt setPspClientSession:self.clientSession];
@@ -42,9 +42,9 @@
 }
 
 -(void)retrievePaymentMethodToken:(NSString *)paymentMethodToken
-                   methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
+                   methodResponse:(void (^)(NpsMethodResponse *methodResponse, NSError *error))response{
     
-    RetrievePaymentMethodToken *rppt = [[RetrievePaymentMethodToken alloc]init];
+    NpsRetrievePaymentMethodToken *rppt = [[NpsRetrievePaymentMethodToken alloc]init];
     
     [rppt setPspMerchantId:self.merchantId];
     [rppt setPspClientSession:self.clientSession];
@@ -55,10 +55,10 @@
 
 -(void)recachePaymentMethodToken:(NSString *)paymentMethodId
                 cardSecurityCode:(NSString *)securityCode
-                  billingDetails:(Billing *)billing
-                  methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
+                  billingDetails:(NpsBilling *)billing
+                  methodResponse:(void (^)(NpsMethodResponse *methodResponse, NSError *error))response{
 
-    RecachePaymentMethodToken *rppt = [[RecachePaymentMethodToken alloc]init];
+    NpsRecachePaymentMethodToken *rppt = [[NpsRecachePaymentMethodToken alloc]init];
     
     [rppt setPspMerchantId:self.merchantId];
     [rppt setPspClientSession:self.clientSession];
@@ -70,29 +70,29 @@
 }
 
 -(void)getIINDetails:(NSString *)iin
-   methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
+   methodResponse:(void (^)(NpsMethodResponse *methodResponse, NSError *error))response{
     
-    GetIINDetails *giid = [[GetIINDetails alloc]init];
+    NpsGetIINDetails *giid = [[NpsGetIINDetails alloc]init];
     
     [giid setPspMerchantId:self.merchantId];
     [giid setPspVersion:self.pspVersion];
     [giid setPspClientSession:self.clientSession];
     [giid setIin:iin];
-    [giid setPosDateTime: [Utilities getDate]];
+    [giid setPosDateTime: [NpsUtilities getDate]];
     
     [self.client send:giid methodResponse:response];
 }
 
 -(void)getProduct:(NSString *)iin
-      methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
+      methodResponse:(void (^)(NpsMethodResponse *methodResponse, NSError *error))response{
     
-    GetIINDetails *giid = [[GetIINDetails alloc]init];
+    NpsGetIINDetails *giid = [[NpsGetIINDetails alloc]init];
     
     [giid setPspMerchantId:self.merchantId];
     [giid setPspVersion:self.pspVersion];
     [giid setPspClientSession:self.clientSession];
     [giid setIin:iin];
-    [giid setPosDateTime:[Utilities getDate]];
+    [giid setPosDateTime:[NpsUtilities getDate]];
     
     [self.client send:giid methodResponse:response];
 }
@@ -103,9 +103,9 @@
                       country:(NSString *)country
                   numPayments:(NSString *)numPayments
            paymentMethodToken:(NSString *)paymentMethodToken
-               methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
+               methodResponse:(void (^)(NpsMethodResponse *methodResponse, NSError *error))response{
     
-    GetInstallmentsOptions *gio = [[GetInstallmentsOptions alloc]init];
+    NpsGetInstallmentsOptions *gio = [[NpsGetInstallmentsOptions alloc]init];
     
     [gio setPspAmount:amount];
     [gio setPspProduct:product];
@@ -114,7 +114,7 @@
     [gio setPspNumPayments:numPayments];
     [gio setPspPaymentMethodToken:paymentMethodToken];
     [gio setPspClientSession:self.clientSession];
-    [gio setPspPosDateTime:[Utilities getDate]];
+    [gio setPspPosDateTime:[NpsUtilities getDate]];
                                   
     [self.client send:gio methodResponse:response];
     
@@ -122,16 +122,16 @@
 
 
 -(Boolean)validateCardNumber:(NSString *)cardNumber{
-    return [Utilities hazCorrectSize:cardNumber max:24 minimum:9] && [Utilities isValidLuhn:cardNumber];
+    return [NpsUtilities hazCorrectSize:cardNumber max:24 minimum:9] && [NpsUtilities isValidLuhn:cardNumber];
 }
 
 -(Boolean)validateCardHolderName:(NSString *)cardHolderName{
-    return [Utilities hazCorrectSize:cardHolderName max:27 minimum:2];
+    return [NpsUtilities hazCorrectSize:cardHolderName max:27 minimum:2];
 }
 
 -(Boolean)validateCardSecurityCode:(int)cardSecurityCode{
     NSString *cvcAsString = [NSString stringWithFormat:@"%d", cardSecurityCode];
-    return [Utilities hazCorrectSize:cvcAsString max:4 minimum:3];
+    return [NpsUtilities hazCorrectSize:cvcAsString max:4 minimum:3];
 }
 
 -(Boolean)validateCardExpDate:(int)year
@@ -155,7 +155,6 @@
 
 +(NSString *) getDeviceFingerPrint{
     return [iovation ioBegin];
-    //return @"";
 }
 
 @end

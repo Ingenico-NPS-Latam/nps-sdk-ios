@@ -10,7 +10,7 @@
 
 @implementation NpsSoapClient
 
--(instancetype)initWithConfiguration:(Configuration *)conf{
+-(instancetype)initWithConfiguration:(NpsConfiguration *)conf{
     self = [super init];
     if (self) {
         self.conf = conf;
@@ -19,12 +19,12 @@
 }
 
 
--(void)send:(Method *)method
-methodResponse:(void (^)(MethodResponse *methodResponse, NSError *error))response{
+-(void)send:(NpsMethod *)method
+methodResponse:(void (^)(NpsMethodResponse *methodResponse, NSError *error))response{
     
     NSString *soapMessage = @"";
     
-    MethodResponse *mr = [method getResponseObject];
+    NpsMethodResponse *mr = [method getResponseObject];
     
     soapMessage = [soapMessage stringByAppendingString:method.superHeader];
     soapMessage = [soapMessage stringByAppendingString:method.asXml];

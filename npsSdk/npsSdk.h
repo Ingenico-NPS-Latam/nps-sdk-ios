@@ -17,21 +17,21 @@ FOUNDATION_EXPORT const unsigned char npsSdkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <npsSdk/PublicHeader.h>
 
 #import <npsSdk/Nps.h>
-#import <npsSdk/CreatePaymentMethodTokenResponse.h>
-#import <npsSdk/RecachePaymentMethodTokenResponse.h>
-#import <npsSdk/RetrievePaymentMethodTokenResponse.h>
-#import <npsSdk/GetIINDetailsResponse.h>
-#import <npsSdk/GetProductResponse.h>
+#import <npsSdk/NpsCreatePaymentMethodTokenResponse.h>
+#import <npsSdk/NpsRecachePaymentMethodTokenResponse.h>
+#import <npsSdk/NpsRetrievePaymentMethodTokenResponse.h>
+#import <npsSdk/NpsGetIINDetailsResponse.h>
+#import <npsSdk/NpsGetProductResponse.h>
 
-#import <npsSdk/CreatePaymentMethodToken.h>
-#import <npsSdk/RecachePaymentMethodToken.h>
-#import <npsSdk/RetrievePaymentMethodToken.h>
-#import <npsSdk/GetIINDetailsResponse.h>
+#import <npsSdk/NpsCreatePaymentMethodToken.h>
+#import <npsSdk/NpsRecachePaymentMethodToken.h>
+#import <npsSdk/NpsRetrievePaymentMethodToken.h>
+#import <npsSdk/NpsGetIINDetailsResponse.h>
 
-#import <npsSdk/Address.h>
-#import <npsSdk/Billing.h>
-#import <npsSdk/CardDetails.h>
-#import <npsSdk/Person.h>
-#import <npsSdk/Installments.h>
+#import <npsSdk/NpsAddress.h>
+#import <npsSdk/NpsBilling.h>
+#import <npsSdk/NpsCardDetails.h>
+#import <npsSdk/NpsPerson.h>
+#import <npsSdk/NpsInstallments.h>
 
-#import <npsSdk/Configuration.h>
+#import <npsSdk/NpsConfiguration.h>

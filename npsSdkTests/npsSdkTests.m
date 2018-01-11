@@ -2,13 +2,13 @@
 //  npsSdkTests.m
 //  npsSdkTests
 //
-//  Created by Gustavo Diaz on 5/16/17.
-//  Copyright © 2017 Gustavo Diaz. All rights reserved.
+//  Created by Ingenico on 5/16/17.
+//  Copyright © 2017 Ingenico. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import "Nps.h"
-#import "Utilities.h"
+#import "NpsUtilities.h"
 
 
 @interface npsSdkTests : XCTestCase
@@ -41,7 +41,7 @@
 }
 
 -(void)testDate{
-    [Utilities getDate];
+    [NpsUtilities getDate];
 }
 
 -(void)testGetIINDetails{
@@ -49,12 +49,12 @@
     XCTestExpectation * expectation = [self expectationWithDescription:@"no workeo"];
     
     
-    Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+    Nps *nps = [[Nps alloc]initWithEnvironment:NPSSANDBOX];
     nps.merchantId = @"psp_test";
     nps.clientSession = @"7csdPFVDLqH3jL2I6nsniJZdtOdwZDteIFeIxBWOcUY9uXpwG5i1LmQPeBIbd6ka";
     
     [nps getIINDetails:@"424242"
-        methodResponse:^(GetIINDetailsResponse *methodResponse, NSError *error) {
+        methodResponse:^(NpsGetIINDetailsResponse *methodResponse, NSError *error) {
             if (!error){
                 NSLog(@"%@", [methodResponse responseCod]);
                 [expectation fulfill];
@@ -76,12 +76,12 @@
     XCTestExpectation * expectation = [self expectationWithDescription:@"no workeo"];
     
     
-    Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+    Nps *nps = [[Nps alloc]initWithEnvironment:NPSSANDBOX];
     nps.merchantId = @"psp_test";
     nps.clientSession = @"7csdPFVDLqH3jL2I6nsniJZdtOdwZDteIFeIxBWOcUY9uXpwG5i1LmQPeBIbd6ka";
     
     [nps getProduct:@"424242"
-        methodResponse:^(GetProductResponse *methodResponse, NSError *error) {
+        methodResponse:^(NpsGetProductResponse *methodResponse, NSError *error) {
             if (!error){
                 NSLog(@"%@", [methodResponse responseCod]);
                 [expectation fulfill];
@@ -100,7 +100,7 @@
 }
 
 -(void)testValidateNumber{
-    Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+    Nps *nps = [[Nps alloc]initWithEnvironment:NPSSANDBOX];
     nps.merchantId = @"psp_test";
     nps.clientSession = @"x";
     NSLog(@"%hhu", [nps validateCardNumber:@"4517660119344587"]);
@@ -111,7 +111,7 @@
 -(void)testinstallments{
     XCTestExpectation * expectation = [self expectationWithDescription:@"no workeo"];
     
-    Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+    Nps *nps = [[Nps alloc]initWithEnvironment:NPSSANDBOX];
     nps.merchantId = @"psp_test";
     nps.clientSession = @"7csdPFVDLqH3jL2I6nsniJZdtOdwZDteIFeIxBWOcUY9uXpwG5i1LmQPeBIbd6ka";
     
@@ -121,10 +121,10 @@
                         country:@"CHL"
                     numPayments:@"2"
              paymentMethodToken:@"kkvKuOfD2bNKXCBYDkunIRqImvNFNxB3"
-                 methodResponse:^(GetInstallmentsOptionsResponse *methodResponse, NSError *error) {
+                 methodResponse:^(NpsGetInstallmentsOptionsResponse *methodResponse, NSError *error) {
                      if (!error){
                          NSLog(@"%@", [methodResponse responseCod]);
-                         for (Installments *inst in [methodResponse installments]){
+                         for (NpsInstallments *inst in [methodResponse installments]){
                              NSLog(@"%@", [inst installmentAmount]);
                              NSLog(@"%@", [inst interestRate]);
                              NSLog(@"%@", [inst numPayments]);
@@ -148,7 +148,7 @@
 }
 
 -(void)testReverseString{
-    NSLog(@"%@", [Utilities reverseString:@"4111000000000010"]);
+    NSLog(@"%@", [NpsUtilities reverseString:@"4111000000000010"]);
 }
 
 
