@@ -66,7 +66,7 @@ To be able to use nps-ios-sdk methods you need to get a new instance of the clas
 Follow the next sections to get the parameters.
 
 ```objective_c
-Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+Nps *nps = [[Nps alloc]initWithEnvironment:NPSSANDBOX];
 nps.merchantId = @"__YOUR_NPS_MERCHANT_ID__";
 nps.clientSession = @"__YOUR_NPS_CLIENT_SESSION__";
 ```
@@ -76,7 +76,7 @@ nps.clientSession = @"__YOUR_NPS_CLIENT_SESSION__";
 You should configure your client session to be able to start to use nps-ios-sdk to identify your site while communicating with NPS. 
 To do this, set value as parameter on the constructor of the Nps class. Remember to replace the client session call on sandbox with the production domain when you are ready to create real charges.
 
-You can obtain your client session by calling the webservice method "CreateClientSession"
+You can obtain your client session by calling the webservice method "NpsCreateClientSession"
 [CreateClientSession (Request)](#panel-parameters-reference)
 [CreateClientSession (Response)](#panel-parameters-reference)
 
@@ -95,18 +95,18 @@ Once the PaymentMethoToken has been generated, you can safely pass it to your se
 
 ```objective_c
 
-Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+Nps *nps = [[Nps alloc]initWithEnvironment:NPSSANDBOX];
 nps.merchantId = @"__YOUR_NPS_MERCHANT_ID__";
 nps.clientSession = @"__YOUR_NPS_CLIENT_SESSION__";
 
-CardDetails *card = [[CardDetails alloc]init];
+NpsCardDetails *card = [[NpsCardDetails alloc]init];
 
 card.number = @"4507990000000010";
 card.holderName = @"JOHN DOE";
 card.securityCode = @"123";
 card.expirationDate = @"1909";
 
-Billing *billing = [[Billing alloc]init];
+NpsBilling *billing = [[NpsBilling alloc]init];
 
 billing.pspPerson.firstName = @"JOHN";
 billing.pspPerson.lastName = @"Smith";
@@ -128,7 +128,7 @@ billing.pspAddress.houseNumber = @"32123123";
 
 [nps createPaymentMethodToken:card
                billingDetails:billing
-              methodResponse:^(CreatePaymentMethodTokenResponse* methodResponse, NSError *error) {
+              methodResponse:^(NpsCreatePaymentMethodTokenResponse* methodResponse, NSError *error) {
                 if(!error){
                     NSLog(@"%@", [methodResponse responseCod]);
                 }
@@ -151,7 +151,7 @@ Behaviour and capabilities of recache has been cloned from original createPaymen
 
 ```objective_c
 
-Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
+Nps *nps = [[Nps alloc]initWithEnvironment:NPSSANDBOX];
 nps.merchantId = @"__YOUR_NPS_MERCHANT_ID__";
 nps.clientSession = @"__YOUR_NPS_CLIENT_SESSION__";
 
@@ -163,7 +163,7 @@ billingDetailss.pspPerson.firstName = @"JOHN DOE";
 [nps recachePaymentMethodToken:@"kWRZGcAxy5D7MoB6BDACugHYrlFzP9Eg"
               cardSecurityCode:@"123"
                 billingDetails:billingDetailss
-                methodResponse:^(RecachePaymentMethodTokenResponse *methodResponse, NSError *error) {
+                methodResponse:^(NpsRecachePaymentMethodTokenResponse *methodResponse, NSError *error) {
                     if (!error){
                         NSLog(@"%@", [methodResponse responseCod]);
                     }
@@ -210,7 +210,7 @@ Nps *nps = [[Nps alloc]initWithEnvironment:SANDBOX];
 
 [nps getIIDetails:@"424242"
    postDateTime:@"2016-12-01 12:00:00"
- methodResponse:^(GetIINDetailsResponse *methodResponse, NSError *error) {
+ methodResponse:^(NpsGetIINDetailsResponse *methodResponse, NSError *error) {
     if(!error){
         NSLog(@"%@", [methodResponse responseCod]);
     }
@@ -256,7 +256,7 @@ nps.clientSession = @"__YOUR_NPS_CLIENT_SESSION__";
                     country:@"CHL"
                 numPayments:@"2"
          paymentMethodToken:@"kkvKuOfD2bNKXCBYDkunIRqImvNFNxB3"
-             methodResponse:^(GetInstallmentsOptionsResponse *methodResponse, NSError *error) {
+             methodResponse:^(NpsGetInstallmentsOptionsResponse *methodResponse, NSError *error) {
                      if (!error){
                          NSLog(@"%@", [methodResponse responseCod]);
                          for (Installments *inst in [methodResponse installments]){
