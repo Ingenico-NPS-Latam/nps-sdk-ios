@@ -48,7 +48,6 @@ pod 'npsSdk', '1.0.14'
 Install
 
 ```bash
-pod repo update
 pod install
 ```
 
