@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'npsSdk'
-  s.version      = '1.0.14'
+  s.version      = '1.0.15'
   s.summary      = 'And SDK to connect to NPS services'
   s.license      = { :type => 'MIT', :file => 'LICENCE' }
   s.homepage     = 'https://github.com/Ingenico-NPS-Latam/nps-sdk-ios'

@@ -68,8 +68,8 @@
     NpsConfiguration *conf = [[NpsConfiguration alloc]init];
     switch (environ) {
         case 0:
-            conf.baseAction = @"http://sandbox.com.ar/ws.php/";
-            conf.host = @"www.sandbox.nps.com.ar";
+            conf.baseAction = @"http://sandbox.nps.com.ar/ws.php/";
+            conf.host = @"sandbox.nps.com.ar";
             conf.url = @"https://sandbox.nps.com.ar";
             /*
             conf.baseAction = @"http://psp.nps.com.ar/ws.php/";
@@ -78,14 +78,14 @@
             */
             break;
         case 1:
-            conf.baseAction = @"http://implementacion.com.ar/ws.php/";
-            conf.host = @"www.implementacion.nps.com.ar";
+            conf.baseAction = @"http://implementacion.nps.com.ar/ws.php/";
+            conf.host = @"implementacion.nps.com.ar";
             conf.url = @"https://implementacion.nps.com.ar";
             break;
         case 2:
-            conf.baseAction = @"http://service2.com.ar/ws.php/";
-            conf.host = @"www.service2.nps.com.ar";
-            conf.url = @"https://service2.nps.com.ar";
+            conf.baseAction = @"http://services2.nps.com.ar/ws.php/";
+            conf.host = @"services2.nps.com.ar";
+            conf.url = @"https://services2.nps.com.ar";
             break;        
     }
     

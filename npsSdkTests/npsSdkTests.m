@@ -63,7 +63,7 @@
             }
         }];
     
-    [self waitForExpectationsWithTimeout:5.0 handler:^(NSError *error){
+    [self waitForExpectationsWithTimeout:30.0 handler:^(NSError *error){
         if (error){
             NSLog(@"%@", error);
         }
@@ -71,6 +71,42 @@
      ];
     
 }
+
+-(void)testGetPPT{
+    XCTestExpectation * expectation = [self expectationWithDescription:@"no workeo"];
+    
+    Nps *nps = [[Nps alloc]initWithEnvironment:NPSSANDBOX];
+    nps.merchantId = @"psp_test";
+    nps.clientSession = @"USBmdYFceReXIM1a1B9OY8uGklCEecyqhuzina04LewNzFaNlOt1Ldi4kWu8lxkI"; //STAGING
+    
+    //nps.clientSession = @"ZNbM6ilYCqvJVJLlOZezXioSSKDEnLERJnKfUsPv3JNEz9DFbPK8sZdHjbqA9DpR"; //SANDBOX
+    
+    NpsCardDetails *card = [[NpsCardDetails alloc]init];
+    
+    card.number = @"4507990000000010";
+    card.holderName = @"JOHN DOE";
+    card.securityCode = @"123";
+    card.expirationDate = @"1909";
+    
+    [nps createPaymentMethodToken:card
+                   billingDetails:nil
+                   methodResponse:^(NpsCreatePaymentMethodTokenResponse* methodResponse, NSError *error) {
+                       if(!error){
+                           NSLog(@"%@", [methodResponse responseCod]);
+                           [expectation fulfill];
+                           NSLog(@"%@", [methodResponse product]);
+                           NSLog(@"%@", [methodResponse responseExtended]);
+                           NSLog(@"%@", [methodResponse paymentMethodToken]);
+                       }
+                   }];
+    
+    
+    [self waitForExpectationsWithTimeout:50.0 handler:^(NSError *error){
+        if (error){
+            NSLog(@"%@", error);
+        }
+    }
+     ];}
 
 -(void)testGetProduct{
     XCTestExpectation * expectation = [self expectationWithDescription:@"no workeo"];
@@ -109,12 +145,12 @@
 
 
 -(void)testinstallments{
-    XCTestExpectation * expectation = [self expectationWithDescription:@"no workeo"];
+    //XCTestExpectation * expectation = [self expectationWithDescription:@"no workeo"];
     
     Nps *nps = [[Nps alloc]initWithEnvironment:NPSSANDBOX];
     nps.merchantId = @"psp_test";
     nps.clientSession = @"7csdPFVDLqH3jL2I6nsniJZdtOdwZDteIFeIxBWOcUY9uXpwG5i1LmQPeBIbd6ka";
-    
+    NSLog(@"%@", @"empezando");
     [nps getInstallmentsOptions:@"100"
                         product:@"14"
                        currency:@"152"
@@ -130,16 +166,20 @@
                              NSLog(@"%@", [inst numPayments]);
                          }
                          
-                         [expectation fulfill];
+                         //[expectation fulfill];
+                         NSLog(@"%@", @"termiando bien");
                          NSLog(@"%@", [methodResponse responseExtended]);
                      }
+                     NSLog(@"%@", @"termiando con error");
+                     NSLog(@"%@", error);
                  }];
-    [self waitForExpectationsWithTimeout:70.0 handler:^(NSError *error){
+    NSLog(@"%@", @"termiando");
+    /*[self waitForExpectationsWithTimeout:70.0 handler:^(NSError *error){
         if (error){
             NSLog(@"%@ FUCK", error);
         }
-    }
-     ];
+    }*/
+     //];
     
 }
 

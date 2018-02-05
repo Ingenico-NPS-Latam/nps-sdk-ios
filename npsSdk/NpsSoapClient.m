@@ -37,7 +37,7 @@ methodResponse:(void (^)(NpsMethodResponse *methodResponse, NSError *error))resp
     [request setHeaderWithName:@"Host" value:self.conf.host];
     [request setHeaderWithName:@"SOAPAction" value: [NSString stringWithFormat:@"%1$@%2$@", self.conf.baseAction, method.name]];
     [request setHeaderWithName:@"Content-Type" value:@"text/xml; charset=utf-8"];
-    [request setTimeoutSeconds:30];
+    [request setTimeoutSeconds:30.0f];
     request.rawPOSTData = soapData;
     
     request.completionBlock = ^(NSDictionary *headers, NSString *body) {
