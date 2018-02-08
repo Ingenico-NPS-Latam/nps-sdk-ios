@@ -108,6 +108,39 @@
     }
      ];}
 
+-(void)testGetRecachePMT{
+    XCTestExpectation * expectation = [self expectationWithDescription:@"no workeo"];
+    
+    Nps *nps = [[Nps alloc]initWithEnvironment:NPSSTAGING];
+    nps.merchantId = @"psp_test";
+    nps.clientSession = @"2fVm1GU7fI5dsznDSiccIPt9Hy9zBrlp7ecJN5p1zbMdixvZ6z0aGWOwVuGO8nyb"; //STAGING
+    
+    //nps.clientSession = @"ZNbM6ilYCqvJVJLlOZezXioSSKDEnLERJnKfUsPv3JNEz9DFbPK8sZdHjbqA9DpR"; //SANDBOX
+    
+    
+    
+    [nps recachePaymentMethodToken:@"rxRvWEHX3x0h1rddvPKvJvNDO7xavVCa"
+                  cardSecurityCode:@"123"
+                    billingDetails:nil
+                    methodResponse:^(NpsRecachePaymentMethodTokenResponse *methodResponse, NSError *error) {
+                        if(!error){
+                            NSLog(@"%@", [methodResponse responseCod]);
+                            [expectation fulfill];
+                            NSLog(@"%@", [methodResponse product]);
+                            NSLog(@"%@", [methodResponse responseExtended]);
+                            NSLog(@"%@", [methodResponse paymentMethodToken]);
+                        }
+                    }];
+    
+    
+    
+    [self waitForExpectationsWithTimeout:50.0 handler:^(NSError *error){
+        if (error){
+            NSLog(@"%@", error);
+        }
+    }
+     ];}
+
 -(void)testGetProduct{
     XCTestExpectation * expectation = [self expectationWithDescription:@"no workeo"];
     

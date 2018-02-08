@@ -71,8 +71,8 @@
     xml = [xml stringByAppendingString:self.getRootAsXml];
     xml = [xml stringByAppendingString:self.getPspPaymentMethodIdAsXml];
     xml = [xml stringByAppendingString:self.getCardSecurityCodeAsXml];
-    xml = [xml stringByAppendingString:self.getPspPersonAsXml];
-    xml = [xml stringByAppendingString:self.getPspAddressAsXml];
+    xml = [xml stringByAppendingString:[NpsUtilities buildNodeHeaderAsXml:@"psp_Person" nodoAsXml:self.getPspPersonAsXml]];
+    xml = [xml stringByAppendingString:[NpsUtilities buildNodeHeaderAsXml:@"psp_Address" nodoAsXml:self.getPspAddressAsXml]];
     xml = [xml stringByAppendingString:self.getPspClientSessionAsXml];
     xml = [xml stringByAppendingString:self.getFooter];
     return xml;

@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "npsSdk/Nps.m"
-            timestampString = "519564991.190409"
+            timestampString = "539719871.1019861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "157"
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "npsSdkTests/npsSdkTests.m"
-            timestampString = "537375551.248595"
+            timestampString = "539719871.1019861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "-testGetProduct"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "npsSdkTests/npsSdkTests.m"
-            timestampString = "537375564.321555"
+            timestampString = "539719871.1019861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "-testGetProduct"
             landmarkType = "7">
          </BreakpointContent>

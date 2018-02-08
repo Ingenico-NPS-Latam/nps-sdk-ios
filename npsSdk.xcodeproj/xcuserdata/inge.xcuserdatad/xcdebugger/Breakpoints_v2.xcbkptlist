@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "npsSdkTests/npsSdkTests.m"
-            timestampString = "539531269.568889"
+            timestampString = "539719871.1019861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "-testGetProduct"
             landmarkType = "7">
             <Locations>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "npsSdkTests/npsSdkTests.m"
-            timestampString = "539531269.568889"
+            timestampString = "539719871.1019861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "-testValidateNumber"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "npsSdkTests/npsSdkTests.m"
-            timestampString = "539531269.568889"
+            timestampString = "539719871.1019861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "-testinstallments"
             landmarkType = "7">
          </BreakpointContent>
