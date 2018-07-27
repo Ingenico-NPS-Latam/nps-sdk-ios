@@ -1,6 +1,8 @@
 This is a iOS SDK that allows you to process payments directly from the client side and generate a Payment to Ingenico NPS servers without having any sensitive payment details passing through your servers.
 
 ##  How It Works 
+ *Read this for: [Objective C](README.md), [Swift](README_SWIFT.md) 
+ *Read this for: [Objective C](README.md), [Swift](README_SWIFT.md) 
  *Read this for: [Objective C](README.md), [Swift](README_SWIFT.md)
 
 When a customer submits your payment form, nps-ios-sdk sends customer sensitive payment details to be encrypted and stored at Ingenico NPS servers and gives you a PaymentMethodToken to complete Payment process using our API.
@@ -42,7 +44,7 @@ To get started install on your iOS API following the next steps:
 Add to you Podfile
 
 ```bash
-pod 'npsSdk', '1.0.17'
+pod 'npsSdk', '1.0.18'
 ```
 
 Install
