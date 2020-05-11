@@ -1,6 +1,0 @@
-framework module Pods_npsSdkTests {
-  umbrella header "Pods-npsSdkTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

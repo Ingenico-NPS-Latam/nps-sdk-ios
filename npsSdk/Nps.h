@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "iovation.h"
+#import "FraudForce.h"
 #import "NpsMethod.h"
 #import "NpsMethodResponse.h"
 #import "NpsCardDetails.h"

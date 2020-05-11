@@ -1,38 +1,38 @@
 //
-//  DevicePrint.h
+//  FraudForce.h
 //  libiovation
 //
-//  Created by David E. Wheeler on 9/23/14.
-//  Copyright (c) 2014 iovation, Inc. All rights reserved.
+//  Copyright (c) 2010-2020 iovation, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+@protocol FraudForceDelegate;
 
 /*!
  * @header
  *
- * @brief iovation device inspector SDK for iOS
+ * @brief iovation FraudForce SDK for iOS
  *
- * iovation ReputationManager™ identifies devices through information collected
- * by this SDK, which runs on an end user’s iOS device. DevicePrint
- * schedules and runs tasks in an asynchronous queue that collect the data
- * necessary to generate a blackbox containing details about the device. This
- * blackbox must then be transmitted to your servers to be used in a reputation
- * check (for example a @p CheckTransactionDetails call).
+ * iovation identifies devices through information collected by this SDK,
+ * which runs on an end user’s iOS device. FraudForce schedules and runs
+ * tasks in an asynchronous queue that collect the data necessary to generate
+ * a blackbox containing details about the device. This blackbox must then be
+ * transmitted to your servers to be used in a reputation check (for example a
+ * @p CheckTransactionDetails call).
  *
- * @version 4.2.0
- * @copyright 2010-2014 iovation, Inc. All rights reserved.
+ * @version 5.0.4
+ * @copyright 2010-2018 iovation, Inc. All rights reserved.
  *
  * iovation hereby grants to Client a nonexclusive, limited, non-transferable,
  * revocable and non-sublicensable license to install, use, copy and
- * distribute the iovation ReputationShield™ SDK solely as necessary to use
- * the the iovation DevicePrint™ and ReputationManager™ services and platform
- * from within software created and distributed by Client, pursuant to the
- * <a href="https://help.iovation.com/Downloads/iovation_SDK_License>License</a>
+ * distribute the FraudForce SDK solely as necessary to use the the iovation
+ * Global Device Intelligence Platform from within software created and
+ * distributed by Client, pursuant to the
+ * <a href="https://help.iovation.com/Downloads/iovation_SDK_License">License</a>
  * and Service Agreement between iovation and Client.
  *
  */
-@interface DevicePrint : NSObject
+@interface FraudForce : NSObject
 
 /*!
  * Starts the device inspector and returns. The inspector runs asynchronously on
@@ -43,7 +43,7 @@
  * @code
  * - (void)applicationDidBecomeActive:(UIApplication *)app
  * {
- *     [DevicePrint start];
+ *     [FraudForce start];
  * }
  * @endcode
  *
@@ -53,7 +53,7 @@
 + (void)start;
 
 /*!
- * Schedules the device inspector to start after the speciried delay. The
+ * Schedules the device inspector to start after the specified delay. The
  * inspector runs asynchronously on its own thread, thereby minimizing the
  * impact on the responsiveness of your app.This method should be called in the
  * @p -applicationDidBecomeActive: method of your app delegate.
@@ -62,7 +62,7 @@
  * @code
  * - (void)applicationDidBecomeActive:(UIApplication *)app
  * {
- *     [DevicePrint startAFterDelay:10.0];
+ *     [FraudForce startAFterDelay:10.0];
  * }
  * @endcode
  *
@@ -78,7 +78,7 @@
  * inspection jobs, if any. It may take a little time for the jobs to stop,
  * although this method returns without waiting.
  *
- * You should not normally need to call this method, as DevicePrint listens
+ * You should not normally need to call this method, as FraudForce listens
  * for @p UIApplicationDidEnterBackgroundNotification notfications in order to
  * keep itself running in the background long enough to finish its current jobs.
  * If you would rather it didn't finish its tasks in the background, you may
@@ -87,32 +87,32 @@
  * @code
  * - (void)applicationWillResignActive:(UIApplication *)app
  * {
- *     [DevicePrint stop];
+ *     [FraudForce stop];
  * }
  * @endcode
  *
  * @since v4.0.0
  *
  */
-+ (void)stop;
++ (void)stop __attribute__((deprecated("discrete control of device inspector is unnecessary, stop will be removed in a future release")));
 
 /*!
- * Suspends the device inspector and returns. Calling this method prevents the
- * DevicePrint from starting any new jobs, but already executing jobs
+ * Suspends the device inspector and returns. Calling this method prevents
+ * FraudForce from starting any new jobs, but already executing jobs
  * continue to execute. Consider calling this method when your application
  * needs to perform an intensive operation and requires minimal resource
  * contention.
  *
  * @code
- * [DevicePrint suspend];
+ * [FraudForce suspend];
  * expensiveOperation();
- * [DevicePrint resume];
+ * [FraudForce resume];
  * @endcode
  *
  * @since v4.0.0
  *
  */
-+ (void)suspend;
++ (void)suspend __attribute__((deprecated("discrete control of device inspector is unnecessary, suspend will be removed in a future release")));
 
 /*!
  * Resumes a suspended device inspector and returns. Call this method after
@@ -120,15 +120,29 @@
  * operation.
  *
  * @code
- * [DevicePrint suspend];
+ * [FraudForce suspend];
  * expensiveOperation();
- * [DevicePrint resume];
+ * [FraudForce resume];
  * @endcode
  *
  * @since v4.0.0
  *
  */
-+ (void)resume;
++ (void)resume __attribute__((deprecated("discrete control of device inspector is unnecessary, resume will be removed in a future release")));
+
+/*!
+ * Install a delegate object that is queried to determine certain behaviors of 
+ * the FraudForce SDK. Setting a delegate is optional. Sensible defaults will be 
+ * used in the absence of a delegate.
+ *
+ * @since v5.0.0
+ *
+ */
+#if __has_feature(nullability)
++ (void)delegation:(nullable id<FraudForceDelegate>)delegate;
+#else
++ (void)delegation:(id<FraudForceDelegate>)delegate;
+#endif
 
 /*!
  * Marshalls information about the device and returns an encrypted string, or
@@ -148,5 +162,25 @@
 #else
 + (NSString *)blackbox;
 #endif
+
+@end
+
+/*!
+ * Declares the delegate methods that the FraudForce SDK will utilize to allow for subscriber control
+ * over select SDK behaviors.
+ *
+ * @since v5.0.0
+ *
+ */
+@protocol FraudForceDelegate <NSObject>
+
+/*!
+ * Authorizes a network call to iovation's service that enables the collection of additional network
+ * information. If this method returns NO or is not implemented then the SDK will not make network calls.
+ *
+ * @since v5.0.0
+ *
+ */
+- (BOOL)shouldEnableNetworkCalls;
 
 @end

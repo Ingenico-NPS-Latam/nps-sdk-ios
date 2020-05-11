@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B30A22AE2461F22300635AFF /* FraudForce.h in Headers */ = {isa = PBXBuildFile; fileRef = B30A22AD2461F22300635AFF /* FraudForce.h */; };
+		B30A22B024620B6D00635AFF /* FraudForce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30A22A92461F02E00635AFF /* FraudForce.framework */; };
+		B30A22B124620B6D00635AFF /* FraudForce.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B30A22A92461F02E00635AFF /* FraudForce.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B34C2D801EE849C3005A4DC8 /* NpsGetProductResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D7E1EE849C3005A4DC8 /* NpsGetProductResponse.h */; };
 		B34C2D811EE849C3005A4DC8 /* NpsGetProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C2D7F1EE849C3005A4DC8 /* NpsGetProductResponse.m */; };
 		B34C2D841EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D821EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.h */; };
@@ -79,8 +82,6 @@
 		B3EADBB91EEEC27500386E16 /* NpsInstallments.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBB71EEEC27500386E16 /* NpsInstallments.h */; };
 		B3EADBBA1EEEC27500386E16 /* NpsInstallments.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EADBB81EEEC27500386E16 /* NpsInstallments.m */; };
 		B3EADBC01EF802AB00386E16 /* DevicePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBBE1EF802AB00386E16 /* DevicePrint.h */; };
-		B3EADBC11EF802AB00386E16 /* iovation.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EADBBF1EF802AB00386E16 /* iovation.h */; };
-		B3EADBC51EF8062400386E16 /* iovation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EADBC41EF8062400386E16 /* iovation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,11 +94,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B30A22B224620B6D00635AFF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B30A22B124620B6D00635AFF /* FraudForce.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		066BA4F3B0A74A07908599E9 /* Pods-npsSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdk/Pods-npsSdk.debug.xcconfig"; sourceTree = "<group>"; };
-		1255D3994FBEA293E0AA7DA7 /* Pods-npsSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdk.release.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdk/Pods-npsSdk.release.xcconfig"; sourceTree = "<group>"; };
-		64E8856FBE7FEF84795B4794 /* Pods-npsSdkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdkTests/Pods-npsSdkTests.release.xcconfig"; sourceTree = "<group>"; };
-		AFAF9CDE826544BDAE2ECD0E /* Pods-npsSdkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-npsSdkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-npsSdkTests/Pods-npsSdkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B30A22A92461F02E00635AFF /* FraudForce.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FraudForce.framework; path = Carthage/Build/iOS/FraudForce.framework; sourceTree = "<group>"; };
+		B30A22AD2461F22300635AFF /* FraudForce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FraudForce.h; path = Carthage/Build/iOS/FraudForce.framework/Headers/FraudForce.h; sourceTree = SOURCE_ROOT; };
 		B34C2D7E1EE849C3005A4DC8 /* NpsGetProductResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsGetProductResponse.h; sourceTree = "<group>"; };
 		B34C2D7F1EE849C3005A4DC8 /* NpsGetProductResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsGetProductResponse.m; sourceTree = "<group>"; };
 		B34C2D821EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsGetInstallmentsOptions.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -174,9 +187,7 @@
 		B3EADBB71EEEC27500386E16 /* NpsInstallments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsInstallments.h; sourceTree = "<group>"; };
 		B3EADBB81EEEC27500386E16 /* NpsInstallments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsInstallments.m; sourceTree = "<group>"; };
 		B3EADBBE1EF802AB00386E16 /* DevicePrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePrint.h; sourceTree = "<group>"; };
-		B3EADBBF1EF802AB00386E16 /* iovation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iovation.h; sourceTree = "<group>"; };
 		B3EADBC41EF8062400386E16 /* iovation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iovation.framework; path = Frameworks/iovation.framework; sourceTree = "<group>"; };
-		CEB58488938CB8B8D667FB00 /* Pods_npsSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_npsSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,11 +197,11 @@
 			files = (
 				B38B97461ECC8F2900A89908 /* UIKit.framework in Frameworks */,
 				B38B973D1ECC8A1B00A89908 /* CoreFoundation.framework in Frameworks */,
-				B3EADBC51EF8062400386E16 /* iovation.framework in Frameworks */,
 				B38B973B1ECC89C800A89908 /* ExternalAccessory.framework in Frameworks */,
 				B38B97391ECC89BB00A89908 /* Foundation.framework in Frameworks */,
 				B38B97371ECC89B100A89908 /* AdSupport.framework in Frameworks */,
 				B38B97351ECC896C00A89908 /* CoreLocation.framework in Frameworks */,
+				B30A22B024620B6D00635AFF /* FraudForce.framework in Frameworks */,
 				B38B97331ECC896600A89908 /* SystemConfiguration.framework in Frameworks */,
 				B38B97311ECC895D00A89908 /* CoreTelephony.framework in Frameworks */,
 			);
@@ -207,20 +218,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		33D15E1385F836F3C74648B9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				066BA4F3B0A74A07908599E9 /* Pods-npsSdk.debug.xcconfig */,
-				1255D3994FBEA293E0AA7DA7 /* Pods-npsSdk.release.xcconfig */,
-				AFAF9CDE826544BDAE2ECD0E /* Pods-npsSdkTests.debug.xcconfig */,
-				64E8856FBE7FEF84795B4794 /* Pods-npsSdkTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		37D2DCC53C1D6A00613CF4A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B30A22A92461F02E00635AFF /* FraudForce.framework */,
 				B3EADBC41EF8062400386E16 /* iovation.framework */,
 				B38B97451ECC8F2900A89908 /* UIKit.framework */,
 				B38B973C1ECC8A1B00A89908 /* CoreFoundation.framework */,
@@ -231,7 +232,6 @@
 				B38B97321ECC896600A89908 /* SystemConfiguration.framework */,
 				B38B97301ECC895D00A89908 /* CoreTelephony.framework */,
 				B38B972D1ECC895500A89908 /* npsSdk.xcodeproj */,
-				CEB58488938CB8B8D667FB00 /* Pods_npsSdk.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,7 +249,6 @@
 				B3DBD46C1ECB20A3000A7739 /* npsSdk */,
 				B3DBD4771ECB20A3000A7739 /* npsSdkTests */,
 				B3DBD46B1ECB20A3000A7739 /* Products */,
-				33D15E1385F836F3C74648B9 /* Pods */,
 				37D2DCC53C1D6A00613CF4A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -266,8 +265,8 @@
 		B3DBD46C1ECB20A3000A7739 /* npsSdk */ = {
 			isa = PBXGroup;
 			children = (
+				B30A22AD2461F22300635AFF /* FraudForce.h */,
 				B3EADBBE1EF802AB00386E16 /* DevicePrint.h */,
-				B3EADBBF1EF802AB00386E16 /* iovation.h */,
 				B38B96CF1ECC849800A89908 /* NpsAddress.h */,
 				B38B96D01ECC849800A89908 /* NpsAddress.m */,
 				B38B96D11ECC849800A89908 /* NpsBilling.h */,
@@ -353,6 +352,7 @@
 				B38B97051ECC849800A89908 /* NpsCreateClientSession.h in Headers */,
 				B38B97151ECC849800A89908 /* NpsSoapClient.h in Headers */,
 				B34C2D801EE849C3005A4DC8 /* NpsGetProductResponse.h in Headers */,
+				B30A22AE2461F22300635AFF /* FraudForce.h in Headers */,
 				B38B96FF1ECC849800A89908 /* NpsBilling.h in Headers */,
 				B38B97031ECC849800A89908 /* NpsConfiguration.h in Headers */,
 				B38B97111ECC849800A89908 /* NpsMethod.h in Headers */,
@@ -369,7 +369,6 @@
 				B38B97291ECC849800A89908 /* XMLReader.h in Headers */,
 				B38B971D1ECC849800A89908 /* NpsRetrievePaymentMethodToken.h in Headers */,
 				B38B97071ECC849800A89908 /* NpsCreatePaymentMethodToken.h in Headers */,
-				B3EADBC11EF802AB00386E16 /* iovation.h in Headers */,
 				B38B971F1ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.h in Headers */,
 				B38B97191ECC849800A89908 /* NpsRecachePaymentMethodToken.h in Headers */,
 				B38B97091ECC849800A89908 /* NpsCreatePaymentMethodTokenResponse.h in Headers */,
@@ -391,12 +390,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3DBD47E1ECB20A3000A7739 /* Build configuration list for PBXNativeTarget "npsSdk" */;
 			buildPhases = (
-				3636F38B3755BCA090BF8F5D /* [CP] Check Pods Manifest.lock */,
 				B3DBD4651ECB20A3000A7739 /* Sources */,
 				B3DBD4661ECB20A3000A7739 /* Frameworks */,
 				B3DBD4671ECB20A3000A7739 /* Headers */,
 				B3DBD4681ECB20A3000A7739 /* Resources */,
-				18EE8FA33002A9DE16308F1A /* [CP] Copy Pods Resources */,
+				B30A22B224620B6D00635AFF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,12 +409,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3DBD4811ECB20A3000A7739 /* Build configuration list for PBXNativeTarget "npsSdkTests" */;
 			buildPhases = (
-				751EB3A53D8EA47E5A1288EA /* [CP] Check Pods Manifest.lock */,
 				B3DBD46F1ECB20A3000A7739 /* Sources */,
 				B3DBD4701ECB20A3000A7739 /* Frameworks */,
 				B3DBD4711ECB20A3000A7739 /* Resources */,
-				145BE2CD77836AA821295E05 /* [CP] Embed Pods Frameworks */,
-				77C20E8303D052A05614BFC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -452,6 +447,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = B3DBD4601ECB20A3000A7739;
@@ -490,84 +486,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		145BE2CD77836AA821295E05 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-npsSdkTests/Pods-npsSdkTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		18EE8FA33002A9DE16308F1A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-npsSdk/Pods-npsSdk-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3636F38B3755BCA090BF8F5D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		751EB3A53D8EA47E5A1288EA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		77C20E8303D052A05614BFC7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-npsSdkTests/Pods-npsSdkTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B3DBD4651ECB20A3000A7739 /* Sources */ = {
@@ -726,7 +644,6 @@
 		};
 		B3DBD47F1ECB20A3000A7739 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 066BA4F3B0A74A07908599E9 /* Pods-npsSdk.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -736,6 +653,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -757,7 +675,6 @@
 		};
 		B3DBD4801ECB20A3000A7739 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1255D3994FBEA293E0AA7DA7 /* Pods-npsSdk.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -767,6 +684,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -784,7 +702,6 @@
 		};
 		B3DBD4821ECB20A3000A7739 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 066BA4F3B0A74A07908599E9 /* Pods-npsSdk.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = npsSdkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -795,7 +712,6 @@
 		};
 		B3DBD4831ECB20A3000A7739 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64E8856FBE7FEF84795B4794 /* Pods-npsSdkTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = npsSdkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

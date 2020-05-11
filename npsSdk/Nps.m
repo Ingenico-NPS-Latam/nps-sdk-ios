@@ -154,7 +154,7 @@
 }
 
 +(NSString *) getDeviceFingerPrint{
-    return [iovation ioBegin];
+    return [FraudForce blackbox];
 }
 
 @end
