@@ -2,8 +2,6 @@ This is a iOS SDK that allows you to process payments directly from the client s
 
 ##  How It Works 
  *Read this for: [Objective C](README.md), [Swift](README_SWIFT.md) 
- *Read this for: [Objective C](README.md), [Swift](README_SWIFT.md) 
- *Read this for: [Objective C](README.md), [Swift](README_SWIFT.md)
 
 When a customer submits your payment form, nps-ios-sdk sends customer sensitive payment details to be encrypted and stored at Ingenico NPS servers and gives you a PaymentMethodToken to complete Payment process using our API.
 
