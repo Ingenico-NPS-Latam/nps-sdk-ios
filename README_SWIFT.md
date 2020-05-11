@@ -42,7 +42,7 @@ To get started install on your iOS API following the next steps:
 Add to you Podfile
 
 ```bash
-pod 'npsSdk', '1.0.18'
+pod 'npsSdk', '1.0.20'
 ```
 
 Install
