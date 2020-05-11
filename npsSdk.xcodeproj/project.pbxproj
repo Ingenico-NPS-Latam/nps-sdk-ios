@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B30A22AE2461F22300635AFF /* FraudForce.h in Headers */ = {isa = PBXBuildFile; fileRef = B30A22AD2461F22300635AFF /* FraudForce.h */; };
-		B30A22B024620B6D00635AFF /* FraudForce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30A22A92461F02E00635AFF /* FraudForce.framework */; };
-		B30A22B124620B6D00635AFF /* FraudForce.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B30A22A92461F02E00635AFF /* FraudForce.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B30A22B42469D87900635AFF /* FraudForce.h in Headers */ = {isa = PBXBuildFile; fileRef = B30A22B32469D87800635AFF /* FraudForce.h */; };
+		B30A22B62469D8BF00635AFF /* FraudForce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30A22B52469D8BF00635AFF /* FraudForce.framework */; };
+		B30A22B72469D8BF00635AFF /* FraudForce.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B30A22B52469D8BF00635AFF /* FraudForce.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B34C2D801EE849C3005A4DC8 /* NpsGetProductResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D7E1EE849C3005A4DC8 /* NpsGetProductResponse.h */; };
 		B34C2D811EE849C3005A4DC8 /* NpsGetProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C2D7F1EE849C3005A4DC8 /* NpsGetProductResponse.m */; };
 		B34C2D841EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C2D821EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.h */; };
@@ -95,13 +95,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B30A22B224620B6D00635AFF /* Embed Frameworks */ = {
+		B30A22B82469D8BF00635AFF /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B30A22B124620B6D00635AFF /* FraudForce.framework in Embed Frameworks */,
+				B30A22B72469D8BF00635AFF /* FraudForce.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,7 +110,8 @@
 
 /* Begin PBXFileReference section */
 		B30A22A92461F02E00635AFF /* FraudForce.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FraudForce.framework; path = Carthage/Build/iOS/FraudForce.framework; sourceTree = "<group>"; };
-		B30A22AD2461F22300635AFF /* FraudForce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FraudForce.h; path = Carthage/Build/iOS/FraudForce.framework/Headers/FraudForce.h; sourceTree = SOURCE_ROOT; };
+		B30A22B32469D87800635AFF /* FraudForce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FraudForce.h; sourceTree = "<group>"; };
+		B30A22B52469D8BF00635AFF /* FraudForce.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FraudForce.framework; path = Frameworks/FraudForce.framework; sourceTree = "<group>"; };
 		B34C2D7E1EE849C3005A4DC8 /* NpsGetProductResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpsGetProductResponse.h; sourceTree = "<group>"; };
 		B34C2D7F1EE849C3005A4DC8 /* NpsGetProductResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpsGetProductResponse.m; sourceTree = "<group>"; };
 		B34C2D821EE86B4E005A4DC8 /* NpsGetInstallmentsOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NpsGetInstallmentsOptions.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -201,7 +202,7 @@
 				B38B97391ECC89BB00A89908 /* Foundation.framework in Frameworks */,
 				B38B97371ECC89B100A89908 /* AdSupport.framework in Frameworks */,
 				B38B97351ECC896C00A89908 /* CoreLocation.framework in Frameworks */,
-				B30A22B024620B6D00635AFF /* FraudForce.framework in Frameworks */,
+				B30A22B62469D8BF00635AFF /* FraudForce.framework in Frameworks */,
 				B38B97331ECC896600A89908 /* SystemConfiguration.framework in Frameworks */,
 				B38B97311ECC895D00A89908 /* CoreTelephony.framework in Frameworks */,
 			);
@@ -222,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				B30A22A92461F02E00635AFF /* FraudForce.framework */,
+				B30A22B52469D8BF00635AFF /* FraudForce.framework */,
 				B3EADBC41EF8062400386E16 /* iovation.framework */,
 				B38B97451ECC8F2900A89908 /* UIKit.framework */,
 				B38B973C1ECC8A1B00A89908 /* CoreFoundation.framework */,
@@ -265,7 +267,7 @@
 		B3DBD46C1ECB20A3000A7739 /* npsSdk */ = {
 			isa = PBXGroup;
 			children = (
-				B30A22AD2461F22300635AFF /* FraudForce.h */,
+				B30A22B32469D87800635AFF /* FraudForce.h */,
 				B3EADBBE1EF802AB00386E16 /* DevicePrint.h */,
 				B38B96CF1ECC849800A89908 /* NpsAddress.h */,
 				B38B96D01ECC849800A89908 /* NpsAddress.m */,
@@ -352,7 +354,6 @@
 				B38B97051ECC849800A89908 /* NpsCreateClientSession.h in Headers */,
 				B38B97151ECC849800A89908 /* NpsSoapClient.h in Headers */,
 				B34C2D801EE849C3005A4DC8 /* NpsGetProductResponse.h in Headers */,
-				B30A22AE2461F22300635AFF /* FraudForce.h in Headers */,
 				B38B96FF1ECC849800A89908 /* NpsBilling.h in Headers */,
 				B38B97031ECC849800A89908 /* NpsConfiguration.h in Headers */,
 				B38B97111ECC849800A89908 /* NpsMethod.h in Headers */,
@@ -367,6 +368,7 @@
 				B38B97211ECC849800A89908 /* NpsRootParameters.h in Headers */,
 				B3EADBB91EEEC27500386E16 /* NpsInstallments.h in Headers */,
 				B38B97291ECC849800A89908 /* XMLReader.h in Headers */,
+				B30A22B42469D87900635AFF /* FraudForce.h in Headers */,
 				B38B971D1ECC849800A89908 /* NpsRetrievePaymentMethodToken.h in Headers */,
 				B38B97071ECC849800A89908 /* NpsCreatePaymentMethodToken.h in Headers */,
 				B38B971F1ECC849800A89908 /* NpsRetrievePaymentMethodTokenResponse.h in Headers */,
@@ -394,7 +396,7 @@
 				B3DBD4661ECB20A3000A7739 /* Frameworks */,
 				B3DBD4671ECB20A3000A7739 /* Headers */,
 				B3DBD4681ECB20A3000A7739 /* Resources */,
-				B30A22B224620B6D00635AFF /* Embed Frameworks */,
+				B30A22B82469D8BF00635AFF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
